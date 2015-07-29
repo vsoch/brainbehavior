@@ -43,7 +43,7 @@ class Pubmed:
     def _get_pmc_lookup(self):
         print "Downloading latest version of pubmed central ftp lookup..."
         self.ftp = pd.read_csv("ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/file_list.txt",skiprows=1,sep="\t",header=None)
-        self.ftp.columns = ["URL","JOURNAL","PMCID"]
+        self.ftp.columns = ["URL","JOURNAL","PMCID","PMID"]
 
     def get_pubmed_central_ids(self):
         if not self.ftp: self._get_pmc_lookup()

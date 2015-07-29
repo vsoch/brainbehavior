@@ -3,8 +3,8 @@
 # This script will launch instances of download_pubmed_muhaha.py
 
 import os
-from brainbehavior.pubmed import Pubmed, ftp
-from utils import read_pmid_groups
+from brainbehavior.pubmed import Pubmed
+from brainbehavior.utils import read_pmid_groups
 
 # First we need to download full article text
 # Create a pubmed object
