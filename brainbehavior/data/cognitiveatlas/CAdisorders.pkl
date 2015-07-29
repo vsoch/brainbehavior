@@ -1,0 +1,858 @@
+(dp0
+S'dso_0050668'
+p1
+S'(?=birth defect)(?=alcohol)'
+p2
+sS'dso_8645'
+p3
+S'subacute delirium'
+p4
+sS'dso_2848'
+p5
+S'melancholia'
+p6
+sS'dso_2559'
+p7
+S'opiate dependence'
+p8
+sS'dso_3312'
+p9
+S'bipolar disorder|BPD|bipolar'
+p10
+sS'dso_11120'
+p11
+S'psychologic dyspareunia'
+p12
+sS'dso_0050665'
+p13
+S'fetal alcohol syndrome'
+p14
+sS'dso_9974'
+p15
+S'drug dependence'
+p16
+sS'dso_0050667'
+p17
+S'(?=neurodevelopmental)(?=alcohol)'
+p18
+sS'dso_0060146'
+p19
+S'phonagnosia'
+p20
+sS'dso_602'
+p21
+S'cancerophobia'
+p22
+sS'dso_603'
+p23
+S'(?=AIDS)(?=phobia)'
+p24
+sS'dso_334'
+p25
+S'histrionic personality disorder'
+p26
+sS'dso_0060163'
+p27
+S'body dysmorphic disorder|dysmorphic'
+p28
+sS'dso_535'
+p29
+S'sleep disorder'
+p30
+sS'dso_0060144'
+p31
+S'mirror agnosia'
+p32
+sS'dso_10132'
+p33
+S'psychosexual disorder'
+p34
+sS'dso_8689'
+p35
+S'anorexia|anorexia nervosa'
+p36
+sS'dso_8646'
+p37
+S'substance-induced psychosis'
+p38
+sS'dso_0060042'
+p39
+S'(?=atypical)(?=autism)'
+p40
+sS'dso_0060043'
+p41
+S'sexual disorder'
+p42
+sS'dso_0060040'
+p43
+S'pervasive developmental disorder'
+p44
+sS'dso_0060041'
+p45
+S'autism|autism spectrum disorder|ASD'
+p46
+sS'dso_0060046'
+p47
+S'aphasia'
+p48
+sS'dso_0060047'
+p49
+S'writing disorder'
+p50
+sS'dso_0060044'
+p51
+S'paraphilia disorder'
+p52
+sS'dso_0060045'
+p53
+S'Munchausen by proxy'
+p54
+sS'dso_2575'
+p55
+S'barbiturate dependence'
+p56
+sS'dso_0060133'
+p57
+S'anosognosia'
+p58
+sS'dso_13709'
+p59
+S'premature ejaculation'
+p60
+sS'dso_9478'
+p61
+S'postpartum depression|post-partum'
+p62
+sS'dso_8619'
+p63
+S'recurrent hypersomnia'
+p64
+sS'dso_11328'
+p65
+S'schizophreniform disorder'
+p66
+sS'dso_1307'
+p67
+S'dementia'
+p68
+sS'dso_10646'
+p69
+S'schizotypal personality disorder'
+p70
+sS'dso_12797'
+p71
+S'hallucinogen abuse'
+p72
+sS'dso_11257'
+p73
+S'social phobia'
+p74
+sS'dso_1206'
+p75
+S'rett syndrome|rett'
+p76
+sS'dso_1470'
+p77
+S'major depressive disorder|MDD|depress|unipolar depression|major depression|unipolar disorder|recurrent depression|clinical depression|unipolar affective disorder'
+p78
+sS'dso_1203'
+p79
+S'drug-induced mental disorder'
+p80
+sS'dso_0050742'
+p81
+S'nicotine dependence'
+p82
+sS'dso_12294'
+p83
+S'(?=atypical)(?=depress)'
+p84
+sS'dso_10236'
+p85
+S'exhibitionism'
+p86
+sS'dso_5419'
+p87
+S'schizophrenia'
+p88
+sS'dso_0050776'
+p89
+S'non-specific X-linked mental retardation'
+p90
+sS'dso_92'
+p91
+S'speech disorder'
+p92
+sS'dso_93'
+p93
+S'language disorder'
+p94
+sS'dso_0060138'
+p95
+S'autotopagnosia'
+p96
+sS'dso_0060139'
+p97
+S'color agnosia'
+p98
+sS'dso_0060136'
+p99
+S'associative agnosia'
+p100
+sS'dso_0060137'
+p101
+S'auditory agnosia'
+p102
+sS'dso_0060134'
+p103
+S'apperceptive agnosia'
+p104
+sS'dso_0060135'
+p105
+S'apraxia'
+p106
+sS'dso_0060132'
+p107
+S'amusia'
+p108
+sS'dso_11038'
+p109
+S'depersonalization disorder'
+p110
+sS'dso_0060130'
+p111
+S'akinetopsia'
+p112
+sS'dso_0060131'
+p113
+S'alexithymia'
+p114
+sS'dso_0060037'
+p115
+S'developmental disorder of mental health'
+p116
+sS'dso_2468'
+p117
+S'psychotic disorder'
+p118
+sS'dso_0060048'
+p119
+S'nosophobia'
+p120
+sS'dso_13417'
+p121
+S'alexia'
+p122
+sS'dso_14320'
+p123
+S'generalized anxiety disorder|GAD|generalized anxiety'
+p124
+sS'dso_670'
+p125
+S'(?=ampheatmine)(?=abuse)'
+p126
+sS'dso_4737'
+p127
+S'somatoform disorder'
+p128
+sS'dso_600'
+p129
+S'(?=animal)(?=phobia)'
+p130
+sS'dso_0060038'
+p131
+S'specific developmental disorder'
+p132
+sS'dso_4627'
+p133
+S'ideomotor apraxia'
+p134
+sS'dso_11206'
+p135
+S'opioid abuse'
+p136
+sS'dso_52c731124ad3e'
+p137
+S'formula creation disorder'
+p138
+sS'dso_1574'
+p139
+S'alcohol abuse|substance abuse'
+p140
+sS'dso_0050628'
+p141
+S'advanced sleep phase syndrome'
+p142
+sS'dso_1849'
+p143
+S'(?=cannabis)(?=depend)'
+p144
+sS'dso_1510'
+p145
+S'personality disorder'
+p146
+sS'dso_52b09acce73fc'
+p147
+S'wingnut'
+p148
+sS'dso_605'
+p149
+S'flying phobia'
+p150
+sS'dso_4090'
+p151
+S'agnosia'
+p152
+sS'dso_12139'
+p153
+S'dysthymic disorder'
+p154
+sS'dso_11385'
+p155
+S'expressive language disorder'
+p156
+sS'dso_0060149'
+p157
+S'social emotional agnosia'
+p158
+sS'dso_0060148'
+p159
+S'simultanagnosia'
+p160
+sS'dso_10914'
+p161
+S'(?=amnestic)(?=disorder)'
+p162
+sS'dso_8986'
+p163
+S'narcolepsy'
+p164
+sS'dso_0060143'
+p165
+S'integrative agnosia'
+p166
+sS'dso_0060142'
+p167
+S'form agnosia'
+p168
+sS'dso_0060141'
+p169
+S'finger agnosia'
+p170
+sS'dso_0060140'
+p171
+S'cortical deafness'
+p172
+sS'dso_0060147'
+p173
+S'semantic agnosia'
+p174
+sS'dso_4541'
+p175
+S'nominal aphasia'
+p176
+sS'dso_0060145'
+p177
+S'pain agnosia'
+p178
+sS'dso_4543'
+p179
+S'retrograde amnesia'
+p180
+sS'dso_13918'
+p181
+S'somatization disorder'
+p182
+sS'dso_9923'
+p183
+S'developmental coordination disorder'
+p184
+sS'dso_4428'
+p185
+S'dyslexia'
+p186
+sS'dso_1561'
+p187
+S'cognitive disorder'
+p188
+sS'dso_13487'
+p189
+S'childhood disintegrative disease'
+p190
+sS'dso_1509'
+p191
+S'avoidant personality disorder'
+p192
+sS'dso_2846'
+p193
+S'bruxism'
+p194
+sS'dso_3324'
+p195
+S'mood disorder'
+p196
+sS'dso_0050696'
+p197
+S'fetal alcohol spectrum disorder'
+p198
+sS'dso_4540'
+p199
+S'dysgraphia'
+p200
+sS'dso_9091'
+p201
+S'REM sleep behavior disorder|REM sleep disorder'
+p202
+sS'dso_10849'
+p203
+S'sexual masochism'
+p204
+sS'dso_2030'
+p205
+S'anxiety disorder'
+p206
+sS'dso_2033'
+p207
+S'communication disorder'
+p208
+sS'dso_9220'
+p209
+S'central sleep apnea'
+p210
+sS'dso_12685'
+p211
+S'mixed receptive-expressive language disorder'
+p212
+sS'dso_12129'
+p213
+S'bulimia nervosa|bulimia'
+p214
+sS'dso_52c73c015b5a4'
+p215
+S'explorer deprecation disorder'
+p216
+sS'dso_10932'
+p217
+S'obsessive-compulsive personality disorder|obsessive compulsive personality'
+p218
+sS'dso_9505'
+p219
+S'(?=cannabis)(?=abuse)'
+p220
+sS'dso_0060150'
+p221
+S'astereognosia'
+p222
+sS'dso_0060151'
+p223
+S'tactile agnosia'
+p224
+sS'dso_0060152'
+p225
+S'time agnosia'
+p226
+sS'dso_0060153'
+p227
+S'topographical agnosia'
+p228
+sS'dso_0060154'
+p229
+S'verbal auditory agnosia'
+p230
+sS'dso_0060155'
+p231
+S'visual agnosia'
+p232
+sS'dso_0060156'
+p233
+S'visual verbal agnosia'
+p234
+sS'dso_5062'
+p235
+S'phencyclidine abuse'
+p236
+sS'dso_1595'
+p237
+S'endogenous depression'
+p238
+sS'dso_1596'
+p239
+S'mental depression'
+p240
+sS'dso_1768'
+p241
+S'conversion disorder'
+p242
+sS'dso_1766'
+p243
+S'factitious disorder'
+p244
+sS'dso_12995'
+p245
+S'conduct disorder'
+p246
+sS'dso_9976'
+p247
+S'heroin dependence'
+p248
+sS'dso_9977'
+p249
+S'hallucinogen dependence'
+p250
+sS'dso_4964'
+p251
+S'neurotic disorder'
+p252
+sS'dso_9975'
+p253
+S'(?=cocaine)(?=depend)'
+p254
+sS'dso_12128'
+p255
+S'pica disease'
+p256
+sS'dso_5341d1ef4107e'
+p257
+S'alzheimer'
+p258
+sS'dso_11718'
+p259
+S'(?=antidepress)(?=abuse)'
+p260
+sS'dso_2745'
+p261
+S'narcissistic personality disorder'
+p262
+sS'dso_0050741'
+p263
+S'alcohol dependence|substance dependence'
+p264
+sS'dso_6950'
+p265
+S'combat disorder'
+p266
+sS'dso_9336'
+p267
+S'bestiality'
+p268
+sS'dso_0050587'
+p269
+S'trichotillomania'
+p270
+sS'dso_10937'
+p271
+S'impulse control disorder'
+p272
+sS'dso_10936'
+p273
+S'schizoid personality disorder'
+p274
+sS'dso_10935'
+p275
+S'dissociative disorder'
+p276
+sS'dso_10934'
+p277
+S'multiple personality disorder'
+p278
+sS'dso_10933'
+p279
+S'obsessive-compulsive disorder|ocd|obsessive compulsive'
+p280
+sS'dso_845'
+p281
+S'cyclothymic disorder'
+p282
+sS'dso_10931'
+p283
+S'dependent personality disorder'
+p284
+sS'dso_10930'
+p285
+S'borderline personality disorder|BPD|borderline personality'
+p286
+sS'dso_0060165'
+p287
+S'kleine-levin|kleine levin'
+p288
+sS'dso_0060164'
+p289
+S'pain disorder'
+p290
+sS'dso_0060167'
+p291
+S'seasonal affective disorder'
+p292
+sS'dso_0060166'
+p293
+S'bipolar II disorder|bipolar II'
+p294
+sS'dso_10834'
+p295
+S'voyeurism'
+p296
+sS'dso_10939'
+p297
+S'antisocial personality disorder'
+p298
+sS'dso_10938'
+p299
+S'paranoid personality disorder'
+p300
+sS'dso_4762'
+p301
+S'vasculogenic impotence'
+p302
+sS'dso_1229'
+p303
+S'paranoid schizophrenia'
+p304
+sS'dso_8927'
+p305
+S'learning disability'
+p306
+sS'dso_12883'
+p307
+S'hypochondriasis'
+p308
+sS'dso_809'
+p309
+S'(?=cocaine)(?=abuse)'
+p310
+sS'dso_14042'
+p311
+S'bipolar I disorder|bipolar I|bipolar affective disorder|manic-depressive|manic depressive|bipolar'
+p312
+sS'dso_12399'
+p313
+S'pathological gambling'
+p314
+sS'dso_1876'
+p315
+S'sexual dysfunction'
+p316
+sS'dso_11569'
+p317
+S'neurocirculatory asthenia'
+p318
+sS'dso_4188'
+p319
+S'echolalia'
+p320
+sS'dso_4189'
+p321
+S'mutism'
+p322
+sS'dso_0050432'
+p323
+S'aspberger'
+p324
+sS'dso_4260'
+p325
+S'gait apraxia'
+p326
+sS'dso_4186'
+p327
+S'articulation disorder'
+p328
+sS'dso_13352'
+p329
+S'ego-dystonic sexual orientation'
+p330
+sS'dso_13351'
+p331
+S'pedophilia'
+p332
+sS'dso_1875'
+p333
+S'impotence'
+p334
+sS'dso_0050666'
+p335
+S'partial fetal alcohol syndrome'
+p336
+sS'dso_0060179'
+p337
+S'renpenning syndrome'
+p338
+sS'dso_303'
+p339
+S'substance-related disorder'
+p340
+sS'dso_302'
+p341
+S'substance abuse'
+p342
+sS'dso_13868'
+p343
+S'hypoactive sexual desire disorder'
+p344
+sS'dso_1742'
+p345
+S'drug psychosis'
+p346
+sS'dso_1235'
+p347
+S'fetishism'
+p348
+sS'dso_1234'
+p349
+S'gender identity disorder'
+p350
+sS'dso_1233'
+p351
+S'transvestism'
+p352
+sS'dso_1094'
+p353
+S'attention deficit hyperactivity disorder|adhd'
+p354
+sS'dso_2055'
+p355
+S'Post-traumatic stress disorder|ptsd|post traumatic stress'
+p356
+sS'dso_1059'
+p357
+S'intellectual disability'
+p358
+sS'dso_593'
+p359
+S'agoraphobia'
+p360
+sS'dso_9207'
+p361
+S'periodic limb movement disorder'
+p362
+sS'dso_2303'
+p363
+S'stereotypic movement disorder'
+p364
+sS'dso_251'
+p365
+S'(?=alcohol)(?=mental disorder)'
+p366
+sS'dso_507'
+p367
+S'adjustment disorder'
+p368
+sS'dso_252'
+p369
+S'(?=alcohol)(?=psychosis)'
+p370
+sS'dso_13365'
+p371
+S'reading disorder'
+p372
+sS'dso_8670'
+p373
+S'eating disorder'
+p374
+sS'dso_6088'
+p375
+S'acute stress'
+p376
+sS'dso_2510'
+p377
+S'kluver-bucy|kluver bucy'
+p378
+sS'dso_10817'
+p379
+S'sexual sadism'
+p380
+sS'dso_10685'
+p381
+S'separation anxiety disorder'
+p382
+sS'dso_4970'
+p383
+S'prosopagnosia'
+p384
+sS'dso_0060001'
+p385
+S'withdrawal disorder'
+p386
+sS'dso_9828'
+p387
+S'neonatal abstinence syndrome'
+p388
+sS'dso_52a0e46059d0a'
+p389
+S'Flapjacks'
+p390
+sS'dso_12849'
+p391
+S'autistic disorder'
+p392
+sS'dso_11507'
+p393
+S'rumination disorder'
+p394
+sS'dso_6680'
+p395
+S'capgras syndrome|capgras'
+p396
+sS'dso_8519'
+p397
+S'barbiturate abuse'
+p398
+sS'dso_5340'
+p399
+S'anterograde amnesia'
+p400
+sS'dso_5418'
+p401
+S'schizoaffective disorder'
+p402
+sS'dso_599'
+p403
+S'specific phobia'
+p404
+sS'dso_594'
+p405
+S'panic disorder'
+p406
+sS'dso_2560'
+p407
+S'morphine dependence'
+p408
+sS'dso_11037'
+p409
+S'dissociative amnesia'
+p410
+sS'dso_591'
+p411
+S'phobic disorder'
+p412
+sS'dso_10919'
+p413
+S'transsexualism'
+p414
+sS'dso_52d06688e07f3'
+p415
+S'philoprogeria'
+p416
+sS'dso_9973'
+p417
+S'substance dependence'
+p418
+sS'dso_12401'
+p419
+S'intermittent explosive disorder'
+p420
+sS'dso_12400'
+p421
+S'kleptomania'
+p422
+sS'dso_12402'
+p423
+S'pyromania'
+p424
+sS'dso_778'
+p425
+S'delusional disorder'
+p426
+sS'dso_12568'
+p427
+S'dyscalculia'
+p428
+s.
