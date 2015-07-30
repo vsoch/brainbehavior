@@ -39,6 +39,7 @@ class Pubmed:
     """Init Pubmed Object"""
     def __init__(self,email):
         self.email = email
+        self.ftp = None
 
     def _get_pmc_lookup(self):
         print "Downloading latest version of pubmed central ftp lookup..."
@@ -54,7 +55,7 @@ class Pubmed:
         if not self.ftp: self._get_pmc_lookup()
         subset = pd.DataFrame(columns=self.ftp.columns)
         for p in pmids:
-            row = self.ftp.ix[self.ftp.index[self.ftp.PMCID == p]]
+            row = self.ftp.loc[self.ftp.index[self.ftp.PMCID == p]]
             subset = subset.append(row)
         # Now for each, assemble the URL
         for row in subset.iterrows():

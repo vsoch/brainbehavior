@@ -4,7 +4,6 @@
 
 import os
 from brainbehavior.pubmed import Pubmed
-from brainbehavior.utils import read_pmid_groups
 
 # First we need to download full article text
 # Create a pubmed object
@@ -16,7 +15,6 @@ pc_ids =  list(pm.ftp["PMCID"])
 
 # We are going to download them here
 download_folder = "/scratch/PI/russpold/DATA/PUBMED/articles"
-email = "vsochat@stanford.edu"
 
 # Submit scripts to download in batches of 100
 start = 0
@@ -29,6 +27,7 @@ for i in range(0,5000):
     end = start + 100
   else:
     end = len(pc_ids)
+if 1==1:
   jobname = "pm_%s-%s" %(start,end)
   filey = open(".job/%s.job" % (jobname),"w")
   filey.writelines("#!/bin/bash\n")
@@ -38,6 +37,6 @@ for i in range(0,5000):
   filey.writelines("#SBATCH --time=2-00:00\n")
   filey.writelines("#SBATCH --mem=12000\n")
   # Usage : download_pubmed_muhaha.py start end download_folder
-  filey.writelines("/home/vsochat/python-lapack-blas/bin/python /home/vsochat/SCRIPT/python/brainbehavior/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_folder,email))
+  filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_folder,email))
   filey.close()
   os.system("sbatch -p russpold .job/%s.job" % (jobname))
