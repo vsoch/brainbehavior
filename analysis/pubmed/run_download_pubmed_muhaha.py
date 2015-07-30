@@ -14,14 +14,14 @@ pm = Pubmed(email)
 pc_ids = pm.get_pubmed_central_ids()
 
 # We are going to download them here
-download_folder = "/scratch/PI/russpold/DATA/PUBMED/articles"
+download_folder = "/scratch/PI/russpold/data/PUBMED/articles"
 
 # Submit scripts to download in batches of 100
 start = 0
 iters = len(pc_ids)/100
 
 # Prepare and submit a job for each
-for i in range(0,5000):
+for i in range(1,5000):
   download_subfolder = "%s/%s" %(download_folder,i)
   if not os.path.exists(download_subfolder):
       os.mkdir(download_subfolder)
@@ -30,7 +30,6 @@ for i in range(0,5000):
     end = start + 100
   else:
     end = len(pc_ids)
-if 1==1:
   jobname = "pm_%s-%s" %(start,end)
   filey = open(".job/%s.job" % (jobname),"w")
   filey.writelines("#!/bin/bash\n")
