@@ -11,7 +11,7 @@ email = "vsochat@stanford.edu"
 pm = Pubmed(email)
 
 # Get pubmed ids for all articles in database
-pc_ids =  list(pm.ftp["PMCID"])
+pc_ids = pm.get_pubmed_central_ids()
 
 # We are going to download them here
 download_folder = "/scratch/PI/russpold/DATA/PUBMED/articles"
@@ -22,6 +22,9 @@ iters = len(pc_ids)/100
 
 # Prepare and submit a job for each
 for i in range(0,5000):
+  download_subfolder = "%s/%s" %(download_folder,i)
+  if not os.path.exists(download_subfolder):
+      os.mkdir(download_subfolder)
   start = i*100
   if i != iters:
     end = start + 100
@@ -37,6 +40,6 @@ if 1==1:
   filey.writelines("#SBATCH --time=2-00:00\n")
   filey.writelines("#SBATCH --mem=12000\n")
   # Usage : download_pubmed_muhaha.py start end download_folder
-  filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_folder,email))
+  filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_subfolder,email))
   filey.close()
   os.system("sbatch -p russpold .job/%s.job" % (jobname))
