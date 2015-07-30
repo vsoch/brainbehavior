@@ -39,7 +39,7 @@ class Pubmed:
     """Init Pubmed Object"""
     def __init__(self,email):
         self.email = email
-        self.ftp = None
+        self.ftp = self._get_pmc_lookup()
 
     def _get_pmc_lookup(self):
         print "Downloading latest version of pubmed central ftp lookup..."
@@ -47,12 +47,10 @@ class Pubmed:
         self.ftp.columns = ["URL","JOURNAL","PMCID","PMID"]
 
     def get_pubmed_central_ids(self):
-        if not self.ftp: self._get_pmc_lookup()
         return list(self.ftp["PMCID"])
 
     """Download full text of articles with pubmed ids pmids to folder"""
     def download_pubmed(self,pmids,download_folder):
-        if not self.ftp: self._get_pmc_lookup()
         subset = pd.DataFrame(columns=self.ftp.columns)
         for p in pmids:
             row = self.ftp.loc[self.ftp.index[self.ftp.PMCID == p]]
