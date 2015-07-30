@@ -39,7 +39,7 @@ class Pubmed:
     """Init Pubmed Object"""
     def __init__(self,email):
         self.email = email
-        self.ftp = self._get_pmc_lookup()
+        self._get_pmc_lookup()
 
     def _get_pmc_lookup(self):
         print "Downloading latest version of pubmed central ftp lookup..."

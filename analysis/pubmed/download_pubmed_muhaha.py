@@ -5,6 +5,7 @@
 # Usage : download_pubmed_muhaha.py start end download_folder
 
 import sys
+import pandas
 from brainbehavior.pubmed import Pubmed
 
 # Get the start and end index of ids from the command line
