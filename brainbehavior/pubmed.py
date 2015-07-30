@@ -63,6 +63,12 @@ class Pubmed:
             if not os.path.isfile("%s%s" %(download_place,row[1]["URL"])):
                 os.system("wget \"%s\" -P %s" % (url,download_place))
 
+    """check if file downloaded"""
+    def check_download(self,pmid,download_folder):
+        article = self.ftp.loc[self.ftp.index[self.ftp.PMCID == pmid]]
+        article = "%s/%s" %(download_folder,article)
+        return os.path.exists(article)
+
     """Read and return single article (or search term) pubmed"""
     def get_single_article(self,id1):
         Entrez.email = self.email
