@@ -42,6 +42,21 @@ def get_term_counts(terms,text):
         text = [text]
         return get_term_counts_list(terms,text)
 
+def get_term_counts_list(terms,text):
+    # Convert words into stems
+    stems = do_stem(terms)
+
+    # data frame hold counts
+    counts = pandas.DataFrame(0,columns=["count"],index=stems)
+
+    for sentence in text:
+        blob =  TextBlob(sentence)
+        words = do_stem(blob.words)
+        words = [w for w in words if w in stems]
+        counts.loc[words] = counts.loc[words] + 1
+    return counts        
+    
+
 def get_term_counts_dict(terms,text):
     # Convert words into stems
     stems = do_stem(terms)

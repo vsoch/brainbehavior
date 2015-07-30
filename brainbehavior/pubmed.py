@@ -255,6 +255,22 @@ def read_xml(xml):
     with open (xml, "r") as myfile:
         return myfile.read().replace('\n', '')
 
+'''Cut out article sections we aren't interested in'''
+def crop_text(text,remove_before="<abstract>",remove_after="<ref-list>"):
+    # Remove everything before abstract
+    start = re.compile(remove_before)
+    end = re.compile(remove_after)
+    start = start.search(text)
+    end = end.search(text)
+    return text[start.start():end.start()]
+
+def remove_formatting(text):
+    to_remove = ["<italic>","<bold>","<p>","<sub>","<table>","<td>","<tr>"]
+    for remove in to_remove:
+        text = text.replace(remove,"")
+        text = text.replace(remove.replace("<","</"),"")
+    return text
+
 '''Search text for list of terms, return list of match counts'''
 def search_text(text,terms):
     vector = np.zeros(len(terms))
