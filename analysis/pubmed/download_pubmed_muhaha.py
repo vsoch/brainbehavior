@@ -16,7 +16,6 @@ email = sys.argv[4]
 # First we need to download full article text
 # Create a pubmed object
 pm = Pubmed(email)
-pm.ftp = None
 
 # Get pubmed ids for articles in database
 pc_ids = pm.get_pubmed_central_ids()
