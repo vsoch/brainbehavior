@@ -17,11 +17,10 @@ pc_ids = pm.get_pubmed_central_ids()
 download_folder = "/scratch/PI/russpold/data/PUBMED/articles"
 
 # Submit scripts to download in batches of 100
-start = 0
 iters = len(pc_ids)/100
 
 # Prepare and submit a job for each
-for i in range(1,5000):
+for i in range(10000,iters):
   download_subfolder = "%s/%s" %(download_folder,i)
   if not os.path.exists(download_subfolder):
       os.mkdir(download_subfolder)

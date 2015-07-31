@@ -77,6 +77,7 @@ cogpheno.index = lower_labels
 overlap_labels = [x for x in lower_labels if x in data.columns]
 cogatpheno_subset = data[overlap_labels]
 #cogatpheno_subset.to_pickle("analysis/data/CNP_cogatpheno.pkl")
+cogatpheno_subset.to_csv("analysis/data/CNP_cogatpheno.csv")
 
 # Try multidimensional scaling for a first go
 cap_defined = cogatpheno_subset.copy()
@@ -117,9 +118,9 @@ nmds = manifold.MDS(n_components=2, metric=False, max_iter=3000, eps=1e-12,
 npos = nmds.fit_transform(similarities, init=pos)
 
 # Rescale the data STOPPED HERE
-X_true = cap_defined.copy()
-pos *= np.sqrt((X_true ** 2).sum()) / np.sqrt((pos ** 2).sum())
-npos *= np.sqrt((X_true ** 2).sum()) / np.sqrt((npos ** 2).sum())
+# X_true = cap_defined.copy()
+# pos *= np.sqrt((X_true ** 2).sum(axix=1)) / np.sqrt((pos ** 2).sum(axis=1))
+# npos *= np.sqrt((X_true ** 2).sum()) / np.sqrt((npos ** 2).sum())
 
 # Rotate the data
 clf = PCA(n_components=2)

@@ -24,14 +24,13 @@ iters = len(pc_ids)/100
 # Find missing ones
 missing = []
 subfolders = []
-for i in range(1,5000):
+for i in range(0,iters):
+  print "%s of %s" %(i,iters)
   download_subfolder = "%s/%s" %(download_folder,i)
   start = i*100
-  if i != iters:
-    end = start + 100
-  else:
-    end = len(pc_ids)
-  for ii in [start:end]
+  if i != iters: end = start + 100
+  else: end = len(pc_ids)
+  for ii in range(start,end):
       pmid = pc_ids[ii]
       if not check_download(pmid,download_subfolder):
           missing.append(pmid)
