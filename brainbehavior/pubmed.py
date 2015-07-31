@@ -66,6 +66,7 @@ class Pubmed:
     """check if file downloaded"""
     def check_download(self,pmid,download_folder):
         article = self.ftp.loc[self.ftp.index[self.ftp.PMCID == pmid]]
+        article = os.path.basename(article["URL"][0])
         article = "%s/%s" %(download_folder,article)
         return os.path.exists(article)
 
