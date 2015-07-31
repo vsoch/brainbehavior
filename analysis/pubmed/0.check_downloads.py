@@ -20,26 +20,8 @@ download_folder = "/scratch/PI/russpold/data/PUBMED/articles"
 start = 0
 iters = len(pc_ids)/100
 
-
-# Find missing ones
-missing = []
-subfolders = []
-for i in range(0,iters):
-  print "%s of %s" %(i,iters)
-  download_subfolder = "%s/%s" %(download_folder,i)
-  start = i*100
-  if i != iters: end = start + 100
-  else: end = len(pc_ids)
-  for ii in range(start,end):
-      pmid = pc_ids[ii]
-      if not check_download(pmid,download_subfolder):
-          missing.append(pmid)
-          subfolders.append(download_subfolder)
-
-# Now submit missing jobs
-for m in range(0,len(missing)):
-  pmid = missing[m]
-  download_folder = subfolders[m]
+# Function to submit a single iteration of a missing job
+def submit_single_missing(pmid,download_folder)
   jobname = "pm_%s" %(pmid)
   filey = open(".job/%s.job" % (jobname),"w")
   filey.writelines("#!/bin/bash\n")
@@ -51,3 +33,18 @@ for m in range(0,len(missing)):
   filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_single.py %s %s %s\n" % (pmid,download_subfolder,email))
   filey.close()
   os.system("sbatch -p russpold .job/%s.job" % (jobname))
+
+# Find missing ones
+for i in range(0,iters):
+  print "%s of %s" %(i,iters)
+  download_subfolder = "%s/%s" %(download_folder,i)
+  start = i*100
+  if i != iters: end = start + 100
+  else: end = len(pc_ids)
+  for ii in range(start,end):
+      pmid = pc_ids[ii]
+      if not pm.check_download(pmid,download_subfolder):
+          print "Missing %s" %pmid
+          missing.append(pmid)
+          subfolders.append(download_subfolder)
+
