@@ -5,6 +5,7 @@
 
 import sys
 import pandas
+import pickle
 from brainbehavior.pubmed import download_pubmed
 
 # Get the start and end index of ids from the command line
