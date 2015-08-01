@@ -189,8 +189,8 @@ def download_pubmed(pmids,download_folder,ftp):
         url = "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/%s" % (row[1]["URL"])
         print "Downloading %s" % (url)
         download_place = "%s/" %(download_folder)
-        basename = os.path.basename(row[1]["URL"]))
-        if not os.path.isfile("%s/%s" %(download_folder,basename):
+        basename = os.path.basename(row[1]["URL"])
+        if not os.path.isfile("%s/%s" %(download_folder,basename)):
             os.system("wget \"%s\" -P %s" % (url,download_place))
 
 
