@@ -85,6 +85,8 @@ ftp_pickle = "/scratch/PI/russpold/data/PUBMED/ftp_df.pkl"
 
 for f in range(0,len(its)):
     i = its[f]  
+
+if 1==1:
     print "%s of %s" %(i,iters)
     download_subfolder = "%s/%s" %(download_folder,i)
     start = i*100
@@ -98,7 +100,7 @@ for f in range(0,len(its)):
     filey.writelines("#SBATCH --error=.out/%s.err\n" %(jobname))
     filey.writelines("#SBATCH --time=2-00:00\n")
     filey.writelines("#SBATCH --mem=12000\n")
-    filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_local.py %s %s %s %s\n" % (start,end,download_subfolder,ftp_pickle,ids_pickle))
+    filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_local.py %s %s %s %s %s\n" % (start,end,download_subfolder,ftp_pickle,ids_pickle))
     filey.close()
     os.system("sbatch -p russpold .job/%s.job" % (jobname))
 
