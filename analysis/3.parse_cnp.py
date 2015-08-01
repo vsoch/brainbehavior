@@ -61,9 +61,6 @@ with PdfPages('analysis/data/cnp_plots.pdf') as pdf:
                 plt.close()
 
 
-# TODO: Ask Russ about data privacy, add data to CogatPheno database (remove from repo?)
-# Then write functions to explore interactively
-
 # Read in data export
 from brainbehavior.cognitiveatlas import read_cogpheno
 import numpy as np

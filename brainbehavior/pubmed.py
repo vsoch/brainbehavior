@@ -175,6 +175,22 @@ class Pubmed:
             print "No papers found for searchterm " + searchterm + "!"
 
 
+# Download pubmed without relying on pubmed object
+"""Download full text of articles with pubmed ids pmids to folder"""
+def download_pubmed(pmids,download_folder,ftp):
+    subset = pd.DataFrame(columns=ftp.columns)
+    for p in pmids:
+        row = ftp.loc[ftp.index[ftp.PMCID == p]]
+        subset = subset.append(row)
+    # Now for each, assemble the URL
+    for row in subset.iterrows():
+        url = "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/%s" % (row[1]["URL"])
+        print "Downloading %s" % (url)
+        download_place = "%s/" %(download_folder)
+        if not os.path.isfile("%s%s" %(download_place,row[1]["URL"])):
+            os.system("wget \"%s\" -P %s" % (url,download_place))
+
+
 
 # ARTICLE ------------------------------------------------------------------------------
 """An articles object holds a pubmed article"""
