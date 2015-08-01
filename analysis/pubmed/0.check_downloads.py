@@ -85,8 +85,6 @@ ftp_pickle = "/scratch/PI/russpold/data/PUBMED/ftp_df.pkl"
 
 for f in range(0,len(its)):
     i = its[f]  
-
-if 1==1:
     print "%s of %s" %(i,iters)
     download_subfolder = "%s/%s" %(download_folder,i)
     start = i*100

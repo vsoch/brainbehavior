@@ -187,10 +187,10 @@ def download_pubmed(pmids,download_folder,ftp):
     # Now for each, assemble the URL
     for row in subset.iterrows():
         url = "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/%s" % (row[1]["URL"])
-        print "Downloading %s" % (url)
         download_place = "%s/" %(download_folder)
         basename = os.path.basename(row[1]["URL"])
         if not os.path.isfile("%s/%s" %(download_folder,basename)):
+            print "Downloading %s" % (url)       
             os.system("wget \"%s\" -P %s" % (url,download_place))
 
 
