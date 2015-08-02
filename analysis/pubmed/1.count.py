@@ -10,6 +10,7 @@ import sys
 topfolder = sys.argv[1]
 subfolder = sys.argv[2]
 term_pickle = sys.argv[3]
+outfolder = sys.argv[4]
 
 folder = "%s/%s" %(topfolder,subfolder)
 
@@ -40,4 +41,4 @@ for z in zips:
 
 # Save to output file
 result = {df:df,noterms_count:noterms,files_in_folder:len(zips),total_words=totalwords}
-pickle.dump(result,open("%s/%s_counts.pkl" %(folder,subfolder)),"wb")
+pickle.dump(result,open("%s/%s_counts.pkl" %(outfolder,subfolder)),"wb")
