@@ -36,7 +36,7 @@ for z in zips:
     # Only save if we have at least one!
     if counts["count"].sum() > 0:    
         totalwords.append(get_total_words(text))
-        df.loc[zname,counts.index] = counts["count"]
+        dfcount.loc[zname,counts.index] = counts["count"]
     else:
         noterms += 1
 
