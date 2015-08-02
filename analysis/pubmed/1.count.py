@@ -1,6 +1,7 @@
 from brainbehavior.pubmed import get_xml_tree
 from brainbehavior.nlp import get_term_counts, do_stem, get_total_words
 from glob import glob
+import os
 import pandas
 import pickle
 import sys
