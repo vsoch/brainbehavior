@@ -52,7 +52,7 @@ for i in range(0,iters):
   print "%s of %s" %(i,iters)
   download_subfolder = "%s/%s" %(download_folder,i)
   number_files = len(glob("%s/*.tar.gz"%download_subfolder))
-  if number_files != 100:
+  if number_files < 100:
     folders.append(download_subfolder)
     its.append(i)
     numbers.append(number_files)
@@ -60,30 +60,30 @@ for i in range(0,iters):
 
 # Submit for entire folder (using Pubmed ftp)
 for f in range(0,len(its)):
-  i = its[f]  
-  print "%s of %s" %(i,iters)
-  download_subfolder = "%s/%s" %(download_folder,i)
-  start = i*100
-  if i != iters: end = start + 100
-  else: end = len(pc_ids)
-  jobname = "pm_%s-%s" %(start,end)
-  filey = open(".job/%s.job" % (jobname),"w")
-  filey.writelines("#!/bin/bash\n")
-  filey.writelines("#SBATCH --job-name=%s\n" %(jobname))
-  filey.writelines("#SBATCH --output=.out/%s.out\n" %(jobname))
-  filey.writelines("#SBATCH --error=.out/%s.err\n" %(jobname))
-  filey.writelines("#SBATCH --time=2-00:00\n")
-  filey.writelines("#SBATCH --mem=12000\n")
-  filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_subfolder,email))
-  filey.close()
-  os.system("sbatch -p russpold .job/%s.job" % (jobname))
+    i = its[f]  
+    print "%s of %s" %(i,iters)
+    download_subfolder = "%s/%s" %(download_folder,i)
+    start = i*100
+    if i != iters: end = start + 100
+    else: end = len(pc_ids)
+    jobname = "pm_%s-%s" %(start,end)
+    filey = open(".job/%s.job" % (jobname),"w")
+    filey.writelines("#!/bin/bash\n")
+    filey.writelines("#SBATCH --job-name=%s\n" %(jobname))
+    filey.writelines("#SBATCH --output=.out/%s.out\n" %(jobname))
+    filey.writelines("#SBATCH --error=.out/%s.err\n" %(jobname))
+    filey.writelines("#SBATCH --time=2-00:00\n")
+    filey.writelines("#SBATCH --mem=12000\n")
+    filey.writelines("python /home/vsochat/SCRIPT/python/brainbehavior/analysis/pubmed/download_pubmed_muhaha.py %s %s %s %s\n" % (start,end,download_subfolder,email))
+    filey.close()
+    os.system("sbatch -p russpold .job/%s.job" % (jobname))
 
 
 # Submit for entire folder (using pubmed pickles, local)
 ids_pickle = "/scratch/PI/russpold/data/PUBMED/pmc_ids.pkl"
 ftp_pickle = "/scratch/PI/russpold/data/PUBMED/ftp_df.pkl"
 
-for f in range(0,len(its)):
+for f in range(6800,len(its)):
     i = its[f]  
     print "%s of %s" %(i,iters)
     download_subfolder = "%s/%s" %(download_folder,i)

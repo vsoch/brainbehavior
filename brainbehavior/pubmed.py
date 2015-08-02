@@ -58,10 +58,12 @@ class Pubmed:
         # Now for each, assemble the URL
         for row in subset.iterrows():
             url = "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/%s" % (row[1]["URL"])
-            print "Downloading %s" % (url)
             download_place = "%s/" %(download_folder)
-            if not os.path.isfile("%s%s" %(download_place,row[1]["URL"])):
+            basename = os.path.basename(row[1]["URL"])
+            if not os.path.isfile("%s/%s" %(download_folder,basename)):
+                print "Downloading %s" % (url)       
                 os.system("wget \"%s\" -P %s" % (url,download_place))
+
 
     """check if file downloaded"""
     def check_download(self,pmid,download_folder):

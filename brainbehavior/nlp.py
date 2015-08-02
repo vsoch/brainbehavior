@@ -35,6 +35,31 @@ def do_stem(words):
     return numpy.unique([s.lower() for s in stems]).tolist()
 
 
+def get_total_words(text):
+
+    totalwords = 0
+
+    # Dictionary
+    if isinstance(text,dict):
+        for label,sentences in text.iteritems():
+            if isinstance(sentences,str):
+                sentences = [sentences]
+            for sentence in sentences:
+                blob =  TextBlob(sentence)
+                words = do_stem(blob.words)
+                totalwords += len(words)
+        return totalwords    
+
+    # String or list
+    elif isinstance(text,str):
+        text = [text]
+    for sentence in text:
+        blob =  TextBlob(sentence)
+        words = do_stem(blob.words)
+        totalwords += len(words)
+    return totalwords
+
+
 def get_term_counts(terms,text):
     if isinstance(text,dict):
         return get_term_counts_dict(terms,text)
