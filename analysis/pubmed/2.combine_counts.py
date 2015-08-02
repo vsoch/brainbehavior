@@ -2,8 +2,10 @@ from glob import glob
 import pandas
 import pickle
 
+# NOTE: this will likely need to be run on a bigmem node...
+
 input_folder = "/scratch/PI/russpold/data/PUBMED/counts"
-output_folder = "/scratch/PI/russpold/data/PUBMED/counts"
+output_folder = "/scratch/PI/russpold/data/PUBMED"
 files = glob("%s/*.pkl" %input_folder)
 tmp = pickle.load(open(files[0],"rb"))
 
@@ -29,3 +31,5 @@ result = {"counts":counts,
          "files_in_folder":files_in_folder,
          "noterms_count":noterms_count}
 pickle.dump(result,open("%s/pmc_counts_result.pkl" %output_folder,"wb"))
+
+
