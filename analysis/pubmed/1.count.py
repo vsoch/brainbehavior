@@ -41,5 +41,5 @@ for z in zips:
         noterms += 1
 
 # Save to output file
-result = {df:dfcount,noterms_count:noterms,files_in_folder:len(zips),total_words:totalwords}
+result = {"df":dfcount,"noterms_count":noterms,"files_in_folder":len(zips),"total_words":totalwords}
 pickle.dump(result,open("%s/%s_counts.pkl" %(outfolder,subfolder)),"wb")
