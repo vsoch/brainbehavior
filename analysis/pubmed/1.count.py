@@ -1,5 +1,4 @@
 from brainbehavior.pubmed import get_xml_tree
-from brainbehavior.cognitiveatlas import get_behaviors
 from brainbehavior.nlp import get_term_counts, do_stem, get_total_words
 from glob import glob
 import pandas
