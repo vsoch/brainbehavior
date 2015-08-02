@@ -42,6 +42,4 @@ pm.ftp.shape[0] - subset.shape[0]
 # Now count journals
 subset["JOURNAL_NAME"] = [x.split(".")[0] for x in subset["JOURNAL"]]
 counts = subset["JOURNAL_NAME"].value_counts()
-counts.to_pickle("%s/journal_counts.pkl" %download_folder)
-
-
+counts.to_pickle("/scratch/PI/russpold/data/PUBMED/journal_counts.pkl")

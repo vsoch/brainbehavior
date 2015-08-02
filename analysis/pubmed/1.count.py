@@ -25,7 +25,6 @@ stems = do_stem(terms)
 dfcount = pandas.DataFrame(columns=stems)
 totalwords = []
 
-
 # We want to keep a count of those with no terms
 noterms = 0
 

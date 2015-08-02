@@ -9,8 +9,8 @@ outfolder = "/scratch/PI/russpold/data/PUBMED/counts"
 # This pickle has a list of our terms
 term_pickle =  "/scratch/PI/russpold/data/PUBMED/behavior_list.pkl"
 
-for subfolder in subfolders:
-if 1==1:
+for s in range(0,4500):
+    subfolder = subfolders[s]
     jobfile = open(".job/%s.job" %subfolder,'w')
     jobfile.writelines("#!/bin/bash\n")
     jobfile.writelines("#SBATCH --job-name=%s_count.job\n" %(subfolder))
