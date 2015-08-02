@@ -9,7 +9,7 @@ outfolder = "/scratch/PI/russpold/data/PUBMED/counts"
 # This pickle has a list of our terms
 term_pickle =  "/scratch/PI/russpold/data/PUBMED/behavior_list.pkl"
 
-for s in range(0,4500):
+for s in range(4500,len(subfolders)):
     subfolder = subfolders[s]
     jobfile = open(".job/%s.job" %subfolder,'w')
     jobfile.writelines("#!/bin/bash\n")
