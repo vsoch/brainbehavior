@@ -37,7 +37,8 @@ for z in zips:
         counts = get_term_counts(terms,text)
         totalwords.append(get_total_words(text))
         df.loc[zname,counts.index] = counts["count"]
-    else noterms = noterms + 1
+    else:
+    noterms += 1
 
 # Save to output file
 result = {df:dfcount,noterms_count:noterms,files_in_folder:len(zips),total_words=totalwords}
