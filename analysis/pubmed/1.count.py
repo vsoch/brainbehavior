@@ -32,9 +32,9 @@ noterms = 0
 for z in zips:
     zname = "%s/%s" %(subfolder,os.path.basename(z))
     text = get_xml_tree(z)
+    counts = get_term_counts(terms,text)
     # Only save if we have at least one!
-    if counts["count"].sum() > 0:
-        counts = get_term_counts(terms,text)
+    if counts["count"].sum() > 0:    
         totalwords.append(get_total_words(text))
         df.loc[zname,counts.index] = counts["count"]
     else:
