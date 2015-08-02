@@ -37,8 +37,8 @@ for z in zips:
         counts = get_term_counts(terms,text)
         totalwords.append(get_total_words(text))
         df.loc[zname,counts.index] = counts["count"]
-    else noterms += 1
+    else noterms = noterms + 1
 
 # Save to output file
-result = {df:df,noterms_count:noterms,files_in_folder:len(zips),total_words=totalwords}
+result = {df:dfcount,noterms_count:noterms,files_in_folder:len(zips),total_words=totalwords}
 pickle.dump(result,open("%s/%s_counts.pkl" %(outfolder,subfolder)),"wb")
