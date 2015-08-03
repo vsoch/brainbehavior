@@ -4,11 +4,11 @@ import pickle
 
 # NOTE: this will likely need to be run on a bigmem node...
 
-input_pickle = "/scratch/PI/russpold/data/PUBMED/pmc_counts_result.pkl"
-result = pickle.load(open(input_pickle,"rb"))
+input_pickle = "/scratch/PI/russpold/data/PUBMED/pmc_counts_pandas_df.pkl"
+result = pandas.read_pickle(input_pickle)
 
-terms = result["counts"].columns.tolist()
-articles = result["counts"].index.tolist()
+terms = result.columns.tolist()
+articles = result.index.tolist()
 
 # Result df will be terms by terms
 df = pandas.DataFrame(columns=terms,index=terms)
@@ -16,7 +16,7 @@ df = pandas.DataFrame(columns=terms,index=terms)
 for t in range(0,len(terms)):
     print "%s of %s" %(t,len(terms))
     term1 = terms[t]
-    subset = result["counts"].loc[result["counts"][term1]>0]
+    subset = result.loc[result[term1]>0]
     number_with_term1 = subset.shape[0]
     if number_with_term1 != 0:
         for term2 in terms:
@@ -26,3 +26,5 @@ for t in range(0,len(terms)):
             df.loc[term2,term1] = pt2_given_t1    
     else:
         df.loc[:,term1] = 0
+
+df.to_pickle("/scratch/PI/russpold/data/PUBMED/pmc_co-occurrence.pkl")
