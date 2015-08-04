@@ -42,5 +42,12 @@ save_result(counts,total_words,files_in_folder,noterms_count)
 numpy.mean(total_words)
 numpy.sum(noterms_count)
 
+# Save total words and files_in_folder
+pickle.dump(total_words,open("%s/pmc_total_words.pkl" %output_folder,"wb"))
+pickle.dump(noterms_count,open("%s/pmc_noterms_count.pkl" %output_folder,"wb"))
+
 # Save just the dataframe (likely better compression this way)
-counts.to_pickle("%s/pmc_counts_pandas_df.pkl" %output_folder)
+# counts.to_pickle("%s/pmc_counts_pandas_df.pkl" %output_folder)
+# This doesn't work - try hd5 store
+counts.to_hdf("%s/pmc_counts_pandas_df.h5" %output_folder,'df',append=True)
+counts.to_sql()

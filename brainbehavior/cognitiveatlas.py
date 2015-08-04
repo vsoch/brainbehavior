@@ -98,7 +98,7 @@ def get_json(behaviors,sim_metric="path"):
     synsets = get_behaviors_synsets(behaviors)
     return get_behavior_json(synsets,sim_metric)
 
-'''Get path distane for each of syn1 and syn2'''
+'''Get path distance for each of syn1 and syn2'''
 def get_relation(syn1,syn2,sim_metric):
     if sim_metric == "path":
         return syn1.path_similarity(syn2)
@@ -138,8 +138,12 @@ def get_term_strings(behaviors):
 
 # Generate a matrix of path similarity scores between all terms, for use in text parsing
 def get_sim_matrix(behaviors):
+    # For each behavior, get all associated objects
+    for behavior in behaviors:
+        objects = get_term_objects(behavior)
+
     terms = get_term_objects(behaviors)
-    #TODO
+    #TODO not yet written
 
 def get_behavior_json(synsets,sim_metric="path"):
     if sim_metric in ["path","lch","wup"]:
