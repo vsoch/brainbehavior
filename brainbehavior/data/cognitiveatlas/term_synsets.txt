@@ -1,0 +1,187 @@
+term	synset
+active	active.a.07
+adventurous	adventurous.a.01
+aggressive	aggressive.a.01
+agitated	agitated.a.01
+agreeable	agreeable.a.01
+alogia	
+aloof	aloof.s.01
+ambitious	ambitious.a.01
+anhedonia
+anxious	anxious.s.02
+apathetic	apathetic.s.02
+attention seeking	
+average	average.s.02
+back pain	
+blank	blank.s.02
+breathless	breathless.a.01
+capricious	capricious.s.01
+careful	careful.a.01
+careless	careless.a.01
+cautious	cautious.a.01
+clanging	
+clean	clean.a.01
+clever	clever.s.03
+color sensitivity	
+conceptual disorganization	
+constipated	constipated.a.01
+contemplative	broodsing.s.01
+content	contented.a.01
+cooperative	cooperative.a.02
+craving carbohydrate	
+creative	creative.a.01
+critical	critical.a.01
+curious	curious.a.02
+deceptive	deceptive.s.01
+decisive	decisive.a.01
+deliberate	deliberate.s.01
+delusional	delusional.s.01
+depersonalized
+depressed	gloomy.s.02
+derealized	
+determined	determined.s.03
+directed	directed.s.01
+disoriented	confused.s.03
+distractible	distracted.s.01
+drugs	drug.n.01
+early-bird	punctual.a.01
+eating	eat.v.01
+eccentric	bizarre.s.01
+eclectic	eclectic.s.01
+embarrassable	abashed.s.01
+emotional	aroused.s.06
+empathetic	empathetic.s.01
+energetic	energetic.a.01
+excited	excited.a.02
+expeditious	expeditious.a.01
+expressive	expressive.s.01
+eye contact	
+famished	famished.s.01
+fatigued	exhausted.s.01
+feeble	feeble.s.04
+feeling invincible	invincible.s.01
+finishing tasks	
+flakey	unreliable.s.04
+flat affect	
+following instructions	
+forgetful	forgetful.s.03
+frugal	economical.s.03
+funny	amusing.s.02
+grandiose	grandiose.s.01
+grounded	realistic.a.01
+guilty	guilty.s.02
+hallucinates	hallucinate.v.01
+happy	happy.a.01
+hard-working	hardworking.s.01
+health-conscious	healthy.a.01
+heartbroken	brokenhearted.s.01
+honest	honest.a.01
+hopeless	hopeless.a.01
+horny	aroused.s.04
+hostile	hostile.a.01
+hyperactive	hyperactive.s.01
+hypochondriatic hypochondriac.s.01
+hypomanic	frenzied.s.01
+imaginative	imaginative.s.01
+impatient	impatient.a.01
+impulsive	impulsive.s.02
+incoherent	incoherent.a.01
+individualistic	individualist.s.01
+industrious	energetic.s.02
+informed	informed.a.01
+insightful	insightful.s.01
+intense	intense.a.01
+intrusive	intrusive.a.01
+intrusive thoughts	
+irritable	cranky.s.02
+law-abiding	law.abiding.s.01
+lethargic	lethargic.a.01
+light sensitivity	
+listening	heedful.a.01
+logical	logical.a.01
+lonely	lonely.s.02
+mannerisms	idiosyncrasy.n.01
+meticulous	meticulous.s.02
+misunderstood	misunderstood.s.01
+moral	moral.a.01
+narcissistic	egotistic.s.01
+nauseated	nauseated.s.01
+nervous	nervous.s.01
+nocturnal	nocturnal.a.01
+novelty-seeking	
+numb	dead.s.06
+obsessive-compulsive	obsessive-compulsive.s.01
+open	candid.s.03
+open to experience	openness.n.02	
+optimistic	optimistic.a.01
+organized	organized.a.02
+paranoid	paranoid.s.01
+pathological	pathololgical.s.02
+people pleaser	pleaser.n.01
+perfectionistic	perfectionist.n.01
+persuasive	persuasive.n.01
+planning	planning.n.03
+popular	popular.a.01
+practical	practical.a.01
+present-oriented	present.a.02
+productive	productive.a.01
+prompt	prompt.s.02
+psychomotor retardation	
+pushover	pushover.n.01
+quick-witted	quick-witted.s.01
+racing thoughts	
+rationale	rationale.n.01
+reactive	reactive.s.02
+relaxed	relaxed.a.01
+religious	religious.s.01
+repetitious	repetitive.a.02
+reserved	reserved.a.02
+resilient	resilient.s.01
+responsible	responsible.a.01
+responsive	responsive.a.02
+restless	restless.s.01
+retarded	retarded.a.01
+risk-seeking	
+risk-taking	
+routinized	routine.n.01
+sad	sad.a.01
+scared	frightened.s.01
+scholarly	scholarly.a.01
+self-blaming	blame.v.02
+self-confident	self-assured.s.01
+self-controlled	controlled.a.01
+self-directed	autonomous-s-03
+self-improving	improving.s.01
+self-neglecting	neglect.v.04
+sensitive	sensitive.a.02
+sensory sensitivity	sensitive.a.01
+shy	diffident.a.02
+sleepy	sleepy.s.01
+social	social.a.02
+sore	sensitive.s.04
+sound sensitivity	sensitive.a.01
+spontaneous	spontaneous.a.01
+strange	strange.a.01
+street smart	
+studious	bookish.s.01
+suicidal	self-destructive.s.01
+sustaining attention	attentive.a.01
+sympathetic	sympathetic.a.02
+talkative	chatty.s.01
+tangential	digressive.s.01
+tense	tense.a.01
+thought blocking	
+thought insertion	
+thought withdrawal	
+thoughtful	thoughtful.s.01
+thoughts of broadcasting	
+tired	tired.a.01
+touch sensitivity	sensitive.a.01
+trapped	trapped.v.01
+unusual thoughts	
+volatile	volatile.s.04
+weak
+withdrawn emotionally	
+withdrawn socially	weak.a.01
+worried	apprehesive.s.02
+worthless	wortheless.a.01
