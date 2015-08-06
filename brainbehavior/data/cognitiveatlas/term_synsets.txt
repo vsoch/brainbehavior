@@ -59,7 +59,7 @@ eye contact
 famished	famished.s.01
 fatigued	exhausted.s.01
 feeble	feeble.s.04
-feeling invincible	invincible.s.01
+invincible	invincible.s.01
 finishing tasks	
 flakey	unreliable.s.04
 flat affect	
@@ -72,8 +72,8 @@ grounded	realistic.a.01
 guilty	guilty.s.02
 hallucinates	hallucinate.v.01
 happy	happy.a.01
-hard-working	hardworking.s.01
-health-conscious	healthy.a.01
+hardworking	hardworking.s.01
+healthy	healthy.a.01
 heartbroken	brokenhearted.s.01
 honest	honest.a.01
 hopeless	hopeless.a.01
@@ -117,7 +117,7 @@ optimistic	optimistic.a.01
 organized	organized.a.02
 paranoid	paranoid.s.01
 pathological	pathological.s.02
-people pleaser	pleaser.n.01
+pleaser	pleaser.n.01
 perfectionistic	perfectionist.n.01
 persuasive	persuasive.a.01
 planning	planning.n.03
@@ -143,7 +143,7 @@ restless	restless.s.01
 retarded	retarded.a.01
 risk-seeking	
 risk-taking	
-routinized	routine.n.01
+routine	routine.n.01
 sad	sad.a.01
 scared	frightened.s.01
 scholarly	scholarly.a.01

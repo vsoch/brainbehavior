@@ -13,7 +13,7 @@ SAMPLE USAGE: Please see README included with package
 """
 
 from textblob import Word
-from textblog.wordnet import Synset
+from textblob.wordnet import Synset
 import pickle
 import numpy
 import pandas
@@ -73,9 +73,6 @@ class Behavior:
         self.definitions = word.definitions
         return word.synsets
 
-    def make_path_similarity_matrix(self):
-        print "WRITE ME"
-
     def get_json(self,sim_metric="path"):
         # First make list of all unique synsets
         synsets = get_behavior_synset(self)
@@ -102,14 +99,17 @@ def get_json(behaviors,sim_metric="path"):
 '''Get path distance for each of syn1 and syn2'''
 def get_relation(syn1,syn2,sim_metric):
     if sim_metric == "path":
-        return syn1.path_similarity(syn2)
+        sim_score = syn1.path_similarity(syn2)
     elif sim_metric == "lch":
         if syn1.pos() == syn2.pos():
-            return syn1.lch_similarity(syn2)
+            sim_score = syn1.lch_similarity(syn2)
         else:
-            return None
+            sim_score = 0
     elif sim_metric == "wup":
-        return syn1.wup_similarity(syn2)
+        sim_score = syn1.wup_similarity(syn2)
+    if sim_score: return sim_score
+    else: return 0 
+    
 
 '''Return link json for two nodes'''
 def make_link(syn1,syn2,sim,sim_metric):
@@ -123,14 +123,17 @@ def get_term_objects(behaviors):
     all_terms = []
     for syn,data in synsets.iteritems(): # synsets already contain parents/child etc.
         # We also need to get the lemmas
-        new_terms = [data["data"]] + data["data"].similar_tos() + data["data"].lemmas()
+        lemmas = data["data"].lemmas()
+        lemma_synsets = [l.synset() for l in lemmas]
+        new_terms = [data["data"]] + data["data"].similar_tos() + lemma_synsets
         all_terms = all_terms + new_terms
     return all_terms
 
 # Extract family from a synset
 def get_synset_family(synset):
-    return synset.similar_tos() + synset.lemmas()
-    
+    lemmas = [l.synset() for l in synset.lemmas()]
+    family = numpy.unique(synset.similar_tos() + lemmas).tolist()
+    return family
 
 # Get unique strings to parse text (we can compare Word strings and text blobs)
 def get_term_strings(behaviors,word_only=True):
@@ -147,14 +150,70 @@ def get_term_strings(behaviors,word_only=True):
     for behavior in behaviors:
         if behavior.trait not in term_strings:
             term_strings.append(behavior.trait) 
-    return term_strings
+    return numpy.sort(term_strings).tolist()
 
 # Generate a matrix of path similarity scores between all terms, for use in text parsing
 # Synset selection is a dictionary of chosen synsets, one for each term
 def get_path_similarity_matrix(behaviors,synset_selection,sim_metric="path"):
-    from nltk.corpus.wordnet import Lemma
+    from nltk.corpus.reader.wordnet import Lemma, Synset as Syn
 
+    # First we need a list of all lemmas (similarity == 1) and relevant synsets
+    term_objects = []
 
+    for b in range(0,len(behaviors)):
+        behavior = behaviors[b] 
+ 
+        # If we even have synsets or lemmas
+        if len(behavior.is_a) > 0:
+            # If the term has a matching synset
+            if isinstance(synset_selection[behavior.trait],str):
+                correct_synset = Synset(synset_selection[behavior.trait])
+                term_objects.append(correct_synset)
+
+                # Filter synset to the one we are interested in
+                family = get_synset_family(correct_synset)
+                term_objects = term_objects + family 
+            
+        # If not, append the name of the term
+        else:
+            term_objects.append(behavior.trait)
+
+    # Now we will fill in the data frame with similarities
+    names = []
+    for obj in term_objects:
+        if isinstance(obj,str):
+            names.append(obj)
+        else:
+            names.append(obj.name())
+    names = numpy.unique(names).tolist()
+    df = pandas.DataFrame(columns=names,index=names)
+
+    # Now calculate similarities
+    strings = numpy.unique([s for s in term_objects if isinstance(s,str)]).tolist()
+    syns = numpy.unique([s for s in term_objects if isinstance(s,Syn)]).tolist()
+
+    # First calculate for synsets
+    for t1 in range(0,len(syns)):
+        term1 = syns[t1]
+        term1_name = term1.name()
+        df.loc[term1_name,term1_name] = 1
+        print "Calculating path similarity for term %s, %s of %s" %(term1_name,t1,len(syns))
+        for t2 in range(0,len(syns)):
+            if t1 < t2:
+                term2 = syns[t2]
+                term2_name = term2.name()
+                sim_score = get_relation(term1,term2,sim_metric)
+                df.loc[term1_name,term2_name] = sim_score
+                df.loc[term2_name,term1_name] = sim_score
+
+    # Now fill in 0 for behaviors not in wordNet (they are in their own family)    
+    for s in range(0,len(strings)):
+        string = strings[s]
+        df.loc[string] = 0
+        df[string] = 0
+        df.loc[string,string] = 1
+
+    return df
 
 
 def get_behavior_json(synsets,sim_metric="path"):

@@ -1,4 +1,5 @@
 from glob import glob
+import os
 
 # Run iterations of "count" to count the number of terms in each folder of zipped up pubmed articles
 
@@ -9,7 +10,7 @@ outfolder = "/scratch/PI/russpold/data/PUBMED/counts"
 # This pickle has a list of our terms
 term_pickle =  "/scratch/PI/russpold/data/PUBMED/behavior_list.pkl"
 
-for s in range(8000,len(subfolders)):
+for s in range(9990,len(subfolders)):
     subfolder = subfolders[s]
     jobfile = open(".job/%s.job" %subfolder,'w')
     jobfile.writelines("#!/bin/bash\n")
