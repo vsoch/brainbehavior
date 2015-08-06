@@ -25,7 +25,7 @@ clever	clever.s.03
 color sensitivity	
 conceptual disorganization	
 constipated	constipated.a.01
-contemplative	broodsing.s.01
+contemplative	brooding.s.01
 content	contented.a.01
 cooperative	cooperative.a.02
 craving carbohydrate	
@@ -44,11 +44,11 @@ directed	directed.s.01
 disoriented	confused.s.03
 distractible	distracted.s.01
 drugs	drug.n.01
-early-bird	punctual.a.01
+punctual	punctual.a.01
 eating	eat.v.01
 eccentric	bizarre.s.01
 eclectic	eclectic.s.01
-embarrassable	abashed.s.01
+embarrassed	abashed.s.01
 emotional	aroused.s.06
 empathetic	empathetic.s.01
 energetic	energetic.a.01
@@ -80,7 +80,7 @@ hopeless	hopeless.a.01
 horny	aroused.s.04
 hostile	hostile.a.01
 hyperactive	hyperactive.s.01
-hypochondriatic hypochondriac.s.01
+hypochondriac	hypochondriac.s.01
 hypomanic	frenzied.s.01
 imaginative	imaginative.s.01
 impatient	impatient.a.01
@@ -94,7 +94,7 @@ intense	intense.a.01
 intrusive	intrusive.a.01
 intrusive thoughts	
 irritable	cranky.s.02
-law-abiding	law.abiding.s.01
+law-abiding	law-abiding.s.01
 lethargic	lethargic.a.01
 light sensitivity	
 listening	heedful.a.01
@@ -112,14 +112,14 @@ novelty-seeking
 numb	dead.s.06
 obsessive-compulsive	obsessive-compulsive.s.01
 open	candid.s.03
-open to experience	openness.n.02	
+open to experience	openness.n.02
 optimistic	optimistic.a.01
 organized	organized.a.02
 paranoid	paranoid.s.01
-pathological	pathololgical.s.02
+pathological	pathological.s.02
 people pleaser	pleaser.n.01
 perfectionistic	perfectionist.n.01
-persuasive	persuasive.n.01
+persuasive	persuasive.a.01
 planning	planning.n.03
 popular	popular.a.01
 practical	practical.a.01
@@ -150,7 +150,7 @@ scholarly	scholarly.a.01
 self-blaming	blame.v.02
 self-confident	self-assured.s.01
 self-controlled	controlled.a.01
-self-directed	autonomous-s-03
+self-directed	autonomous.s.03
 self-improving	improving.s.01
 self-neglecting	neglect.v.04
 sensitive	sensitive.a.02
@@ -177,11 +177,11 @@ thoughtful	thoughtful.s.01
 thoughts of broadcasting	
 tired	tired.a.01
 touch sensitivity	sensitive.a.01
-trapped	trapped.v.01
+trapped	trap.v.01
 unusual thoughts	
 volatile	volatile.s.04
 weak
 withdrawn emotionally	
 withdrawn socially	weak.a.01
-worried	apprehesive.s.02
-worthless	wortheless.a.01
+worried	apprehensive.s.02
+worthless	worthless.a.01

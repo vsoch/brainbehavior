@@ -89,7 +89,7 @@ aS'distractible'
 p44
 aS'drugs'
 p45
-aS'early-bird'
+aS'punctual'
 p46
 aS'eating'
 p47
@@ -97,7 +97,7 @@ aS'eccentric'
 p48
 aS'eclectic'
 p49
-aS'embarrassable'
+aS'embarrassed'
 p50
 aS'emotional'
 p51
@@ -119,7 +119,7 @@ aS'fatigued'
 p59
 aS'feeble'
 p60
-aS'feeling invincible'
+aS'invincible'
 p61
 aS'finishing tasks'
 p62
@@ -153,9 +153,9 @@ aS'hallucinates (visual)'
 p76
 aS'happy'
 p77
-aS'hard-working'
+aS'hardworking'
 p78
-aS'health-conscious'
+aS'healthy'
 p79
 aS'heartbroken'
 p80
@@ -169,7 +169,7 @@ aS'hostile'
 p84
 aS'hyperactive'
 p85
-aS'hypochondriatic'
+aS'hypochondriac'
 p86
 aS'hypomanic'
 p87
@@ -243,7 +243,7 @@ aS'paranoid'
 p121
 aS'pathological'
 p122
-aS'people pleaser'
+aS'pleaser'
 p123
 aS'perfectionistic'
 p124
@@ -295,7 +295,7 @@ aS'risk-seeking'
 p147
 aS'risk-taking'
 p148
-aS'routinized'
+aS'routine'
 p149
 aS'sad'
 p150

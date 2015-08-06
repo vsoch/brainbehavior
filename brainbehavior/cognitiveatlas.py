@@ -13,6 +13,7 @@ SAMPLE USAGE: Please see README included with package
 """
 
 from textblob import Word
+from textblog.wordnet import Synset
 import pickle
 import numpy
 import pandas
@@ -126,24 +127,35 @@ def get_term_objects(behaviors):
         all_terms = all_terms + new_terms
     return all_terms
 
+# Extract family from a synset
+def get_synset_family(synset):
+    return synset.similar_tos() + synset.lemmas()
+    
+
 # Get unique strings to parse text (we can compare Word strings and text blobs)
-def get_term_strings(behaviors):
+def get_term_strings(behaviors,word_only=True):
     all_terms = get_term_objects(behaviors)
     # Now we want a string associated with each
     term_strings = []
     for term in all_terms:
-        term_strings.append(term.name().split(".")[0])
-    term_strings = numpy.unique(term_strings)    
-    return term_strings.tolist()
+        if word_only:
+            term_strings.append(term.name().split(".")[0])
+        else:
+            term_strings.append(term.name())
+    term_strings = numpy.unique(term_strings).tolist()
+    # Finally, some terms don't have synsets, add them
+    for behavior in behaviors:
+        if behavior.trait not in term_strings:
+            term_strings.append(behavior.trait) 
+    return term_strings
 
 # Generate a matrix of path similarity scores between all terms, for use in text parsing
-def get_sim_matrix(behaviors):
-    # For each behavior, get all associated objects
-    for behavior in behaviors:
-        objects = get_term_objects(behavior)
+# Synset selection is a dictionary of chosen synsets, one for each term
+def get_path_similarity_matrix(behaviors,synset_selection,sim_metric="path"):
+    from nltk.corpus.wordnet import Lemma
 
-    terms = get_term_objects(behaviors)
-    #TODO not yet written
+
+
 
 def get_behavior_json(synsets,sim_metric="path"):
     if sim_metric in ["path","lch","wup"]:
