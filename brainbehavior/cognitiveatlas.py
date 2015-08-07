@@ -98,8 +98,10 @@ def get_json(behaviors,sim_metric="path"):
 
 '''Get path distance for each of syn1 and syn2'''
 def get_relation(syn1,syn2,sim_metric):
+    from nltk.corpus import wordnet as wn
     if sim_metric == "path":
-        sim_score = syn1.path_similarity(syn2)
+        # https://stackoverflow.com/questions/20075335/is-wordnet-path-similarity-commutative
+        sim_score = min(wn.path_similarity(syn1,syn2), wn.path_similarity(syn2,syn1))
     elif sim_metric == "lch":
         if syn1.pos() == syn2.pos():
             sim_score = syn1.lch_similarity(syn2)

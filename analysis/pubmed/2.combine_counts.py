@@ -39,8 +39,8 @@ for f in range(0,len(files)):
 save_result(counts,total_words,files_in_folder,noterms_count)
 
 # What is average total words?
-numpy.mean(total_words)
-numpy.sum(noterms_count)
+#numpy.mean(total_words)
+#numpy.sum(noterms_count)
 
 # Save total words and files_in_folder
 pickle.dump(total_words,open("%s/pmc_total_words.pkl" %output_folder,"wb"))
