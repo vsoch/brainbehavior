@@ -1,7 +1,10 @@
-input_data = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/data/pmc_co-occurrence.csv"
+library(reshape)
+library(plyr)
+
+input_data = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed/pmc_family_co-occurrence.tsv"
 outdir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed"
 
-df = read.csv(input_data,sep=",")
+df = read.csv(input_data,sep="\t")
 rownames(df) = df[,1]
 df = df[,-1]
 

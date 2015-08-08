@@ -4,11 +4,10 @@ import pickle
 
 # NOTE: this will likely need to be run on a bigmem node...
 
-input_pickle = "/scratch/PI/russpold/data/PUBMED/pmc_counts_pandas_df.pkl"
-result = pandas.read_pickle(input_pickle)
+input_pickle = "/scratch/PI/russpold/data/PUBMED/behavior_family_df.pkl"
+familydf = pandas.read_pickle(input_pickle)
 
-terms = result.columns.tolist()
-articles = result.index.tolist()
+terms = familydf.columns.tolist()
 
 # Result df will be terms by terms
 df = pandas.DataFrame(columns=terms,index=terms)
@@ -16,7 +15,7 @@ df = pandas.DataFrame(columns=terms,index=terms)
 for t in range(0,len(terms)):
     print "%s of %s" %(t,len(terms))
     term1 = terms[t]
-    subset = result.loc[result[term1]>0]
+    subset = familydf.loc[familydf[term1]>0]
     number_with_term1 = subset.shape[0]
     if number_with_term1 != 0:
         for term2 in terms:

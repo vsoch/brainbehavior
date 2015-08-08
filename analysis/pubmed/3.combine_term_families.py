@@ -28,22 +28,45 @@ for row in synsets.iterrows():
 
 path_similarities = get_path_similarity_matrix(behaviors,synset_selection)
 
-# Do some manual work to fix columns
-
 # Step 2: For each term, find family based on path similarity
-used = [] 
+
+# This will be a new matrix with only base terms as column names
+familydf = pandas.DataFrame(index=result.index)
+
+missing = [] # should be empty!
+
 for bname,sname in synset_selection.iteritems():
     if isinstance(sname,str):
-        family = path_similarities[sname][path_similarities[sname] != 0]
-        # Add names to list, to check for overlap
-        used = used + family.index.tolist()
-        column_names = do_stem([x.split(".")[0] for x in family.index.tolist()])
-        family.index = column_names
-        # Create a data frame with just the columns
-        column_names = [c for c in column_names if c in result.columns]
-        family = family[column_names]
-        subset = result[]
+        print "Processing %s,%s" %(bname,sname)
+        if sname in path_similarities.index.tolist():
+            family = path_similarities[sname][path_similarities[sname] != 0]
+            # Add names to list, to check for overlap
+            column_names = do_stem([x.split(".")[0] for x in family.index.tolist()])
+            family.index = column_names
+            # Create a data frame with just the columns
+            column_names = [c for c in column_names if c in result.columns]
+            family = family[column_names]
+            # if there are no family members
+            if family.shape[0] == 0: 
+                familydf[bname] = result[do_stem(bname)]
+            # Weight each count by the path similarity, and sum
+            else:
+                subset = result[column_names].copy()
+                for col in subset.columns:
+                    subset[col] *= family[col]
+                    if do_stem([bname]) in result.columns.tolist():
+                        familydf[bname] = subset.sum(axis=1) + result[do_stem(bname)]
+                    else:       
+                        familydf[bname] = subset.sum(axis=1)
+        else:
+            print "CHECK: %s:%s only has main term!" %(sname,bname)
+            familydf[bname] = result[do_stem([bname])]
     else:
-    #STOPPED HERE - write this function when new matrix is generated!
+        if do_stem([bname])[0] not in result.columns:
+            missing.append(bname)
+        else:
+            print "CHECK: %s:%s only has main term!" %(sname,bname)
+            familydf[bname] = result[do_stem([bname])]
 
-
+# Save family data frame to file
+familydf.to_pickle("/scratch/PI/russpold/data/PUBMED/behavior_family_df.pkl")
