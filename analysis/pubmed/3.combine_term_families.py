@@ -28,12 +28,39 @@ for row in synsets.iterrows():
 
 path_similarities = get_path_similarity_matrix(behaviors,synset_selection)
 
+# Step 1: Terms that appear in most papers need to be filterd out
+percents = []
+for c in result.columns:
+    col = result[c]
+    percent_occur = col[col!=0].shape[0] / float(col.shape[0])
+    percents.append(percent_occur)
+percents = pandas.DataFrame(percents)
+percents.index = results.columns
+percents.to_csv("/scratch/PI/russpold/data/PUBMED/percent_occur.tsv",sep="\t")
+
+# Lets try nixing words with > 0.1 frequency...
+nix = percents.loc[percents[0]>0.1]
+result[nix.index] = 0
+
 # Step 2: For each term, find family based on path similarity
 
 # This will be a new matrix with only base terms as column names
 familydf = pandas.DataFrame(index=result.index)
 
 missing = [] # should be empty!
+
+# If we have synsets in synset_selection in the same family, we need to remove them
+# otherwise P(term1|term2) == 1
+from nltk.corpus.reader.wordnet import Lemma, Synset
+related = dict()
+for name1,syn1 in synset_selection.iteritems():
+    for name2,syn2 in synset_selection.iteritems():
+        if name1 != name2:
+            sim_score = min(Synset(syn1).path_similarity(Synset(syn2)),Synset(syn2).path_similarity(Synset(syn1)))
+            if sim_score > 0:
+                print "%s and %s, %s" %(name1,name2,sim_score)
+                related[name1] = name2
+
 
 for bname,sname in synset_selection.iteritems():
     if isinstance(sname,str):
@@ -69,4 +96,4 @@ for bname,sname in synset_selection.iteritems():
             familydf[bname] = result[do_stem([bname])]
 
 # Save family data frame to file
-familydf.to_pickle("/scratch/PI/russpold/data/PUBMED/behavior_family_df.pkl")
+familydf.to_pickle("/scratch/PI/russpold/data/PUBMED/behavior_family_df_filtered.pkl")

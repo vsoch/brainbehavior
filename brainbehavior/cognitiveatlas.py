@@ -162,9 +162,17 @@ def get_path_similarity_matrix(behaviors,synset_selection,sim_metric="path"):
     # First we need a list of all lemmas (similarity == 1) and relevant synsets
     term_objects = []
 
+    # We will run into trouble if a family member stem is == another family member stem
+    # unlike terms that have familial similarity, this would be counting the same
+    # information in two places, so we assign the family member to the base term
+    # with highest similarity
+    stems_seen = []
+    
     for b in range(0,len(behaviors)):
         behavior = behaviors[b] 
  
+        #stem = do_stem([bname])[0]
+
         # If we even have synsets or lemmas
         if len(behavior.is_a) > 0:
             # If the term has a matching synset
@@ -280,6 +288,19 @@ def get_behavior_synset(behavior,nid=1):
 
 def read_cogpheno(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv"):
     return pandas.read_csv(input_file,sep="\t")
+
+# Tell the user for any terms that are not in wordnet (in case we want to change)
+def check_cogpheno_terms(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv"):
+    cogpheno = read_cogpheno(input_file)
+    print "Evaluating terms: terms without matches (below) should be re-considered, unless it's a medical term."
+    traits = cogpheno.question_behavioral_trait.unique()
+    traits.sort()
+    traits = traits.tolist()[1:len(traits)]
+    traits = [x for x in traits if x not in ["nan","None"]]
+    for trait in traits:
+        tmp = Behavior(trait)
+        if len(tmp.is_a) == 0:
+            print tmp.trait
 
 def save_behaviors(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv",
                   output_file="brainbehavior/data/cognitiveatlas/behavioraltraits.pkl"):
