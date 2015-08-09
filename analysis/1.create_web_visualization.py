@@ -1,8 +1,7 @@
 #!/usr/bin/env python2
 
-# This script will use the brainbehavior.py module to search for behavioral terms in
-# relevant paper abstracts, and return a matrix of disorder ids (columns) by papers (rows)
-# with "1" indicating that a disorder term was found, and "0" not.
+# This script will generate json files to power a web interface to show possible synset matches
+# for a list of behavioral term words (not necessary for analysis, as this is now done in CogatPheno)
 from brainbehavior.cognitiveatlas import load_behaviors, Behavior, get_json, get_term_strings
 from brainbehavior.utils import save_json
 

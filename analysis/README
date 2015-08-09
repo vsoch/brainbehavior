@@ -1,0 +1,6 @@
+# Rough Steps
+
+1. CogatPheno is first used to tag questions from behavioral assessments with synsets
+2. The scripts in this top level folder are then used to expand this set to family (similar and opposites) and generate a pickle of terms to use to search pubmed
+3. The scripts in "pubmed" are then used to count the terms
+4. And finally, the script in "CNP" are used to generate cognitive phenotypes

@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 
 # This script will use the brainbehavior.py module to parse a text corpus for a list of terms
+# For example, wikipedia, this script was not used for main (pubmed) analysis
 from brainbehavior.wikipedia import get_page_content, get_headers, get_section_text
 from brainbehavior.nlp import get_term_counts
 import pickle

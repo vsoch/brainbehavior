@@ -18,6 +18,7 @@ import pickle
 import numpy
 import pandas
 import json
+import re
 
 __author__ = ["Vanessa Sochat (vsochat@stanford.edu)"]
 __version__ = "$Revision: 1.0 $"
@@ -26,30 +27,9 @@ __license__ = "Python"
 
 # Cognitive Atlas Functions---------------------------------------------------------
 
-"""Read in file of local disorders to create pickle object
-THIS WILL BE UPDATED TO USE COGNITIVE ATLAS PYTHON API WRAPPER
-"""
-def read_local_disorders(self):
-    import pickle
-    filey = open("data/disorder_subset_10-31-14.csv","r")
-    disorders = filey.readlines()
-    filey.close()
-    header = disorders.pop(0).strip("\n").strip("\r").strip(" ").split(",")
-    disorder = dict()
-    for d in disorders:
-        tmp = d.strip("\n").strip("\r").strip("'").strip('"').split("\t")
-        did = tmp.pop(0).strip('"')
-        # Here are the search terms
-        labels = tmp[2].strip('"')
-        disorder[did] = labels
-    # Save to pickle object
-    pickle.dump(disorder, open( "data/CAdisorders.pkl", "wb" ) )
-
-def load_disorders(self):
-    import pickle
-    return pickle.load( open( "data/CAdisorders.pkl", "rb" ) )
-
 # Behaviors --------------------------------------------------------------------
+
+# This function is used to generate likely behaviors/synsets for any word
 class Behavior:
 
     def __init__(self,trait):
@@ -134,8 +114,18 @@ def get_term_objects(behaviors):
 # Extract family from a synset
 def get_synset_family(synset):
     lemmas = [l.synset() for l in synset.lemmas()]
-    family = numpy.unique(synset.similar_tos() + lemmas).tolist()
-    return family
+    is_as = synset.hypernyms()
+    part_of = synset.member_holonyms() 
+    family = numpy.unique(synset.similar_tos() + lemmas + part_of + is_as).tolist()
+    return numpy.unique(family).tolist()
+
+# Get opposites
+def get_synset_opposites(synset):
+    lemmas = synset.lemmas()
+    opposites = []
+    for lemma in lemmas:
+        opposites = opposites + [l.synset() for l in lemma.antonyms()]
+    return numpy.uniqie(opposites).tolist()
 
 # Get unique strings to parse text (we can compare Word strings and text blobs)
 def get_term_strings(behaviors,word_only=True):
@@ -289,6 +279,8 @@ def get_behavior_synset(behavior,nid=1):
 def read_cogpheno(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv"):
     return pandas.read_csv(input_file,sep="\t")
 
+
+# QUALITY CONTROL -----------------------------------------------------------------------------------------------------
 # Tell the user for any terms that are not in wordnet (in case we want to change)
 def check_cogpheno_terms(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv"):
     cogpheno = read_cogpheno(input_file)
@@ -302,14 +294,70 @@ def check_cogpheno_terms(input_file="brainbehavior/data/cognitiveatlas/cogPheno_
         if len(tmp.is_a) == 0:
             print tmp.trait
 
-def save_behaviors(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv",
-                  output_file="brainbehavior/data/cognitiveatlas/behavioraltraits.pkl"):
-    cogpheno = read_cogpheno(input_file)
-    traits = cogpheno.question_behavioral_trait.unique()
-    traits.sort()
-    traits = traits.tolist()[1:len(traits)]
-    traits = [x for x in traits if x not in ["nan","None"]]
-    pickle.dump(traits,open(output_file,"wb"))
 
+# LOADING/SAVING -----------------------------------------------------------------------------------------------------
+# Core are just the terms defined in cogatpheno
+def get_core_behaviors(input_file="brainbehavior/data/cognitiveatlas/cogPheno_791.tsv"):
+    cogpheno = read_cogpheno(input_file)
+    # Reduce down to synsets
+    traits = cogpheno.question_behavioral_trait_synset.dropna().unique()
+    traits = traits[traits != "None"]
+    # Undefined (None) are typically clinical symptoms
+    clinical = cogpheno.question_behavioral_trait[cogpheno.question_behavioral_trait_synset=="None"].dropna().unique()
+    behaviors = clinical.tolist() + traits.tolist()
+    behaviors.sort()
+    return behaviors
+
+
+def get_expanded_behavior_list(synset_names=False):
+    from nltk.corpus import wordnet as wn
+    behaviors = get_core_behaviors()
+    core = []
+    for behavior in behaviors:
+        if re.search("[.]",behavior):
+            syn = wn.synset(behavior)
+            family = get_synset_family(syn) + get_synset_opposites(syn)
+            if synset_names:            
+                family = [f.name() for f in family]
+            else:
+                family = [f.name().split(".")[0] for f in family]
+            core = core + family
+        else:
+            core.append(behavior)
+    return numpy.unique(core).tolist()
+
+def get_expanded_family_dict(synset_names=False,sim_metric="path"):
+    from nltk.corpus import wordnet as wn
+    behaviors = get_core_behaviors()
+    families = []
+    for behavior in behaviors:
+        if re.search("[.]",behavior):
+            tmp = dict()
+            syn = wn.synset(behavior)
+            similar = get_synset_family(syn)
+            opposite = get_synset_opposites(syn)
+            directions = ["similar"] * len(similar) + ["opposite"] * len(opposite)
+            family = similar + opposite
+            tmp["similarity"] = [get_relation(syn,fam,sim_metric) for fam in family]
+            if synset_names:            
+                family = [f.name() for f in family]
+            else:
+                family = [f.name().split(".")[0] for f in family]
+            tmp["base"] = syn
+            tmp["family"] = family
+            tmp["direction"] = directions
+        else:
+            tmp["base"] = behavior
+        families.append(tmp)
+    return families                 
+
+def behaviors_to_pickle(output_file="brainbehavior/data/cognitiveatlas/behavioraltraits.pkl",behavior_set="expanded"):
+    if behavior_set == "expanded":
+        behaviors = get_expanded_behavior_list()
+    else:
+        behaviors = get_core_behaviors()
+    pickle.dump(behaviors,open(output_file,"wb"))
+
+# Expanded include synonyms, similartos
 def load_behaviors(input_pickle="brainbehavior/data/cognitiveatlas/behavioraltraits.pkl"):
     return pickle.load(open(input_pickle,"rb"))

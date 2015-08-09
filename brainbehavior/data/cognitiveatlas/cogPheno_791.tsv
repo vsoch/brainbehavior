@@ -1,0 +1,792 @@
+assessment_name	assessment_number_questions	assessment_version	question_label	question_text	question_behavioral_trait	question_behavioral_trait_id	question_behavioral_trait_synset	question_direction	question_id	question_datatype	question_options
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD_SID	system auto-generated number			None	positive	11	LONGINT	
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD1	1. Makes a Lot of Careless Mistakes	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	14	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD2	2. Difficulty Sustaining Attention on Tasks/Play Activities	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	15	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD3	3. Doesn't Listen	listening	05d12128-8349-4c40-92f3-1343bcb2d6fa	listen.v.01	negative	16	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD4	4. Difficulty Following Instructions	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	17	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD5	5. Difficulty Organizing Tasks	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	negative	18	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD6	6. Dislikes/Avoids Tasks Requiring Attention	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	19	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD7	7. Loses Things	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	20	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD8	8. Easily Distracted	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	21	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD9	9. Forgetful in Daily Activities	forgetful	0b62c78c-6167-406f-8426-cac55d39ba11	unretentive.a.01	positive	22	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD10	10. Fidget	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	23	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD11	11. Difficulty Remaining Seated	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	24	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD12	12. Runs or Climbs Excessively	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	25	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD13	13. Difficulty Playing Quietly	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	26	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD14	14. On the Go/Acts Like Driven by Motor	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	27	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD15	15. Talks Excessively	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	28	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD16	16. Blurts Out Answers	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	29	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD17	17. Difficulty Waiting Turn	impatient	fe6f9936-dbd6-4ac5-818f-0aa4b5779272	impatient.a.01	positive	30	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD18	18. Interrupts or Intrudes	intrusive	709a8a55-a045-47eb-9a2e-5f067bf24482	intrusive.a.01	positive	31	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD23	23. Careless/Sloppy	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	37	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD24	24. Difficulty sustaining attention	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	38	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD25	25. Doesn't listen	listening	05d12128-8349-4c40-92f3-1343bcb2d6fa	listen.v.01	negative	39	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD26	26. Difficulty following instructions (finishing)	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	40	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD27	27. Difficulty organizing tasks/activities	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	negative	41	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD28	28. Avoidance of tasks with sustained mental effort	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	42	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD29	29. Loses things	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	43	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD30	30. Easily distracted	distracted	2237796f-d495-4153-8cf4-cd19d950c86b	distracted.s.01	positive	44	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD31	31. Forgetful in daily activities	forgetful	0b62c78c-6167-406f-8426-cac55d39ba11	unretentive.a.01	positive	45	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD32	32. Fidgets/Squirms	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	46	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD33	33. Difficulty remaining seated	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	47	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD34	34. Runs/Climbs excessively/Inappropriately	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	48	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD35	35. Difficulty playing quietly	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	49	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD36	36. On the go/Driven by a motor	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	50	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD37	37. Talks excessively	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	51	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD38	38. Blurts out answers	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	52	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD39	39. Difficulty waiting turn	impatient	fe6f9936-dbd6-4ac5-818f-0aa4b5779272	impatient.a.01	positive	53	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	CHILDADHD40	40. Interrupts or Intrudes	intrusive	709a8a55-a045-47eb-9a2e-5f067bf24482	intrusive.a.01	positive	54	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD1	1. Makes a Lot of Careless Mistakes	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	56	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD2	2. Difficulty Sustaining Attention on Tasks/Play Activities	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	57	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD3	3. Doesn't Listen	listening	05d12128-8349-4c40-92f3-1343bcb2d6fa	listen.v.01	negative	58	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD4	4. Difficulty Following Instructions	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	59	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD5	5. Difficulty Organizing Tasks	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	negative	60	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD6	6. Dislikes/Avoids Tasks Requiring Attention	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	61	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD7	7. Loses Things	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	62	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD8	8. Easily Distracted	distracted	2237796f-d495-4153-8cf4-cd19d950c86b	distracted.s.01	positive	63	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD9	9. Forgetful in Daily Activities	forgetful	0b62c78c-6167-406f-8426-cac55d39ba11	unretentive.a.01	positive	64	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD10	10. Fidget	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	65	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD11	11. Difficulty Remaining Seated	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	66	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD12	12. Runs or Climbs Excessively	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	67	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD13	13. Difficulty Playing Quietly	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	68	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD14	14. On the Go/Acts Like Driven by Motor	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	69	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD15	15. Talks Excessively	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	70	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD16	16. Blurts Out Answers	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	71	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD17	17. Difficulty Waiting Turn	impatient	fe6f9936-dbd6-4ac5-818f-0aa4b5779272	impatient.a.01	positive	72	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD18	18. Interrupts or Intrudes	intrusive	709a8a55-a045-47eb-9a2e-5f067bf24482	intrusive.a.01	positive	73	INT	1|2|3|4|6|8|9
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD22	22. Careless/Sloppy	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	77	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD23	23. Difficulty sustaining attention	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	78	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD24	24. Doesn't listen	listening	05d12128-8349-4c40-92f3-1343bcb2d6fa	listen.v.01	negative	79	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD25	25. Difficulty following instructions (finishing)	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	80	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD26	26. Difficulty organizing tasks/activities	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	negative	81	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD27	27. Avoidance of tasks with sustained mental effort	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	82	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD28	28. Loses things	careless	e73b17d6-2a4c-496e-bef8-8a47c5161188	careless.a.01	positive	83	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD29	29. Easily distracted	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	84	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD30	30. Forgetful in daily activities	forgetful	0b62c78c-6167-406f-8426-cac55d39ba11	unretentive.a.01	positive	85	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD31	31. Fidgets/Squirms	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	86	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD32	32. Difficulty remaining seated	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	87	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD33	33. Runs/Climbs excessively/Inappropriately	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	88	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD34	34. Difficulty playing quietly	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	89	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD35	35. On the go/Driven by a motor	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	90	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD36	36. Talks excessively	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	91	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD37	37. Blurts out answers	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	92	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD38	38. Difficulty waiting turn	impatient	fe6f9936-dbd6-4ac5-818f-0aa4b5779272	impatient.a.01	positive	93	INT	1  YES  2  NO
+Adult ADHD Clinical Diagnostic Scale	73	1.2	ADULTADHD39	39. Interrupts or Intrudes	intrusive	709a8a55-a045-47eb-9a2e-5f067bf24482	intrusive.a.01	positive	94	INT	1  YES  2  NO
+Young Mania Rating Scale	12	C	YMRS_SID	system auto-generated number			None	positive	131	LONGINT	
+Young Mania Rating Scale	12	C	YMRS_PTID	Patient ID			None	positive	133	LONGINT	
+Young Mania Rating Scale	12	C	YMRS1	1. Elevated Mood	happy	88cb2f51-b773-428c-b346-25a27ec7a289	happy.a.01	positive	134	INT	0.Absent  1.Mildly or possibly increased on questioning  2.Definite subjective elevation: optimistic  self-confident| Cheerful|  appropriate to content  3.Elevated  inappropriate to content|  humorous  4.Euphoric| inappropriate laughter| singing
+Young Mania Rating Scale	12	C	YMRS2	2. Increased Motor Activity-Energy	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	135	INT	0. Absent  1. Subjectively increased  2. Animated| gestures increased  3. Excessive energy| hyperactive at times| restless (can be calmed)  4. Motor excitement| continuous hyperactivity (cannot be calmed)
+Young Mania Rating Scale	12	C	YMRS3	3. Sexual Interest	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	positive	136	INT	0. Normal| not increased  1. Mildly or possibly increased  2. Definite subjective increase on questioning  3. Spontaneous sexual content| elaborates on sexual matters| hypersexual by self-report  4. Overt sexual acts (toward patients  staff or interviewer)
+Young Mania Rating Scale	12	C	YMRS4	4. Sleep	sleepy	8ef3ce27-572d-403b-b02d-1c8a7acb504a	sleepy.s.01	positive	137	INT	0. Reports no decrease in sleep  1. Sleeping less than normal amount by up to one hour  2. Sleeping less than normal by more than one hour  3. Reports decreased need for sleep  4. Denies need for sleep
+Young Mania Rating Scale	12	C	YMRS5	5. Irritability	irritable	d7f4c531-534d-423b-9a20-31cb4a1fbeb2	cranky.s.02	positive	138	INT	0. Absent  2. Subjectively increased  4. Irritable at times during interview| recent episodes of anger or annoyance on ward  6. Frequently irritable during interview| short  curt throughout  8. Hostile  uncooperative| interview impossible
+Young Mania Rating Scale	12	C	YMRS6	6. Speech (Rate and Amount)	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	139	INT	0. No increase  2. Feels talkative  4. Increased rate or amount at times  verbose at times  6. Push| consistently increased rate and amount| difficult to interrupt  8. Pressured| uninterruptible continuous speech
+Young Mania Rating Scale	12	C	YMRS7	7. Language - Thought Disorder	pathological	4a467d32-3d7f-4cb0-8b3a-56a4238a138f	pathological.s.02	positive	140	INT	0. Absent  1. Circumstantial| mild distractibility| quick thoughts  2. Distractible| loses goal of thought| changes topics frequently| racing thoughts  3. Flight of ideas| tangentiality| difficult to follow| rhyming echolalia  4. Incoherent|  communication impossible
+Young Mania Rating Scale	12	C	YMRS8	8. Content	content	eec3abf1-a149-4cf1-8393-525c62d7e7cc	contentedness.n.01	positive	141	INT	0. Normal  2. Questionable plans| new interests  4. Special project(s)| hyper religious  6. Grandiose or paranoid ideas| ideas of reference  8. Delusions| hallucinations
+Young Mania Rating Scale	12	C	YMRS9	9. Disruptive - Aggressive Behavior	aggressive	e032f0fd-78d3-42e3-8fd7-0b049466df04	aggressive.s.03	positive	142	INT	0. Absent cooperative  1. Sarcastic| loud at times guarded  2. Demanding| threats on ward  3. Threatens interviewer shouting| interview difficult  4. Assaultive| destructive|  interview impossible
+Young Mania Rating Scale	12	C	YMRS11	11. Insight	insightful	b1e9a7b7-20be-4d96-b204-f33727f21c2c	insightful.s.01	positive	144	INT	0. Present| admits illness| agrees with need for treatment  1. Possibly ill  2. Admits behavior change but denies illness  3. Admits possible change in behavior  but denies illness  4. Denies any behavior change
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON_SID	system auto-generated number			None	positive	146	LONGINT	
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON_PTID	Patient ID			None	positive	148	LONGINT	
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON1	1. Depression	depressed	bb471004-22da-47ce-af33-5f367ac71041	gloomy.s.02	positive	149	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON2	2. Feelings of Guilt	guilty	2a68fb80-dcd5-4116-a473-30b88f11846c	guilty.s.02	positive	150	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON3	3. Suicide	suicidal	74c0ae95-da1d-40d9-90a2-d7c2c863dd91	self-destructive.s.01	positive	151	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON4	4. Insomnia, Early	sleepy	8ef3ce27-572d-403b-b02d-1c8a7acb504a	sleepy.s.01	negative	152	INT	0~2
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON5	5. Insomnia, Middle	sleepy	8ef3ce27-572d-403b-b02d-1c8a7acb504a	sleepy.s.01	negative	153	INT	0~2
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON6	6. Insomnia, Late	sleepy	8ef3ce27-572d-403b-b02d-1c8a7acb504a	sleepy.s.01	negative	154	INT	0~2
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON8	8. Retardation	retarded	98c36795-cbb2-4e88-97b5-1bd25e3daf41	retarded.a.01	positive	156	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON9	9. Agitation	agitated	0e2fd2a3-2c48-4089-9aaf-a817f9e020a3	agitated.a.01	positive	157	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON10	10. Anxiety, Psychic	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	158	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON11	11. Anxiety, Somatic	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	159	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON15	15. Hypochondriasis	hypochondriac	378e83c0-811e-4c16-afda-4d2ea6d6bc12	hypochondriac.s.01	positive	163	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON17	17. Insight	insightful	b1e9a7b7-20be-4d96-b204-f33727f21c2c	insightful.s.01	positive	166	INT	0~2
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON19	19. Depresonalization and Derealization	derealized	3e348941-9e62-4c16-968b-406e5d2f9f86	None	positive	169	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON20	20. Paranoid Symptoms	paranoid	4636548c-16c3-45b9-a8dd-8f1a55969677	paranoid.s.01	positive	170	INT	0~3
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON21	21. Obsessional and Compulsive Symptoms	obsessive-compulsive	1216904d-d645-4cde-9401-deec55c95987	obsessive-compulsive.n.01	positive	171	INT	0~2
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON22	22. Fatigability	tired	d0394c59-0fa8-4a8b-a27c-2fd113306713	tired.a.01	positive	172	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON23	23. Social Withdrawal	withdrawn (socially)	3892426d-b97e-48bd-a5cf-51589bcf694d	recluse.s.01	positive	173	INT	0~4
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON24	24. Appetite Increase	famished	04d58762-926b-4be6-9417-3ee465aa463a	famished.s.01	positive	174	INT	0~3
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON25	25. Increased Eating	eating	a987743d-f626-4240-95e5-83632af2bf5c	eat.v.01	positive	175	INT	0~3
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON26	26. Carbohydrate Craving	craving	a4984226-2c36-46b3-b064-169dbea2f9a2	crave.v.01	positive	176	INT	0~3
+Hamilton Psychiatric Rating Scale for Depression	23		HAMILTON28	28. Hypersomnia	tired	d0394c59-0fa8-4a8b-a27c-2fd113306713	tired.a.01	positive	178	INT	0~4
+Scale for the Assessment of Negative Symptoms	27		SANS_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	986	LONGINT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	987	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	988	LONGINT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS1	1. Unchanging Facial Expression	expressive	c90e9779-59f4-4c1b-977b-13f3f8f3b982	expressive.s.01	negative	989	INT	negative
+Scale for the Assessment of Negative Symptoms	27		SANS2	2. Decreased Spontaneous Movements	retardation (psychomotor)	2d01364d-cb15-4203-9ddd-121d51b7c015	slowdown.n.01	positive	990	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS3	3. Paucity of Expressive Gestures	expressive	c90e9779-59f4-4c1b-977b-13f3f8f3b982	expressive.s.01	negative	991	INT	negative
+Scale for the Assessment of Negative Symptoms	27		SANS4	4. Poor Eye Contact	gaze	af939d9a-7cdd-4175-8578-d65a99b5404c	gaze.v.01	negative	992	INT	negative
+Scale for the Assessment of Negative Symptoms	27		SANS5	5. Affective Nonresponsivity	blank	82351345-d32f-486a-9fad-2d984de742cd	blank.s.02	positive	993	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS6	6. Lack of Vocal Inflections	blank	82351345-d32f-486a-9fad-2d984de742cd	blank.s.02	positive	994	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS7	7. Global Rating of Affective Flattening	blank	82351345-d32f-486a-9fad-2d984de742cd	blank.s.02	positive	995	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS8	8. Poverty of Speech	alogia	f38ec5a0-043a-49a8-b7df-6b301855f1fc	None	positive	996	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS9	9. Blocking	thought blocking	b9a8b78a-c1b9-49a5-bb2a-8e0644ae7bfe	schizophrenic.n.01	positive	997	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS10	10. Increased Latency of Response	lethargic	2da32608-e05d-450f-af3a-be78bf5e69c3	lethargic.a.01	positive	998	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS12	12. Grooming and Hygiene	clean	c6f48c19-4472-4e79-85bd-7ff8577d4325	clean.a.01	positive	1000	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS13	13a. Impersistence at Work or School	studious	ac47e94a-b776-4cf9-a687-b5206ea69831	studious.s.01	negative	1001	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS14	13b. Impersistence at Work or School	studious	ac47e94a-b776-4cf9-a687-b5206ea69831	studious.s.01	negative	1002	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS15	14. Physical Anergia	lethargic	2da32608-e05d-450f-af3a-be78bf5e69c3	lethargic.a.01	positive	1003	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS16	15. Global Rating of Avolition-Apathy	apathetic	02a0a7b5-f845-4258-86d0-a9747f16a906	apathetic.s.02	positive	1004	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS17	16. Recreational Interests and Activities	eclectic	84173116-9784-4989-a776-f8163a52d6ff	eclectic.s.01	positive	1005	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS18	17. Sexual Activity	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	positive	1006	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS19	18. Ability to Feel Intimacy and Closeness	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	negative	1007	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS20	19. Relationships with Friends and Peers	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	negative	1008	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS21	20. Global Rating of Anhedonia-Asociality	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	1009	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS22	21. Social Inattentiveness	withdrawn (socially)	3892426d-b97e-48bd-a5cf-51589bcf694d	recluse.s.01	positive	1010	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS23	22. Inattentiveness During Mental Status Training	apathetic	02a0a7b5-f845-4258-86d0-a9747f16a906	apathetic.s.02	positive	1011	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS24	23. Global Rating of Attention	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	positive	1012	INT	positive
+Scale for the Assessment of Negative Symptoms	27		SANS11	11. Global rating of Alogia	alogia	f38ec5a0-043a-49a8-b7df-6b301855f1fc	None	positive	1023	INT	positive
+The Scale for the Assessment of Positive Symptoms	37		SAPS_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	179	LONGINT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	180	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	181	LONGINT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS1	1. Auditory Hallucinations	hallucinates (auditory)	39f7aab9-222a-4347-87d7-1fe39ff8df59	hallucinate.v.01	positive	182	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS2	2. Voices Commenting	hallucinates (auditory)	39f7aab9-222a-4347-87d7-1fe39ff8df59	hallucinate.v.01	positive	183	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS3	3. Voices Conversing	hallucinates (auditory)	39f7aab9-222a-4347-87d7-1fe39ff8df59	hallucinate.v.01	positive	184	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS4	4. Somatic or Tactile Hallucinations	hallucinates (tactile)	4980d9ae-5f80-4bbc-a8ff-3f761a9bc6cc	hallucinate.v.01	positive	185	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS5	5. Olfactory Hallucinations	hallucinates (smell)	5d6d26b7-4361-416b-bf38-45bf94913642	hallucinate.v.01	positive	186	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS6	6. Visual Hallucinations	hallucinates (visual)	5e647005-7086-4d8b-adac-ac0313c7b5a7	hallucinate.v.01	positive	187	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS7	7. Global Ratings of Hallucinations	hallucinates	c3a2c0ad-27da-45fe-98ca-739ce496d15a	hallucinate.v.01	positive	188	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS8	8. Persecutory Delusions	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	189	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS9	9. Delusions of Jealousy	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	190	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS10	10. Delusions of Guilt or Sin	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	191	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS11	11. Grandiose Delusions	grandiose	9ad7785a-02e8-47b2-9bd6-db2362d57305	grandiose.s.02	positive	192	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS12	12. Religious Delusions	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	193	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS13	13. Somatic Delusions	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	194	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS14	14. Delusions of Reference	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	195	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS15	15. Delusions of Being Controlled	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	196	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS16	16. Delusions of Mind Reading	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	197	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS17	17. Thoughts of Broadcasting	thoughts of broadcasting	3f290b02-d4cf-4377-b844-a71cd36f3cca	schizophrenic.n.01	positive	198	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS18	18. Thought Insertion	thought insertion	1dd25080-5ca7-418c-b8f0-3480a51ab39a	schizophrenic.n.01	positive	199	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS19	19. Thought Withdrawal	thought withdrawal	c6b0adae-15a9-4d2b-aa07-fd089cfb62db	schizophrenic.n.01	positive	200	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS20	20. Global Rating of Delusion	delusional	7c05e503-afb3-4d01-ab4c-8c5bbdefbb35	delusional.s.01	positive	201	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS21	21. Clothing and Appearance	clean	c6f48c19-4472-4e79-85bd-7ff8577d4325	clean.a.01	positive	202	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS22	22. Social and Sexual Behavior	social	2c7ce2e5-5c06-42d4-9a0d-0dde19e63423	social.s.06	positive	203	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS23	23. Aggressive and Agitate Behavior	aggressive	e032f0fd-78d3-42e3-8fd7-0b049466df04	aggressive.s.03	positive	204	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS24	24. Repetitive or Stereotyped Behavior	repetitious	0f8022a8-396b-4af4-981c-defd89eb43a2	repetitive.a.02	positive	205	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS25	25. Global Rating of Bizarre Behavior	strange	83b541e7-a254-43c5-b6ea-518729c5c5a5	strange.a.01	positive	206	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS26	26. Derailment	confusion	abe029ca-62bb-42c6-babb-6df86ccfe88a	confusion.n.02	positive	207	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS27	27. Tangetiality	tangential	0353f0f8-30e0-4f5a-ab2c-25ca6391e877	digressive.s.01	negative	208	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS28	28. Incoherence	incoherent	2a8dee73-5ae3-4d91-9fd8-31bc21eff195	incoherent.a.01	positive	209	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS29	29. Illogicality	logical	5126cced-7dff-4c87-996e-006b85f72e88	coherent.s.02	negative	210	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS30	30. Circumstantiality	tangential	0353f0f8-30e0-4f5a-ab2c-25ca6391e877	digressive.s.01	positive	211	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS31	31. Pressure of Speech	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	212	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS32	32. Distractable Speech	distracted	2237796f-d495-4153-8cf4-cd19d950c86b	distracted.s.01	positive	213	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS33	33. Clanging	clanging	8a6997cf-d68e-400b-a7a3-e20b59ce61e0	None	positive	214	INT	undefined
+The Scale for the Assessment of Positive Symptoms	37		SAPS35	35. Inappropriate Affect	blank	82351345-d32f-486a-9fad-2d984de742cd	blank.s.02	positive	216	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	217	LONGINT	undefined
+Brief Psychiatric Rating Scale	31		BPRS_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	218	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	219	LONGINT	undefined
+Brief Psychiatric Rating Scale	31		BPRS1	1. Somatic Concern	hypochondriac	378e83c0-811e-4c16-afda-4d2ea6d6bc12	hypochondriac.s.01	positive	220	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS2	2. Anxiety	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	221	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS3	3. Depression	depressed	bb471004-22da-47ce-af33-5f367ac71041	gloomy.s.02	positive	222	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS4	4. Suicidality	suicidal	74c0ae95-da1d-40d9-90a2-d7c2c863dd91	self-destructive.s.01	positive	223	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS5	5. Guilt	guilty	2a68fb80-dcd5-4116-a473-30b88f11846c	guilty.s.02	positive	224	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS6	6. Hostility	hostile	f3db4a00-5f28-4963-80af-f04b7dc22250	hostile.a.01	positive	225	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS7	7. Elevated Mood	happy	88cb2f51-b773-428c-b346-25a27ec7a289	happy.a.01	positive	226	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS8	8. Grandiosity	grandiose	9ad7785a-02e8-47b2-9bd6-db2362d57305	grandiose.s.02	positive	227	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS9	9. Suspiciousness	paranoid	4636548c-16c3-45b9-a8dd-8f1a55969677	paranoid.s.01	positive	228	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS10	10. Hallucinations	hallucinates	c3a2c0ad-27da-45fe-98ca-739ce496d15a	hallucinate.v.01	positive	229	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS11	11. Unusual Thought Content	unusual thoughts	f5005f64-c4c2-4f5e-85c3-abaf671b6422	schizophrenic.n.01	positive	230	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS12	12. Bizarre Behavior	strange	83b541e7-a254-43c5-b6ea-518729c5c5a5	strange.a.01	positive	231	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS13	13. Self-neglect	neglecting	79e1c832-668b-439f-b6f3-3af50cf47ccd	fail.v.01	positive	232	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS14	14. Disorientation	disoriented	2f6f7e7c-f024-4183-bd21-38f213a5cbb4	confused.s.03	positive	233	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS15	15. Conceptual Disorganization	confusion	abe029ca-62bb-42c6-babb-6df86ccfe88a	confusion.n.02	positive	234	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS16	16. Blunted Affect	expressive	c90e9779-59f4-4c1b-977b-13f3f8f3b982	expressive.s.01	negative	235	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS17	17. Emotional Withdrawal	withdrawn (emotionally)	536306bb-6fc0-4b5d-86e2-7259240cc1eb	indrawn.s.01	positive	236	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS18	18. Motor Retardation	retardation (psychomotor)	2d01364d-cb15-4203-9ddd-121d51b7c015	slowdown.n.01	positive	237	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS19	19. Tension	tense	d3aad31a-6089-4b3a-aca2-23eb02e34eff	tense.a.01	positive	238	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS20	20. Uncooperativeness	cooperative	6f570adc-d56b-4ab3-a9e8-552ca1d8885b	accommodative.s.02	negative	239	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS21	21. Excitement	excited	e0d67cf8-9167-4afb-abe2-16819d57eb36	delirious.s.02	positive	240	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS22	22. Distractibility	distracted	2237796f-d495-4153-8cf4-cd19d950c86b	distracted.s.01	positive	241	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS23	23. Motor hyperactivity	hyperactive	6ad9a438-ddff-490e-8c03-e9418616fe51	hyperactive.s.01	positive	242	INT	undefined
+Brief Psychiatric Rating Scale	31		BPRS24	24. Mannerisms and Posturing	mannerisms	5bf47778-b98a-462c-a1da-6bd0ca6881e1	idiosyncrasy.n.01	positive	243	INT	undefined
+Brief Psychiatric Rating Scale	31		SRCPATIENT	Patient	impatient	fe6f9936-dbd6-4ac5-818f-0aa4b5779272	impatient.a.01	negative	244	INT	undefined
+Brief Psychiatric Rating Scale	31		ASSESSQSYMPTOM	Symptoms possibly substance-induced	drugs	08e181cf-3540-4ada-99ee-75131a0a1802	drug.v.02	positive	249	INT	undefined
+Brief Psychiatric Rating Scale	31		ASSESSQUNCOOPRATIVE	Patient uncooperative	cooperative	6f570adc-d56b-4ab3-a9e8-552ca1d8885b	accommodative.s.02	negative	251	INT	undefined
+Brief Psychiatric Rating Scale	31		ASSESSQDISORDER	Difficult to assess due to formal thought disorder	unusual thoughts	f5005f64-c4c2-4f5e-85c3-abaf671b6422	schizophrenic.n.01	positive	252	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_SID	None	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	318	LONGINT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	319	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	320	LONGINT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_FINALDETAIL	1. How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done	comprehensive	b48b3c24-4031-40af-96be-4b605df6a9e6	comprehensive.a.01	negative	321	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_ORGANIZE	2. How often do you have difficulty getting things in order when you have to do a task that requires organization	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	negative	322	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_REMAPPOINTMENT	3. How often do you have problems remembering appointments or obligations	forgetful	0b62c78c-6167-406f-8426-cac55d39ba11	unretentive.a.01	positive	323	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_AVIODSTART	4. When you have a task that requires a lot of thought, how often do you avoid or delay getting started	procrastinate	369be164-0de4-4bec-8b1d-ba0b89fdf21d	procrastinate.v.02	positive	324	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_FIDGET	5. How often do you fidget or squirm with your hands or feet when you have to sit down for a long time	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	325	INT	undefined
+Adult Self-Report Scale Screener	9	1.1	ASRS_OVERACTIVE	6. How often do you feel overly active and compelled to do things, like you were driven by a motor	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	326	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	330	LONGINT	undefined
+Hopkins Symptom Checklist	61		HOPKINS_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	331	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	332	LONGINT	undefined
+Hopkins Symptom Checklist	61		HOPKINS1	1. Headaches	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	333	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS2	2. Nervousness or shakiness inside	nervous	5d260f59-f24b-4cd6-8e94-f128a3963c7a	nervous.s.01	positive	334	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS3	3. Being unable to get rid of bad thoughts or ideas	rumination	9080f004-c57b-40ad-866f-54b22c2aa112	contemplation.n.02	positive	335	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS4	4. Faintness or dizziness	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	336	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS5	5. Loss of sexual interest or pleasure	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	negative	337	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS6	6. Feeling critical of others	critical	862c418c-8325-41e8-bf8e-68a2043b277e	critical.a.07	positive	338	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS7	7. Bad dreams	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	339	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS8	8. Difficulty in speaking when you are excited	excited	e0d67cf8-9167-4afb-abe2-16819d57eb36	delirious.s.02	positive	340	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS9	9. Trouble remembering things	forgetful	0b62c78c-6167-406f-8426-cac55d39ba11	unretentive.a.01	positive	341	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS10	10. Worried about sloppiness or carelessness	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	342	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS11	11. Feeling easily annoyed or irritated	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	343	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS12	12. Pains in the heart or chest	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	344	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS13	13. Itching	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	345	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS14	14. Feeling low in energy or slowed down	lethargic	2da32608-e05d-450f-af3a-be78bf5e69c3	lethargic.a.01	positive	346	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS15	15. Thoughts of ending your life	suicidal	74c0ae95-da1d-40d9-90a2-d7c2c863dd91	self-destructive.s.01	positive	347	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS16	16. Sweating	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	348	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS17	17. Trembling	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	349	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS18	18. Feeling confused	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	350	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS19	19. Poor appetite	eating	a987743d-f626-4240-95e5-83632af2bf5c	eat.v.01	negative	351	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS20	20. Crying easily	sensitive	cfd01fda-0283-4f36-a5e6-9b373effb2c0	sensitive.a.02	positive	352	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS21	21. Feeling shy or uneasy with the opposite sex	self-confident	35b092e6-5278-4937-bc84-eade1b526742	self-assured.s.01	negative	353	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS22	22. A feeling of being trapped or caught	stuck	44bccc67-10be-4e5d-a29c-82bf45f100fa	stuck.a.01	positive	354	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS23	23. Suddenly scared for no reason	scared	7aaddb95-1d33-47b0-aba4-4a2fd506b7fd	frightened.s.01	positive	355	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS24	24. Temper outbursts that you could not control	irritable	d7f4c531-534d-423b-9a20-31cb4a1fbeb2	cranky.s.02	positive	356	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS25	25. Constipation	constipated	e5dc60b2-2177-437a-a6fe-447844a153f2	constipated.a.01	positive	357	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS26	26. Blaming yourself for things	blaming	893413cc-1c4e-4c61-bb64-1e8dfffd04af	blame.v.03	positive	358	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS27	27. Pains in the lower part of your back	backache	68019af7-0642-4ca3-a4f9-b3e97596ec26	backache.n.01	positive	359	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS28	28. Feeling blocked in getting things done	productive	743acdda-4621-4520-93d0-cdc42bc0cdff	productive.a.01	negative	360	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS29	29. Feeling lonely	lonely	499a70c3-4646-4797-ab4e-ba8e0d6f8483	alone.s.02	positive	361	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS30	30. Feeling blue	sad	ebb92f7c-ba4a-47d9-8407-e101a0f933e4	sad.a.01	positive	362	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS31	31. Worrying or stewing about things	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	363	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS32	32. Feeling no interest in things	depressed	bb471004-22da-47ce-af33-5f367ac71041	gloomy.s.02	positive	364	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS33	33. Feeling fearful	scared	7aaddb95-1d33-47b0-aba4-4a2fd506b7fd	frightened.s.01	positive	365	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS34	34. Your feelings being easily hurt	sensitive	cfd01fda-0283-4f36-a5e6-9b373effb2c0	sensitive.a.02	positive	366	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS35	35. Having to ask others what you should do	self-confident	35b092e6-5278-4937-bc84-eade1b526742	self-assured.s.01	negative	367	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS36	36. Feeling others do not understand you or are unsympathetic	misunderstood	6dfda5fc-1649-42a5-88a6-f82236f8f63b	misunderstood.s.01	positive	368	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS37	37. Feeling that people are unfriendly or dislike you	popular	031c7318-2d3d-4494-b3af-36332ceaca6d	popular.a.01	negative	369	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS38	38. Having to do things very slowly in order to insure you were doing them right	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	positive	370	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS39	39. Heart pounding or racing	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	371	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS40	40. Nausea or upset stomach	nauseated	ac0aa581-98ed-4775-9664-2928aa345641	nauseated.s.01	positive	372	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS41	41. Feeling inferior to others	worthless	84864f59-8b22-4eb2-990c-e9afdd66c3bf	worthless.a.01	positive	373	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS42	42. Soreness of your muscles	sore	84df4c89-7cc5-43d3-b205-7e5af4f3a3e1	sensitive.s.04	positive	374	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS43	43. Loose bowel movements	constipated	e5dc60b2-2177-437a-a6fe-447844a153f2	constipated.a.01	negative	375	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS44	44. Difficulty in falling asleep or staying asleep	sleepy	8ef3ce27-572d-403b-b02d-1c8a7acb504a	sleepy.s.01	negative	376	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS45	45. Having to check and DOUBLEcheck what you do	obsessive-compulsive	1216904d-d645-4cde-9401-deec55c95987	obsessive-compulsive.n.01	positive	377	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS46	46. Difficulty making decisions	decisive	400138ee-e432-4564-bc88-58d5941c27e6	decisive.a.03	negative	378	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS47	47. Wanting to be alone	withdrawn (socially)	3892426d-b97e-48bd-a5cf-51589bcf694d	recluse.s.01	positive	379	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS48	48. Trouble getting your breath	breathless	7d46786f-2070-4c00-8017-93997962cb57	breathless.a.01	positive	380	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS49	49. Hot or cold spells	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	381	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS50	50. Having to avoid certain things, places, or activities because they frighten you	scared	7aaddb95-1d33-47b0-aba4-4a2fd506b7fd	frightened.s.01	positive	382	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS51	51. Your mind going blank	blank	82351345-d32f-486a-9fad-2d984de742cd	blank.s.02	positive	383	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS52	52. Numbness or tingling in parts of your body	numb	3dac55a9-c4ee-4c31-99e4-3bda28675505	dead.s.06	positive	384	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS53	53. A lump in your throat	anxious	6b7a4261-dfcd-4cb6-85d4-ebf5ecb6980d	anxious.s.02	positive	385	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS54	54. Feeling hopeless about the future	hopeless	ddb936c0-22cb-4e82-9906-e5372e59d70b	hopeless.a.01	positive	386	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS55	55. Trouble concentrating	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	387	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS56	56. Weakness in parts of your body	weak	0ddf7489-3e3c-476d-8362-0e3076f891d9	weak.a.01	positive	388	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS57	57. Feeling tense or keyed up	tense	d3aad31a-6089-4b3a-aca2-23eb02e34eff	tense.a.01	positive	389	INT	undefined
+Hopkins Symptom Checklist	61		HOPKINS58	58. Heavy feelings in your arms or legs	lethargic	2da32608-e05d-450f-af3a-be78bf5e69c3	lethargic.a.01	positive	390	INT	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	397	LONGINT	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	398	INT	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	399	LONGINT	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT1	1. I plan tasks carefully.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	400	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT2	2. I do things without thinking.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	401	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT3	3. I make up my mind quickly.	decisive	400138ee-e432-4564-bc88-58d5941c27e6	decisive.a.03	positive	402	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT4	4. I am happy-go-lucky.	happy	88cb2f51-b773-428c-b346-25a27ec7a289	happy.a.01	positive	403	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT5	5. I don't pay attention.	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	404	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT6	6. I have racing thoughts.	rumination	9080f004-c57b-40ad-866f-54b22c2aa112	contemplation.n.02	positive	405	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT7	7. I plan trips well ahead of time.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	406	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT8	8. I am self-controlled.	controlled	c6c994db-f9e7-4f59-a60a-74a1bb9153d3	control.v.01	positive	407	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT9	9. I concentrate easily.	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	positive	408	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT10	10. I save regularly.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	positive	409	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT11	11. I squirm at plays or lectures.	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	410	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT12	12. I am a careful thinker.	thoughtful	bc22004c-ccbd-48c2-8063-afc6d047448c	thoughtful.s.01	positive	411	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT13	13. I plan for job security.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	412	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT14	14. I say things without thinking.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	413	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT15	15. I like to think about complex problems.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	414	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT16	16. I change jobs.	volatile	2fdc0c44-0d31-46f3-b3bb-e0e4ac9257f1	fickle.s.01	positive	415	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT17	17. I act on impulse.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	416	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT18	18. I get easily bored when solving thought problems.	attentive	2f841e23-7458-4268-9e7f-64b6efa796f5	heedful.a.01	negative	417	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT19	19. I act on the spur of the moment.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	418	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT20	20. I am a steady thinker.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	419	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT21	21. I change where I live.	volatile	2fdc0c44-0d31-46f3-b3bb-e0e4ac9257f1	fickle.s.01	positive	420	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT22	22. I buy things on impulse.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	421	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT23	23. I can only think about one problem at a time.	serial	0f53528d-1586-43d6-bb39-2c50db30d23a	consecutive.s.02	positive	422	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT24	24. I change hobbies.	volatile	2fdc0c44-0d31-46f3-b3bb-e0e4ac9257f1	fickle.s.01	positive	423	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT25	25. I spend or charge more than I earn.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	negative	424	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT26	26. I have outside thoughts when thinking.	rumination	9080f004-c57b-40ad-866f-54b22c2aa112	contemplation.n.02	positive	425	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT27	27. I am more interested in the present than the future.	present	871302bc-b1e7-43d9-9a23-2740c0cb8878	present.a.01	positive	426	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT28	28. I am restless at lectures or talks.	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	427	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT29	29. I like puzzles.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	428	DOUBLE	undefined
+Barratt's Impulsiveness Scale (BIS)	33		BARRATT30	30. I plan for the future.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	429	DOUBLE	undefined
+Dickman Impulsivity Inventory	49		DICK_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	455	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	456	INT	undefined
+Dickman Impulsivity Inventory	49		DICK_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	457	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK1	1. I would travel a great deal if I had the chance	adventurous	8e45b894-98ac-4dff-afa1-497f0663f0c5	adventurous.a.01	positive	458	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK2	2. I don't like to make decisions quickly, even simple decisions, such as choosing what to wear, or what to have for dinner	decisive	400138ee-e432-4564-bc88-58d5941c27e6	decisive.a.03	negative	459	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK3	3. I seldom tell lies	honest	623502d3-9179-4653-a767-7c3e5c9e000c	honest.a.01	positive	460	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK4	4. I will often say whatever comes into my head without thinking first	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	461	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK5	5. I have many hobbies	eclectic	84173116-9784-4989-a776-f8163a52d6ff	eclectic.s.01	positive	462	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK6	6. I am good at taking advantage of unexpected opportunities, where you have to do something immediately or lose your chance	responsive	1a3e348f-dcd3-4715-a380-4946f722fefa	responsive.a.02	positive	463	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK7	7. I would rather read fiction than non-fiction	imaginative	50a83dc1-72da-4234-bc0a-d3a8b135a0a5	imaginative.s.01	positive	464	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK8	8. I enjoy working out problems slowly and carefully	thoughtful	bc22004c-ccbd-48c2-8063-afc6d047448c	thoughtful.s.01	positive	465	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK9	9. I would not drive over the speed limit, even if I knew I would not be caught	law-abiding	9096d085-df37-4597-875c-17a819a3b316	law-abiding.s.01	positive	466	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK10	10. I am uncomfortable when I have to make up my mind rapidly	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	467	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK11	11. I consider myself a sympathetic person	sympathetic	f4ddc4a4-e83f-4382-9ed5-1bc98d5d1759	sympathetic.a.02	positive	468	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK12	12. I frequently make appointments without thinking about whether I will be able to keep them	responsible	8d576bd6-f35b-46ea-babd-09c7dc26aa21	responsible.a.01	negative	469	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK13	13. I enjoy exercising	active	94acb7c2-3791-461c-8538-988c9a026dc1	active.a.07	positive	470	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK14	14. I like to take part in really fast-paced conversations, where you don't have much time to think before you speak	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	471	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK15	15. I like most of the people I meet	agreeable	1c847904-b313-4591-b723-1ffcf979c0dc	agreeable.a.01	positive	472	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK16	16. I frequently buy things without thinking about whether or not I can really afford them	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	473	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK17	17. I watch television about as much as most people do	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	474	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK18	18. Most of the time, I can put my thoughts into words very rapidly	responsive	1a3e348f-dcd3-4715-a380-4946f722fefa	responsive.a.02	positive	475	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK19	19. I enjoy outdoor activities	active	94acb7c2-3791-461c-8538-988c9a026dc1	active.a.07	positive	476	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK20	20. I often make up my mind without taking the time to consider the situation from all angles	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	negative	477	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK21	21. I have read more books than most of my friends	scholarly	42853b07-b0b0-4fd7-8287-f6580bc5b2da	scholarly.a.01	positive	478	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK22	22. I don't like to do things quickly, even when I am doing something that is not very difficult	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	positive	479	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK23	23. I am more alert than most people late at night	nocturnal	4051ca2a-064a-4c15-88b8-874787c5c1d6	nocturnal.a.01	positive	480	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK24	24. Often, I don't spend enough time thinking over a situation before I act	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	481	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK25	25. I like to read about scientific research	scholarly	42853b07-b0b0-4fd7-8287-f6580bc5b2da	scholarly.a.01	positive	482	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK26	26. I would enjoy working at a job that required me to make a lot of split-second decisions	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	483	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK27	27. Religion is very important in my life	religious	a95a2102-875a-4761-ad67-26a7b90b4a9a	religious.a.02	positive	484	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK28	28. I often get into trouble because I don't think before I act	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	485	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK29	29. I have more curiosity than most people	curious	4103d331-59cd-404e-80b1-f75facb10957	curious.s.03	positive	486	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK30	30. I like sports and games in which you have to choose your next move very quickly	expeditious	0022f569-89cc-48cc-94a9-02febaa7d962	expeditious.s.01	positive	487	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK31	31. I read the newspaper almost every day	informed	9a92c882-1ae1-4e76-946a-09831e86af70	informed.a.01	positive	488	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK32	32. Many times the plans I make don't work out because I haven't gone over them carefully enough in advance	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	489	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK33	33. I sometimes get depressed for no good reason	depressed	bb471004-22da-47ce-af33-5f367ac71041	gloomy.s.02	positive	490	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK34	34. People have admired me because I can think quickly	quick-witted	e4c88a24-1b1b-4943-b154-2a4c605b97e5	quick-witted.s.01	positive	491	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK35	35. I enjoy it when I get a chance to visit a city I've never seen before	adventurous	8e45b894-98ac-4dff-afa1-497f0663f0c5	adventurous.a.01	positive	492	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK36	36. I rarely get involved in projects without first considering the potential problems	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	493	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK37	37. I am easily embarrassed	embarrassed	3f6dbc6c-eda1-4924-958f-28ea9c9d30fa	abashed.s.01	positive	494	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK38	38. I have often missed out on opportunities because I couldn't make up my mind fast enough	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	495	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK39	39. I am more alert than most people early in the morning	punctual	064924c5-e884-4266-89f7-5eea49555047	punctual.a.01	positive	496	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK40	40. Before making any important decision, I carefully weigh the pros and cons	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	497	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK41	41. I make an effort to take care of my health	healthy	995fa04e-4e82-4116-af12-948060373e5d	healthy.s.04	positive	498	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK42	42. I try to avoid activities where you have to act without much time to think first	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	499	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK43	43. I generally go to bed at a later hour than most people do	nocturnal	4051ca2a-064a-4c15-88b8-874787c5c1d6	nocturnal.a.01	positive	500	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK44	44. I am good at careful reasoning	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	501	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK45	45. I think that I am more creative than most of my friends	creative	610ec49c-f485-45c4-a8d5-fb82aa99c550	creative.a.01	positive	502	LONGINT	undefined
+Dickman Impulsivity Inventory	49		DICK46	46. I often say and do things without considering the consequences	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	503	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	510	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	511	INT	undefined
+Multidimensional Personality Questionnaire	27		MPQ_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	512	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ24	I keep close track of where my money goes.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	positive	513	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ2	When I have to make a decision, I usually take time to consider and weigh all possibilities.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	514	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ47	I like to stop and think things over before I do them.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	515	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ70	I don't like to start a project until I know exactly how to do it.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	516	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ79	I am very levelheaded, usually have both feet on the ground.	realistic	35121159-d082-465c-aa59-d558939b6837	realistic.a.01	positive	517	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ103	I almost never do anything reckless.	careful	456f92c1-bc66-4c29-8ebe-e831da81517f	careful.a.01	positive	518	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ124	I tend to value and take a rational, sensible approach to things.	rational	7b659f72-2d36-43f9-aa26-2960751d0dfa	rational.s.04	positive	519	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ147	I usually think very carefully before I make up my mind.	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	positive	520	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ172	I plan and organize my work in detail.	meticulous	7cb5b6a0-e5a9-480b-956a-fd98737f95e5	meticulous.s.02	positive	521	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ195	People say that I am well organized (that I do things in a systematic manner).	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	positive	522	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ209	I am a cautious person.	cautious	50c1d1d6-9f0d-40ba-a649-64658e317681	cautious.a.01	positive	523	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ234	Whenever I go out to have fun I like to have a pretty good idea of what I'm going to do.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	524	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ251	Before I get into a new situation I like to find out what to expect from it.	spontaneous	1d229855-9591-4baa-90c7-ffd478501179	ad-lib.s.02	negative	525	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ12	I often stop one thing before completing it and start another.	comprehensive	b48b3c24-4031-40af-96be-4b605df6a9e6	comprehensive.a.01	negative	526	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ38	I often act without thinking.	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	527	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ57	I often prefer to play things by ear rather than to plan ahead.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	528	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ92	I am more likely to do things quickly and carelessly rather than slowly and carefully.	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	negative	529	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ112	When I need to buy something, I usually go get it without thinking what more I may soon need from the same store.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	530	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ136	I often act on the spur of the moment.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	531	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ159	I am often not as cautious as I should be.	cautious	50c1d1d6-9f0d-40ba-a649-64658e317681	cautious.a.01	negative	532	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ185	I often start projects with little idea of what the end result will be.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	533	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ219	I generally do not like to have detailed plans.	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	534	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ243	People consider me a rather freewheeling and spontaneous person.	spontaneous	1d229855-9591-4baa-90c7-ffd478501179	ad-lib.s.02	positive	535	LONGINT	undefined
+Multidimensional Personality Questionnaire	27		MPQ266	I often like to do the first thing that comes to my mind.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	536	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYESNECK_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	538	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYESNECK_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	539	INT	undefined
+Eysenck Personality Questionnaire	57		EYESNECK_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	540	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK1	1. Would you enjoy water skiing	active	94acb7c2-3791-461c-8538-988c9a026dc1	active.a.07	positive	541	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK2	2. Usually do you prefer to stick to brands you know are reliable, to trying new ones on the chance of finding something better	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	542	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK3	3. Would you feel sorry for a lonely stranger	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	543	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK4	4. Do you quite enjoy taking risks	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	544	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK5	5. Do you often get emotionally involved in with your friends' problems	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	545	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK6	6. Would you enjoy parachute jumping	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	546	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK7	7. Do you often buy things on impulse	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	547	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK8	8. Do unhappy people who are sorry for themselves irritate you	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	548	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK9	9. Do you generally do and say things without stopping to think	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	549	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK10	10. Are you inclined to get nervous when others around you seem to be nervous	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	550	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK11	11. Do you often get into a jam because you do things without thinking	careful	456f92c1-bc66-4c29-8ebe-e831da81517f	careful.a.01	negative	551	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK12	12. Do you think hitch-hiking is too dangerous a way to travel	adventurous	8e45b894-98ac-4dff-afa1-497f0663f0c5	adventurous.a.01	negative	552	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK13	13. Do you find it silly for people to cry out of happiness	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	553	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK14	14. Do you like diving off the highborard	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	554	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK15	15. Do people you are with have a strong influence on your moods	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	555	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK16	16. Are you an impulsive person	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	556	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK17	17. Do you welcome new and exciting experiences and sensations, even if they are a little frightening and unconventional	open	d1c64f5c-20cd-44e1-a9ec-4b419396a6f1	receptive.a.02	positive	557	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK18	18. Does it affect you very much when one of you friends seems upset	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	558	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK19	19. Do you usually think carefully before doing anything	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	positive	559	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK20	20. Would you like to learn to fly an aeroplane	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	560	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK21	21. Do you ever get deeply involved with the feeling of a character in a film, play or novel	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	561	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK22	22. Do you often do things on the spur of the moment	spontaneous	1d229855-9591-4baa-90c7-ffd478501179	ad-lib.s.02	positive	562	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK23	23. Do you get very upset when you see someone cry	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	563	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK24	24. Do you sometimes find someone else's laughter catching	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	564	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK25	25. Do you mostly speak without thinking things out	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	negative	565	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK26	26. Do you often get involved in things you later wish you could get out of	unreliable	8f07118f-f675-45d6-adaf-0b7ac6f1ad54	unreliable.s.04	positive	566	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK27	27. Do you get so 'carried away' by new and exciting ideas, that you never think of possible snags	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	567	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK28	28. Do you find it hard to understand people who risk their necks climbing mountains	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	negative	568	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK29	29. Can you make decisions without worrying about other people's feelings	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	569	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK30	30. Do you sometimes like doing things that are a bit frightening	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	570	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK31	31. Do you need to use a lot of self-control to keep out of trouble	controlled	c6c994db-f9e7-4f59-a60a-74a1bb9153d3	control.v.01	positive	571	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK32	32. Do you become more irritated than sympathetic when you see someone cry	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	572	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK33	33. Would you agree that almost everything enjoyable is illegal or immoral	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	573	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK34	34. Generally do you prefer to enter cold sea water gradually, to diving or jumping straight in	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	positive	574	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK35	35. Are you often surprised at people's reactions to what you do or say	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	575	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK36	36. Would you enjoy the sensation of skiing very fast down a high mountain slope	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	576	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK37	37. Do you like watching people open presents	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	577	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK38	38. Do you think an evening out is more successful if it is unplanned or arranged at the last moment	planning	28003dc6-2b79-43b9-b44b-daf98c1dc446	planning.n.03	negative	578	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK39	39. Would you like to go scuba diving	adventurous	8e45b894-98ac-4dff-afa1-497f0663f0c5	adventurous.a.01	positive	579	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK40	40. Would you find it very hard to break bad news to someone	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	580	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK41	41. Would you enjoy fast driving	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	581	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK42	42. Do you usually work quickly, without bothering to check	meticulous	7cb5b6a0-e5a9-480b-956a-fd98737f95e5	meticulous.s.02	negative	582	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK43	43. Do you often change your interests	volatile	2fdc0c44-0d31-46f3-b3bb-e0e4ac9257f1	fickle.s.01	positive	583	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK44	44. Before making up your mind, do you consider all the advantages and disadvantages	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	584	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK45	45. Can you get very interested in your friends' problems	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	585	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK46	46. Would you like to go pot-holing	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	positive	586	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK47	47. Would you be put off a job involving quite a bit of danger	brave	b440b603-fe46-4211-958d-4aaddbc3e0a4	weather.v.01	negative	587	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK48	48. Do you prefer to 'sleep on it' before making decisions	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	positive	588	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK49	49. When people shout at you, do you shout back	aggressive	e032f0fd-78d3-42e3-8fd7-0b049466df04	aggressive.s.03	positive	589	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK50	50. Do you feel sorry for very shy people	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	590	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK51	51. Are you happy when you are with a cheerful group and sad when the others are glum	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	591	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK52	52. Do you usually make up your mind quickly	decisive	400138ee-e432-4564-bc88-58d5941c27e6	decisive.a.03	positive	592	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK53	53. Can you imagine what it must be like to be very lonely	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	593	LONGINT	undefined
+Eysenck Personality Questionnaire	57		EYSENCK54	54. Does it worry you when others are worrying and panicky	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	594	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	598	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	599	INT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	600	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN1	61. I have not lived the right kind of life.	content	eec3abf1-a149-4cf1-8393-525c62d7e7cc	contentedness.n.01	negative	601	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN2	239. I have been disappointed in love.	heartbroken	a7c7d17c-e211-4e0a-9dbf-c05488247b94	brokenhearted.s.01	positive	602	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN3	20. My sex life is satisfactory.	content	eec3abf1-a149-4cf1-8393-525c62d7e7cc	contentedness.n.01	positive	603	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN4	317. I am more sensitive than most other people.	sensitive	cfd01fda-0283-4f36-a5e6-9b373effb2c0	sensitive.a.02	positive	604	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN5	284. I am sure I am being talked about.	paranoid	4636548c-16c3-45b9-a8dd-8f1a55969677	paranoid.s.01	positive	605	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN6	501. I usually work things out for myself rather than get someone to show me how.	self-directed	3196015e-de63-4228-9963-b244c9da82fe	autonomous.s.03	positive	606	LONGINT	undefined
+Minnesota Multiphasic Personality Inventory	10		GOLDEN7	207. I enjoy many different kinds of play and recreation.	active	94acb7c2-3791-461c-8538-988c9a026dc1	active.a.07	positive	607	LONGINT	undefined
+Hypomanic Personality Scale	50		CHAPHYPO_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	609	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	610	INT	positive
+Hypomanic Personality Scale	50		CHAPHYPO1	I consider myself to be pretty much an average kind of person.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	611	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO2	It would make me nervous to play the clown in front of other people.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	positive	612	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO3	I am frequently so hyper that my friends kiddingly ask me what drug I'm taking.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	613	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO4	I think I would make a good nightclub comedian.	funny	3d60ff39-f70c-4e8f-9ae7-c09d9ef2d6dd	amusing.s.02	positive	614	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO5	Sometimes ideas and insights come to me so fast that I cannot express them all.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	615	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO6	When with groups of people, I usually prefer to let someone else be the center of attention.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	positive	616	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO7	In unfamiliar surroundings, I am often so assertive and sociable that I  surprise myself.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	617	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO8	There are often times when I am so restless that it is impossible for me to sit still.	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	618	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO9	Many people consider me to be amusing but kind of eccentric.	eccentric	fbc26f6e-4a5b-4522-800e-d0859beb8754	bizarre.s.01	positive	619	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO10	When I feel an emotion, I usually feel it with extreme intensity.	intense	66e108e1-7a17-4a04-b27e-d2d4a8776e76	intense.a.01	positive	620	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO11	I am frequently in such high spirits that I can't concentrate on any one thing for too long.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	621	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO12	I sometimes have felt that nothing can happen to me until I do what I am meant to do in life.	invincible	ab7685c4-85df-462f-ba86-d75538c3c71c	invincible.s.01	positive	622	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO13	People often come to me when they need a clever idea.	clever	7a012d52-6ee9-4a12-a6f1-c412f4583f35	apt.s.03	positive	623	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO14	I am no more self-aware than the majority of people.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	624	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO15	I often feel excited and happy for no apparent reason.	excited	e0d67cf8-9167-4afb-abe2-16819d57eb36	delirious.s.02	positive	625	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO16	I can't imagine that anyone would ever write a book about my life.	narcissistic	ab3f595f-fe8b-449f-92cf-87b32345f582	egotistic.s.01	negative	626	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO17	I am usually in an average sort of mood, not too high and not too low.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	627	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO18	I often have moods where I feel so energetic and optimistic that I feel I  could outperform almost anyone at anything.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	628	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO19	I have such a wide range of interests that I often don't know what to do next.	eclectic	84173116-9784-4989-a776-f8163a52d6ff	eclectic.s.01	positive	629	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO20	There have often been times when I had such an excess of energy that I  felt little need to sleep at night.	nocturnal	4051ca2a-064a-4c15-88b8-874787c5c1d6	nocturnal.a.01	positive	630	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO21	My moods do not seem to fluctuate any more than most people's do.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	631	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO22	I very frequently get into moods where I wish I could be everywhere and do everything at once.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	632	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO23	I expect that someday I will succeed in several different professions.	grandiose	9ad7785a-02e8-47b2-9bd6-db2362d57305	grandiose.s.02	positive	633	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO24	When I feel very excited and happy, I almost always know the reason why.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	negative	634	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO25	When I go to a gathering where I don't know anyone, it usually takes me a while to feel comfortable.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	635	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO26	I think I would make a good actor, because I can play many roles convincingly.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	negative	636	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO27	I like to have others think of me as a normal kind of person.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	637	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO28	I frequently write down the thoughts and insights that come to me when I  am thinking especially creatively.	creative	610ec49c-f485-45c4-a8d5-fb82aa99c550	creative.a.01	positive	638	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO29	I have often persuaded groups of friends to do something really adventurous or crazy.	adventurous	8e45b894-98ac-4dff-afa1-497f0663f0c5	adventurous.a.01	positive	639	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO30	I would really enjoy being a politician and hitting the campaign trail.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	negative	640	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO31	I can usually slow myself down when I want to.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	negative	641	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO32	I am considered to be kind of a hyper person.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	642	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO33	I often get so happy and energetic that I am almost giddy.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	643	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO34	There are so many fields I could succeed in that it seems a shame to have to pick one.	narcissistic	ab3f595f-fe8b-449f-92cf-87b32345f582	egotistic.s.01	positive	644	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO35	I often get into moods where I feel like many of the rules of life don't apply to me.	law-abiding	9096d085-df37-4597-875c-17a819a3b316	law-abiding.s.01	negative	645	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO36	I find it easy to get others to become sexually interested in me.	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	positive	646	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO37	I seem to be a person whose mood goes up and down easily.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	647	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO38	I frequently find that my thoughts are racing.	rumination	9080f004-c57b-40ad-866f-54b22c2aa112	contemplation.n.02	positive	648	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO39	I am so good at controlling others that it sometimes scares me.	persuasive	11fc78dd-e96e-4573-8775-f7d086fcc995	persuasive.a.01	positive	649	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO40	At social gatherings, I am usually the life of the party.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	negative	650	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO41	I do most of my best work during brief periods of intense inspiration.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	651	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO42	I seem to have an uncommon ability to persuade and inspire others.	persuasive	11fc78dd-e96e-4573-8775-f7d086fcc995	persuasive.a.01	positive	652	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO43	I have often been so excited about an involving project that I didn't care about eating or sleeping.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	653	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO44	I frequently get into moods where I feel very speeded-up and irritable.	irritable	d7f4c531-534d-423b-9a20-31cb4a1fbeb2	cranky.s.02	positive	654	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO45	I have often felt happy and irritable at the same time.	manic	df858458-d134-4284-9b59-67d0116e4c09	frenzied.s.01	positive	655	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO46	I often get into excited moods where it's almost impossible for me to stop talking.	talkative	24e9d4d0-43b6-4021-ac53-61db3a5b6adf	chatty.s.01	positive	656	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO47	I would rather be an ordinary success in life than a spectacular failure.	average	722b31c2-5cf4-43a3-b0a2-2ce0e746291e	average.s.02	positive	657	LONGINT	positive
+Hypomanic Personality Scale	50		CHAPHYPO48	A hundred years after I'm dead, my achievements will probably have been forgotten.	narcissistic	ab3f595f-fe8b-449f-92cf-87b32345f582	egotistic.s.01	negative	658	LONGINT	positive
+Chapman Scales - Perceptual Aberrations	38		CHAPPER_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	677	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	678	INT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	679	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER1	1. I sometimes have had the feeling that some parts of my body are not attached to the same person.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	680	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER2	2. Occasionally I have felt as though my body did not exist.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	681	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER3	3. Sometimes people whom I know well begin to look like strangers.	derealized	3e348941-9e62-4c16-968b-406e5d2f9f86	None	positive	682	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER4	4. My hearing is sometimes so sensitive that ordinary sounds become uncomfortable.	sensitivity (sound)	4df7ea47-7f89-498a-a1c8-b87bacadcbb9	sensitivity.n.01	positive	683	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER5	5. Often I have a day when indoor lights seem so bright that they bother my eyes.	sensitivity (light)	66af1045-a5c4-4ffa-b9a5-df06207b69d5	sensitivity.n.01	positive	684	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER6	6. My hands or feet have never seemed far away.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	negative	685	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER7	7. I have sometimes felt confused as to whether my body was really my own.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	686	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER8	8. Sometimes I have felt that I could not distinguish my body from other objects around me.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	687	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER9	9. I have felt that my body and another person's body were one and the same.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	688	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER10	10. I have felt that something outside my body was a part of my body.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	689	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER11	11. I sometimes have had the feeling that my body is abnormal.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	690	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER12	12. Now and then, when I look in the mirror, my face seems quite different than usual.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	691	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER13	13. I have never had the passing feeling that my arms or legs have become longer than usual.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	negative	692	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER14	14. I have sometimes felt that some part of my body no longer belongs to me.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	693	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER15	15. Sometimes when I look at things like tables and chairs, they seem strange.	derealized	3e348941-9e62-4c16-968b-406e5d2f9f86	None	positive	694	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER16	16. I have felt as though my head or limbs were somehow not my own.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	695	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER17	17. Sometimes part of my body has seemed smaller than it usually is.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	696	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER18	18. I have sometimes had the feeling that my body is decaying inside.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	697	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER19	19. Occasionally it has seemed as if my body had taken on the appearance of another person's body.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	698	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER20	20. Ordinary colors sometimes seem much too bright to me.	sensitivity	e48891b6-bd45-42bc-85c3-530b9fcc029d	sensitivity.n.01	positive	699	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER21	21. Sometimes I have had a passing thought that some part of my body was rotting away.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	700	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER22	22. I have sometimes had the feeling that one of my arms or legs is disconnected from the rest of my body.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	701	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER23	23. It has seemed at times as if my body was melting into my surroundings.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	702	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER24	24. I have never felt that my arms or legs have momentarily grown in size.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	negative	703	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER25	25. The boundaries of my body always seem clear.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	negative	704	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER26	26. Sometimes I have had feelings that I am united with an object near me.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	705	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER27	27. Sometimes I have had the feeling that a part of my body is larger than it usually is.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	706	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER28	28. I can remember when it seemed as though one of my limbs took on an unusual shape.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	707	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER29	29. I have had the momentary feeling that my body has become misshapen.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	708	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER30	30. I have had the momentary feeling that the things I touch remain attached to my body.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	709	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER31	31. Sometimes I feel like everything around me is tilting.	derealized	3e348941-9e62-4c16-968b-406e5d2f9f86	None	positive	710	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER32	32. I sometimes have to touch myself to make sure I'm still there.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	711	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER33	33. Parts of my body occasionally seem dead or unreal.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	712	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER34	34. At times I have wondered if my body was really my own.	depersonalized	65ba3855-405a-4ffa-802d-84243fa02118	depersonalize.v.01	positive	713	LONGINT	undefined
+Chapman Scales - Perceptual Aberrations	38		CHAPPER35	35. For several days at a time I have had such a heightened awareness of sights and sounds that I cannot shut then out.	sensitivity (sensory)	0c932d4b-a751-4d5d-9afa-b3b667a2aa4b	sensitivity.n.01	positive	714	LONGINT	undefined
+Chapman Scales - Social Anhedonia	43		CHAPSOC_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	716	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	717	INT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	718	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC1	1. Having close friends is not as important as many people say.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	719	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC2	2. I attach very little importance to having close friends.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	720	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC3	3. I prefer watching television to going out with other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	721	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC4	4. A car ride is much more enjoyable if someone is with me.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	722	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC5	5. I like to make long distance phone calls to friends and relatives.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	723	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC6	6. Playing with children is a real chore.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	724	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC7	7. I have always enjoyed looking at photographs of friends.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	725	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC8	8. Although there are things that I enjoy doing by myself, I usually seem to have more fun when I do things with other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	726	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC9	9. I sometimes become deeply attached to people I spend a lot of time with.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	727	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC10	10. People sometimes think that I am shy when I really just want to be left alone.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	728	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC11	11. When things are going really good for my close friends, it makes me feel good too.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	729	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC12	12. When someone close to me is depressed, it brings me down also.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	730	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC13	13. My emotional responses seem very different from those of other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	731	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC14	14. When I am alone, I often resent people telephoning me or knocking on my door.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	732	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC15	15. Just being with friends can make me feel really good.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	733	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC16	16. When things are bothering me, I like to talk to other people about it.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	734	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC17	17. I prefer hobbies and leisure activi-ties that do not involve other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	735	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC18	18. It's fun to sing with other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	736	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC19	19. Knowing that I have friends who care about me gives me a sense of security.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	737	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC20	20. When I move to a new city, I feel a strong need to make new friends.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	738	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC21	21. People are usually better off if they stay aloof from emotional involvements with most others.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	739	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC22	22. Although I know I should have affection for certain people, I don't really feel it.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	740	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC23	23. People often expect me to spend more time talking with them than I  would like.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	741	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC24	24. I feel pleased and gratified as I learn more and more about the emotional life of my friends.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	742	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC25	25. When others try to tell me about their problems and hang-ups, I  usually listen with interest and attention.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	743	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC26	26. I never had really close friends in high school.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	744	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC27	27. I am usually content to just sit alone, thinking and daydreaming.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	745	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC28	28. I'm much too independent to really get involved with other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	746	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC29	29. There are few things more tiring than to have a long, personal discussion with someone.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	747	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC30	30. It made me sad to see all my high school friends go their separate ways when high school was over.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	748	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC31	31. I have often found it hard to resist talking to a good friend, even when  I have other things to do.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	749	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC32	32. Making new friends isn't worth the energy it takes.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	750	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC33	33. There are things that are more important to me than privacy.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	751	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC34	34. People who try to get to know me better usually give up after awhile.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	752	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC35	35. I could be happy living all alone in a cabin in the woods or mountains.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	753	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC36	36. If given the choice, I would much rather be with others than be alone.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	754	LONGINT	negative
+Chapman Scales - Social Anhedonia	43		CHAPSOC37	37. I find that people too often assume that their daily activities and opinions will be interesting to me.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	755	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC38	38. I don't really feel very close to my friends.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	756	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC39	39. My relationships with other people never get very intense.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	757	LONGINT	positive
+Chapman Scales - Social Anhedonia	43		CHAPSOC40	40. In many ways, I prefer the company of pets to the company of people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	758	LONGINT	positive
+Chapman Scales - Physical Anhedonia	64		CHAPPHY_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	760	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	761	INT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	762	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY1	1. I have usually found lovemaking to be intensely pleasurable.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	763	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY2	2. When eating a favorite food, I have often tried to eat slowly to make it last longer.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	764	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY3	3. I have often enjoyed the feel of silk, velvet, or fur.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	765	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY4	4. I have sometimes enjoyed feeling the strength in my muscles.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	766	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY5	5. Dancing, or the idea of it, has always seemed dull to me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	767	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY6	6. I have always found organ music dull and unexciting.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	768	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY7	7. The taste of food has always been important to me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	769	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY8	8. I have had very little fun from physical activities like walking, swimming, or sports.	active	94acb7c2-3791-461c-8538-988c9a026dc1	active.a.07	negative	770	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY9	9. I have seldom enjoyed any kind of sexual experience.	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	negative	771	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY10	10. On hearing a good song, I have seldom wanted to sing along with it.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	772	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY11	11. I have always hated the feeling of exhaustion that comes from vigorous activity.	active	94acb7c2-3791-461c-8538-988c9a026dc1	active.a.07	negative	773	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY12	12. The color that things are painted has seldom mattered to me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	774	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY13	13. The sound of rustling leaves has never much pleased me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	775	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY14	14. Sunbathing isn't really more fun than lying down indoors.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	776	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY15	15. There just are not many things that I have ever really enjoyed doing.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	777	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY16	16. I don't know why some people are so interested in music.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	778	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY17	17. Flowers aren't as beautiful as many people claim.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	779	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY18	18. I have always loved having my back massaged.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	780	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY19	19. I never wanted to go on any of the rides at an amusement park.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	781	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY20	20. Trying new foods is something I have always enjoyed.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	782	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY21	21. The warmth of an open fireplace hasn't especially soothed and calmed me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	783	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY22	22. Poets always exaggerate the beauty and joys of nature.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	784	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY23	23. When I have seen a statue, I have had the urge to feel it.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	785	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY24	24. I have always had a number of favorite foods.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	786	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY25	25. I don't understand why people enjoy looking at the stars at night.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	787	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY26	26. I have had very little desire to try new kinds of foods.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	788	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY27	27. I never have the desire to take off my shoes and walk through a puddle barefoot.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	789	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY28	28. I've never cared much about the TEXTure of food.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	790	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY29	29. When I have walked by a bakery, the smell of fresh bread has often made me hungry.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	791	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY30	30. I have often enjoyed receiving a strong, warm handshake.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	792	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY31	31. I have often felt uncomfortable when my friends touch me.	sensitivity (tough)	ca5acd56-9b16-46a0-9b1c-0f0dc84b3e9d	sensitivity.n.01	positive	793	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY32	32. I have never found a thunderstorm exhilarating.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	794	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY33	33. Standing on a high place and looking out over the view is very exciting.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	795	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY34	34. I have often found walks to be relaxing and enjoyable.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	796	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY35	35. The sound of the rain falling on the roof has made me feel snug and secure.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	797	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY36	36. I like playing with and petting soft little kittens or puppies.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	798	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY37	37. The sound of organ music has often thrilled me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	799	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY38	38. Beautiful scenery has been a great delight to me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	800	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY39	39. The first winter snowfall has often looked pretty to me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	801	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY40	40. Sex is okay, but not as much fun as most people claim it is.	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	negative	802	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY41	41. I have sometimes danced by myself just to feel my body move with the music.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	803	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY42	42. I have seldom cared to sing in the shower.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	804	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY43	43. One food tastes as good as another to me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	805	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY44	44. On seeing a soft, thick carpet, I have sometimes had the impulse to take off my shoes and walk barefoot on it.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	806	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY45	45. After a busy day, a slow walk has often felt relaxing.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	807	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY46	46. The bright lights of a city are exciting to look at.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	808	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY47	47. The beauty of sunsets is greatly overrated.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	809	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY48	48. It has always made me feel good when someone I care about reaches out to touch me.	sensitivity (tough)	ca5acd56-9b16-46a0-9b1c-0f0dc84b3e9d	sensitivity.n.01	negative	810	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY49	49. I have usually found soft music boring rather than relaxing.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	811	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY50	50. I have usually finished my bath or shower as quickly as possible just to get it over with.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	812	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY51	51. The smell of dinner cooking has hardly ever aroused my appetite.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	813	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY52	52. When I pass by flowers, I have often stopped to smell them.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	814	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY53	53. Sex is the most intensely enjoyable thing in life.	horny	d962fd76-54b6-42b7-bd98-cfd51ffc80fb	aroused.s.04	positive	815	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY54	54. I think that flying a kite is silly.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	816	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY55	55. I've never cared to sunbathe; it just makes me hot.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	817	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY56	56. The sounds of a parade have never excited me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	positive	818	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY57	57. It has often felt good to massage my muscles when they are tired or sore.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	819	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY58	58. When I'm feeling a little sad, singing has often made me feel happier.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	820	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY59	59. A good soap lather when I'm bathing has sometimes soothed and refreshed me.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	821	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY60	60. A brisk walk has sometimes made me feel good all over.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	822	LONGINT	undefined
+Chapman Scales - Physical Anhedonia	64		CHAPPHY61	61. I have been fascinated with the dancing of flames in a fireplace.	anhedonia	8a04e66e-f897-4b29-ac09-a68dcaff0e14	anhedonia.n.01	negative	823	LONGINT	undefined
+Temperament and Character Inventory	138		TCI_SID	system auto-generated number	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	825	LONGINT	undefined
+Temperament and Character Inventory	138		TCI_COMPLETED	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	826	INT	undefined
+Temperament and Character Inventory	138		TCI_PTID	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	827	LONGINT	undefined
+Temperament and Character Inventory	138		TCI8P	I am usually eager to get going on any job I have to do	prompt	666fbd5d-d8f9-407a-820d-3e42a5a54cf7	prompt.s.01	positive	828	LONGINT	undefined
+Temperament and Character Inventory	138		TCI60P	I have often been called an eager beaver because of my enthusiasm for hard work.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	positive	829	LONGINT	undefined
+Temperament and Character Inventory	138		TCI94P	No matter how hard a job is, I like to get started quickly.	prompt	666fbd5d-d8f9-407a-820d-3e42a5a54cf7	prompt.s.01	positive	830	LONGINT	undefined
+Temperament and Character Inventory	138		TCI114P	I am eager to start work on any assigned duty.	prompt	666fbd5d-d8f9-407a-820d-3e42a5a54cf7	prompt.s.01	positive	831	LONGINT	undefined
+Temperament and Character Inventory	138		TCI134P	I often drag my heels a while before starting any project.	prompt	666fbd5d-d8f9-407a-820d-3e42a5a54cf7	prompt.s.01	negative	832	LONGINT	undefined
+Temperament and Character Inventory	138		TCI189P	I like to go slow in starting work, even if it is easy to do.	deliberate	b87ef4b5-d05e-49e3-a40c-ec7d9864047e	careful.s.03	positive	833	LONGINT	undefined
+Temperament and Character Inventory	138		TCI197P	I like to do a job quickly and then volunteer for more.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	834	LONGINT	undefined
+Temperament and Character Inventory	138		TCI200P	I really enjoy keeping busy.	directed	d5d1c226-f0c7-4243-a91b-686b5cdafc67	target.v.01	positive	835	LONGINT	undefined
+Temperament and Character Inventory	138		TCI240P	I am quick to volunteer when there is something to be done.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	836	LONGINT	undefined
+Temperament and Character Inventory	138		TCI5P	I like a challenge better than easy jobs.	industrious	9df2dc8b-bc59-4d53-a6be-df32938300d8	hardworking.s.01	positive	837	LONGINT	undefined
+Temperament and Character Inventory	138		TCI22P	No job is too hard for me to do my best.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	positive	838	LONGINT	undefined
+Temperament and Character Inventory	138		TCI45P	When I fail at something, I become even more determined to do a better job.	determined	f65447e7-b48f-41cf-9f06-f041e8529007	compulsive.s.02	positive	839	LONGINT	undefined
+Temperament and Character Inventory	138		TCI111P	The harder a job is the more I like it.	industrious	9df2dc8b-bc59-4d53-a6be-df32938300d8	hardworking.s.01	positive	840	LONGINT	undefined
+Temperament and Character Inventory	138		TCI140P	I often give up on a job if it takes much longer than I thought it would.	determined	f65447e7-b48f-41cf-9f06-f041e8529007	compulsive.s.02	negative	841	LONGINT	undefined
+Temperament and Character Inventory	138		TCI163P	When I fail to master something at first, it becomes my personal challenge to succeed.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	842	LONGINT	undefined
+Temperament and Character Inventory	138		TCI173P	I often do my best work under difficult circumstances.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	positive	843	LONGINT	undefined
+Temperament and Character Inventory	138		TCI228P	When someone points out my mistakes, I work extra hard to correct them.	improving	dcf80bab-36ea-4fe2-8980-f875db0a3f37	better.v.03	positive	844	LONGINT	undefined
+Temperament and Character Inventory	138		TCI37P	I am a very ambitious person.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	845	LONGINT	undefined
+Temperament and Character Inventory	138		TCI62P	I like to strive for bigger and better things.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	846	LONGINT	undefined
+Temperament and Character Inventory	138		TCI72P	I love to excel at everything I do.	perfectionist	2c9a0f15-d95c-4adf-9413-c5cae0d04663	perfectionist.n.01	positive	847	LONGINT	undefined
+Temperament and Character Inventory	138		TCI117P	I often accomplish more than people expect of me.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	848	LONGINT	undefined
+Temperament and Character Inventory	138		TCI126P	I am often described as an overachiever.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	849	LONGINT	undefined
+Temperament and Character Inventory	138		TCI153P	I am often described as an underachiever.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	negative	850	LONGINT	undefined
+Temperament and Character Inventory	138		TCI191P	When my work goes unnoticed, I become even more determined to succeed.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	851	LONGINT	undefined
+Temperament and Character Inventory	138		TCI202P	I am often successful because of my ambition and hard work.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	852	LONGINT	undefined
+Temperament and Character Inventory	138		TCI207P	I am willing to make many sacrifices to be a success.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	positive	853	LONGINT	undefined
+Temperament and Character Inventory	138		TCI238P	I want to be the best at everything I do.	perfectionist	2c9a0f15-d95c-4adf-9413-c5cae0d04663	perfectionist.n.01	positive	854	LONGINT	undefined
+Temperament and Character Inventory	138		TCI55P	I am usually so determined that I continued to work long after other people have given up.	industrious	9df2dc8b-bc59-4d53-a6be-df32938300d8	hardworking.s.01	positive	855	LONGINT	undefined
+Temperament and Character Inventory	138		TCI76P	I am more hard-working than most people.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	positive	856	LONGINT	undefined
+Temperament and Character Inventory	138		TCI119P	I usually push myself harder than most people do because I want to do as well as I possibly can.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	positive	857	LONGINT	undefined
+Temperament and Character Inventory	138		TCI129P	If something doesn't work as I expected, I am more likely to quit than to keep going for a long time.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	negative	858	LONGINT	undefined
+Temperament and Character Inventory	138		TCI137P	I am more of a perfectionist than most people.	perfectionist	2c9a0f15-d95c-4adf-9413-c5cae0d04663	perfectionist.n.01	positive	859	LONGINT	undefined
+Temperament and Character Inventory	138		TCI146P	I could probably accomplish more than I do, but I don't see the point in pushing myself harder than is necessary to get by.	hardworking	8e73e33e-72bd-4c92-8dc3-79c535191f57	hardworking.s.01	negative	860	LONGINT	undefined
+Temperament and Character Inventory	138		TCI158P	I often push myself to the point of exhaustion or try to do more than I  really can.	ambitious	05ece6b4-17d8-467d-910c-8bf7e0d11a41	ambitious.a.01	positive	861	LONGINT	undefined
+Temperament and Character Inventory	138		TCI229P	I won't give up what I am doing just because of a long run of unexpected failures.	determined	f65447e7-b48f-41cf-9f06-f041e8529007	compulsive.s.02	positive	862	LONGINT	undefined
+Temperament and Character Inventory	138		TCI1T	I often try new things just for fun or thrills, even if most people think it is a waste of time.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	863	LONGINT	undefined
+Temperament and Character Inventory	138		TCI29T	I like old tried and true ways of doing things much better than trying  new and improved ways.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	864	LONGINT	undefined
+Temperament and Character Inventory	138		TCI52T	In conversations I am much better as a listener than as a talker.	listening	05d12128-8349-4c40-92f3-1343bcb2d6fa	listen.v.01	positive	865	LONGINT	undefined
+Temperament and Character Inventory	138		TCI70T	I like to stay at home better than to travel or explore new places.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	866	LONGINT	undefined
+Temperament and Character Inventory	138		TCI99T	I have a reputation as someone who is very practical and does not act on emotion.	practical	4bd6c819-a071-4bba-a2d6-c9a0c021a571	practical.a.01	positive	867	LONGINT	undefined
+Temperament and Character Inventory	138		TCI114T	I usually demand very good practical reasons before I am willing to change my old ways of doing things.	practical	4bd6c819-a071-4bba-a2d6-c9a0c021a571	practical.a.01	positive	868	LONGINT	undefined
+Temperament and Character Inventory	138		TCI144T	I hate to change the way I do things, even if many people tell me there is a new and better way to do it.	routine	a59fd2a5-0425-43d9-9f43-2e521b3a40a3	routine.n.01	positive	869	LONGINT	undefined
+Temperament and Character Inventory	138		TCI167T	I prefer to start conversations, rather than waiting for others to talk to me.	social	2c7ce2e5-5c06-42d4-9a0d-0dde19e63423	social.s.06	positive	870	LONGINT	undefined
+Temperament and Character Inventory	138		TCI191T	I like to explore new ways to do things	creative	610ec49c-f485-45c4-a8d5-fb82aa99c550	creative.a.01	positive	871	LONGINT	undefined
+Temperament and Character Inventory	138		TCI211T	I am slower than most people to get excited about new ideas and activities.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	872	LONGINT	undefined
+Temperament and Character Inventory	138		TCI238T	When nothing new is happening, I usually start looking for something that is thrilling or exciting.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	873	LONGINT	undefined
+Temperament and Character Inventory	138		TCI13T	I often do things based on how I feel at the moment without thinking about how they were done in the past.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	874	LONGINT	undefined
+Temperament and Character Inventory	138		TCI35T	It is difficult for me to keep the same interests for a long time because my attention often shifts to something else.	capricious	1bcac8bb-f522-4306-b430-174b5e365b69	capricious.s.01	positive	875	LONGINT	undefined
+Temperament and Character Inventory	138		TCI61T	I like to think about things for a long time before I make a decision.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	876	LONGINT	undefined
+Temperament and Character Inventory	138		TCI82T	I usually think about all the facts in detail before I make a decision.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	877	LONGINT	undefined
+Temperament and Character Inventory	138		TCI108T	I hate to make decisions based only on my first impressions.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	878	LONGINT	undefined
+Temperament and Character Inventory	138		TCI130T	I often follow my instincts, hunches, or intuition without thinking through all the details.	reactive	b885d12e-c857-47c5-80aa-f83926f1ce36	reactive.s.02	positive	879	LONGINT	undefined
+Temperament and Character Inventory	138		TCI148T	I like to pay close attention to details in everything I do.	meticulous	7cb5b6a0-e5a9-480b-956a-fd98737f95e5	meticulous.s.02	positive	880	LONGINT	undefined
+Temperament and Character Inventory	138		TCI187T	I like to make quick decisions so I can get on with what has to be done.	decisive	400138ee-e432-4564-bc88-58d5941c27e6	decisive.a.03	positive	881	LONGINT	undefined
+Temperament and Character Inventory	138		TCI203T	I nearly always think about all the facts in detail before I make a decision, even when other people demand a quick decision.	contemplative	d0b686b7-e07b-4280-8260-5a9d64446b75	brooding.s.01	positive	882	LONGINT	undefined
+Temperament and Character Inventory	138		TCI237T	I like to read everything when I am asked to sign any papers.	meticulous	7cb5b6a0-e5a9-480b-956a-fd98737f95e5	meticulous.s.02	positive	883	LONGINT	undefined
+Temperament and Character Inventory	138		TCI19T	I am much more reserved and controlled than most people.	controlled	c6c994db-f9e7-4f59-a60a-74a1bb9153d3	control.v.01	positive	884	LONGINT	undefined
+Temperament and Character Inventory	138		TCI41T	I often spend money until I run out of cash or get into debt from using too much credit.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	negative	885	LONGINT	undefined
+Temperament and Character Inventory	138		TCI66T	It is hard for me to enjoy spending money on myself, even when I have saved plenty of money.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	positive	886	LONGINT	undefined
+Temperament and Character Inventory	138		TCI109T	I prefer spending money rather than saving it.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	negative	887	LONGINT	undefined
+Temperament and Character Inventory	138		TCI139T	I am better at saving money than most people.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	positive	888	LONGINT	undefined
+Temperament and Character Inventory	138		TCI155T	Because I so often spend too much money on impulse, it is hard for me to save money - even for special plans like a vacation.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	positive	889	LONGINT	undefined
+Temperament and Character Inventory	138		TCI174T	It is fun for me to buy things for myself.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	negative	890	LONGINT	undefined
+Temperament and Character Inventory	138		TCI192T	I enjoy saving money more than spending it on entertainment or thrills.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	positive	891	LONGINT	undefined
+Temperament and Character Inventory	138		TCI219T	Some people think I am too stingy or tight with my money.	frugal	81894ab6-c9af-4b74-a307-9a8f8cb53759	economical.s.03	positive	892	LONGINT	undefined
+Temperament and Character Inventory	138		TCI34T	I like to be very organized and set up rules for people whenever I can.	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	positive	893	LONGINT	undefined
+Temperament and Character Inventory	138		TCI53T	I lose my temper more quickly than most people.	irritable	d7f4c531-534d-423b-9a20-31cb4a1fbeb2	cranky.s.02	positive	894	LONGINT	undefined
+Temperament and Character Inventory	138		TCI79T	I like it when people can do whatever they want without strict rules and regulations.	law-abiding	9096d085-df37-4597-875c-17a819a3b316	law-abiding.s.01	negative	895	LONGINT	undefined
+Temperament and Character Inventory	138		TCI91T	I am usually able to get other people to believe me, even when I know that what I am saying is exaggerated or untrue.	persuasive	11fc78dd-e96e-4573-8775-f7d086fcc995	persuasive.a.01	positive	896	LONGINT	undefined
+Temperament and Character Inventory	138		TCI110T	I can usually do a good job of stretching the truth to tell a funnier story or to play a joke on someone.	deceptive	0ef53504-e643-4e8f-bb19-cf877de2e3b3	deceptive.s.02	positive	897	LONGINT	undefined
+Temperament and Character Inventory	138		TCI141T	Even when most people feel it is not important, I often insist on things being done in a strict and orderly way.	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	positive	898	LONGINT	undefined
+Temperament and Character Inventory	138		TCI165T	I almost never get so excited that I lose control of myself.	controlled	c6c994db-f9e7-4f59-a60a-74a1bb9153d3	control.v.01	positive	899	LONGINT	undefined
+Temperament and Character Inventory	138		TCI183T	I often break rules and regulations when I think I can get away with it.	law-abiding	9096d085-df37-4597-875c-17a819a3b316	law-abiding.s.01	negative	900	LONGINT	undefined
+Temperament and Character Inventory	138		TCI204T	I am not very good at talking my way out of trouble when I am caught doing something wrong.	persuasive	11fc78dd-e96e-4573-8775-f7d086fcc995	persuasive.a.01	negative	901	LONGINT	undefined
+Temperament and Character Inventory	138		TCI212T	I have trouble telling a lie, even when it is meant to spare someone else's feelings	deceptive	0ef53504-e643-4e8f-bb19-cf877de2e3b3	deceptive.s.02	negative	902	LONGINT	undefined
+Temperament and Character Inventory	138		TCI2T	I usually am confident that everything will go well, even in situations that worry most people.	self-confident	35b092e6-5278-4937-bc84-eade1b526742	self-assured.s.01	positive	903	LONGINT	undefined
+Temperament and Character Inventory	138		TCI20T	I often have to stop what I am doing because I start worrying about what might go wrong.	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	904	LONGINT	undefined
+Temperament and Character Inventory	138		TCI42T	I think I will have very good luck in the future.	optimistic	1e1b1bfa-13d9-4f20-94ed-53cca17033b3	optimistic.a.01	positive	905	LONGINT	undefined
+Temperament and Character Inventory	138		TCI65T	Regardless of any temporary problem that I have to overcome, I always think it will turn out well.	optimistic	1e1b1bfa-13d9-4f20-94ed-53cca17033b3	optimistic.a.01	positive	906	LONGINT	undefined
+Temperament and Character Inventory	138		TCI81T	Usually I am more worried than most people that something might go wrong in the future.	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	907	LONGINT	undefined
+Temperament and Character Inventory	138		TCI112T	If I am embarrassed or humiliated, I get over it very quickly.	embarrassed	3f6dbc6c-eda1-4924-958f-28ea9c9d30fa	abashed.s.01	negative	908	LONGINT	undefined
+Temperament and Character Inventory	138		TCI119T	I nearly always stay relaxed and carefree, even when nearly everyone else is fearful.	relaxed	7c0ee381-f914-4b2d-9115-a4aa58b8fd89	relaxed.a.01	positive	909	LONGINT	undefined
+Temperament and Character Inventory	138		TCI149T	I often stop what I am doing because I get worried, even when my friends tell me everything will go well.	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	910	LONGINT	undefined
+Temperament and Character Inventory	138		TCI164T	I never worry about terrible things that might happen in the future	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	negative	911	LONGINT	undefined
+Temperament and Character Inventory	138		TCI188T	I usually have good luck in whatever I try to do.	optimistic	1e1b1bfa-13d9-4f20-94ed-53cca17033b3	optimistic.a.01	positive	912	LONGINT	undefined
+Temperament and Character Inventory	138		TCI225T	Things often go wrong for me unless I am very careful.	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	913	LONGINT	undefined
+Temperament and Character Inventory	138		TCI12T	I often feel tense and worried in unfamiliar situations, even when others feel there is little to worry about.	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	914	LONGINT	undefined
+Temperament and Character Inventory	138		TCI26T	Most of the time I would prefer to do something a little risky (like riding in an automobile over steep hills and sharp turns) - rather than having to stay quiet and inactive for a few hours.	risky	582b8e92-ed3b-4fb8-81f0-f3e8321484de	hazardous.s.01	positive	915	LONGINT	undefined
+Temperament and Character Inventory	138		TCI67T	I usually stay calm and secure in situations that most people would find physically dangerous.	resilient	855d3025-c0a8-4229-9f8e-6ec92929a7bf	resilient.s.01	positive	916	LONGINT	undefined
+Temperament and Character Inventory	138		TCI129T	I often feel tense and worried in unfamiliar situations, even when others feel there is no danger at all.	worried	af3ded55-72f9-45ff-b8cb-ba31c3b838f1	disquieted.s.01	positive	917	LONGINT	undefined
+Temperament and Character Inventory	138		TCI154T	Most of the time I would prefer to do something risky (like hang-gliding or parachute jumping) - rather than having to stay quiet and inactive for a few hours.	risky	582b8e92-ed3b-4fb8-81f0-f3e8321484de	hazardous.s.01	positive	918	LONGINT	undefined
+Temperament and Character Inventory	138		TCI189T	I am usually confident that I can easily do things that most people would consider dangerous (such as driving an automobile fast on a wet or icy road).	risky	582b8e92-ed3b-4fb8-81f0-f3e8321484de	hazardous.s.01	positive	919	LONGINT	undefined
+Temperament and Character Inventory	138		TCI217T	I usually feel tense and worried when I have to do something new and unfamiliar.	impulsive	344823c9-fb4f-470e-ae63-1712a7c4a25a	impulsive.s.01	negative	920	LONGINT	undefined
+Temperament and Character Inventory	138		TCI27T	I often avoid meeting strangers because I lack confidence with people I  do not know.	self-confident	35b092e6-5278-4937-bc84-eade1b526742	self-assured.s.01	negative	921	LONGINT	undefined
+Temperament and Character Inventory	138		TCI54T	When I have to meet a group of strangers, I am more shy than most people.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	positive	922	LONGINT	undefined
+Temperament and Character Inventory	138		TCI80T	I would probably stay relaxed and outgoing when meeting a group of strangers, even if I were told they are unfriendly.	resilient	855d3025-c0a8-4229-9f8e-6ec92929a7bf	resilient.s.01	positive	923	LONGINT	undefined
+Temperament and Character Inventory	138		TCI100T	It is easy for me to organize my thoughts while talking to someone.	confusion	abe029ca-62bb-42c6-babb-6df86ccfe88a	confusion.n.02	negative	924	LONGINT	undefined
+Temperament and Character Inventory	138		TCI142T	I feel very confident and sure of myself in almost all social situations.	self-confident	35b092e6-5278-4937-bc84-eade1b526742	self-assured.s.01	positive	925	LONGINT	undefined
+Temperament and Character Inventory	138		TCI157T	I am not shy with strangers at all.	shy	7648bdaf-5166-4da2-a814-2fa255653670	diffident.a.02	negative	926	LONGINT	undefined
+Temperament and Character Inventory	138		TCI209T	I think I would stay confident and relaxed when meeting strangers, even if  I were told they are angry at me.	resilient	855d3025-c0a8-4229-9f8e-6ec92929a7bf	resilient.s.01	positive	927	LONGINT	undefined
+Temperament and Character Inventory	138		TCI231T	I usually stay away from social situations where I would have to meet strangers, even if I am assured that they will be friendly.	social	2c7ce2e5-5c06-42d4-9a0d-0dde19e63423	social.s.06	negative	928	LONGINT	undefined
+Temperament and Character Inventory	138		TCI22T	I have less energy and get tired more quickly than most people.	tired	d0394c59-0fa8-4a8b-a27c-2fd113306713	tired.a.01	positive	929	LONGINT	undefined
+Temperament and Character Inventory	138		TCI43T	I recover more slowly than most people from minor illnesses or stress.	feeble	b34bba17-e571-4eba-8811-d37ee8300539	faint.s.03	positive	930	LONGINT	undefined
+Temperament and Character Inventory	138		TCI63T	I often need naps or extra rest periods because I get tired so easily.	fatigued	e9c473cc-86bb-42c5-b7a9-63e1324265b5	exhausted.s.01	positive	931	LONGINT	undefined
+Temperament and Character Inventory	138		TCI92T	I need much extra rest, support, or reassurance to recover from minor illnesses or stress.	feeble	b34bba17-e571-4eba-8811-d37ee8300539	faint.s.03	positive	932	LONGINT	undefined
+Temperament and Character Inventory	138		TCI113T	It is extremely difficult for me to adjust to changes in my usual way of doing things because I get so tense, tired, or worried.	resilient	855d3025-c0a8-4229-9f8e-6ec92929a7bf	resilient.s.01	negative	933	LONGINT	undefined
+Temperament and Character Inventory	138		TCI147T	I am more energetic and tire less quickly than most people.	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	934	LONGINT	undefined
+Temperament and Character Inventory	138		TCI182T	I recover more quickly than most people from minor illnesses or stress.	resilient	855d3025-c0a8-4229-9f8e-6ec92929a7bf	resilient.s.01	positive	935	LONGINT	undefined
+Temperament and Character Inventory	138		TCI202T	I usually can stay on the go all day without having to push myself.	feeble	b34bba17-e571-4eba-8811-d37ee8300539	faint.s.03	negative	936	LONGINT	undefined
+Temperament and Character Inventory	138		TCI236T	I usually feel much more confident and energetic than most people, even after minor illnesses or stress.	resilient	855d3025-c0a8-4229-9f8e-6ec92929a7bf	resilient.s.01	positive	937	LONGINT	undefined
+Temperament and Character Inventory	138		TCI3T	I am often moved deeply by a fine speech or poetry.	emotional	1a9df275-e4e4-45e4-b852-4f1d85d23b0b	emotional.a.01	positive	938	LONGINT	undefined
+Temperament and Character Inventory	138		TCI28T	I like to please other people as much as I can.	pleaser	f5953fb1-29f1-4ddd-95c4-003016e47f99	pleaser.n.01	positive	939	LONGINT	undefined
+Temperament and Character Inventory	138		TCI55T	I am more sentimental than most people.	emotional	1a9df275-e4e4-45e4-b852-4f1d85d23b0b	emotional.a.01	positive	940	LONGINT	undefined
+Temperament and Character Inventory	138		TCI83T	I feel it is more important to be sympathetic and understanding of other people than to be practical and tough-minded.	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	941	LONGINT	undefined
+Temperament and Character Inventory	138		TCI102T	I am strongly moved by sentimental appeals (like when asked to help crippled children).	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	942	LONGINT	undefined
+Temperament and Character Inventory	138		TCI120T	I find sad songs and movies pretty boring.	emotional	1a9df275-e4e4-45e4-b852-4f1d85d23b0b	emotional.a.01	negative	943	LONGINT	undefined
+Temperament and Character Inventory	138		TCI158T	I often give in to the wishes of friends.	pushover	ff772b17-bb11-494e-b761-34ff7c1697de	pushover.n.01	positive	944	LONGINT	undefined
+Temperament and Character Inventory	138		TCI181T	I am more likely to cry at a sad movie than most people.	emotional	1a9df275-e4e4-45e4-b852-4f1d85d23b0b	emotional.a.01	positive	945	LONGINT	undefined
+Temperament and Character Inventory	138		TCI210T	People find it easy to come to me for help, sympathy, and warm understanding.	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	positive	946	LONGINT	undefined
+Temperament and Character Inventory	138		TCI224T	I regularly take time to consider whether what I am doing is right or wrong.	moral	c7d10d03-5f62-47f5-9dde-80fe151a17a8	moral.a.01	positive	947	LONGINT	undefined
+Temperament and Character Inventory	138		TCI21T	I like to discuss my experiences and feelings openly with friends instead of keeping them to myself.	open	d1c64f5c-20cd-44e1-a9ec-4b419396a6f1	receptive.a.02	positive	948	LONGINT	undefined
+Temperament and Character Inventory	138		TCI44T	It wouldn't bother me to be alone all the time.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	949	LONGINT	undefined
+Temperament and Character Inventory	138		TCI68T	I like to keep my problems to myself.	reserved	3fbe034e-d497-4640-801b-2088439c27b5	reserved.a.02	positive	950	LONGINT	undefined
+Temperament and Character Inventory	138		TCI117T	I would like to have warm and close friends with me most of the time.	social	2c7ce2e5-5c06-42d4-9a0d-0dde19e63423	social.s.06	positive	951	LONGINT	undefined
+Temperament and Character Inventory	138		TCI143T	My friends find it hard to know my feelings because I seldom tell them about my private thoughts.	reserved	3fbe034e-d497-4640-801b-2088439c27b5	reserved.a.02	positive	952	LONGINT	undefined
+Temperament and Character Inventory	138		TCI180T	I usually like to stay cool and detached from other people.	aloof	264dcbd1-1bc6-4a3e-8b80-3b8ede5232ae	aloof.s.01	positive	953	LONGINT	undefined
+Temperament and Character Inventory	138		TCI201T	Even when I am with friends, I prefer not to open up very much.	reserved	3fbe034e-d497-4640-801b-2088439c27b5	reserved.a.02	positive	954	LONGINT	undefined
+Temperament and Character Inventory	138		TCI226T	If I am feeling upset, I usually feel better around friends than when left alone.	social	2c7ce2e5-5c06-42d4-9a0d-0dde19e63423	social.s.06	positive	955	LONGINT	undefined
+Temperament and Character Inventory	138		TCI14T	I usually do things my own way - rather than giving in to the wishes of other people.	pleaser	f5953fb1-29f1-4ddd-95c4-003016e47f99	pleaser.n.01	negative	956	LONGINT	undefined
+Temperament and Character Inventory	138		TCI46T	I don't care very much whether other people like me or the way I do things.	pleaser	f5953fb1-29f1-4ddd-95c4-003016e47f99	pleaser.n.01	negative	957	LONGINT	undefined
+Temperament and Character Inventory	138		TCI71T	I do not think it is smart to help weak people who cannot help themselves.	empathetic	a7152677-5154-4847-adf4-67d16a7bb3b5	empathic.s.01	negative	958	LONGINT	undefined
+Temperament and Character Inventory	138		TCI131T	Other people often think that I am too independent because I won't do what they want.	pleaser	f5953fb1-29f1-4ddd-95c4-003016e47f99	pleaser.n.01	negative	959	LONGINT	undefined
+Temperament and Character Inventory	138		TCI156T	I don't go out of my way to please other people.	pleaser	f5953fb1-29f1-4ddd-95c4-003016e47f99	pleaser.n.01	negative	960	LONGINT	undefined
+Temperament and Character Inventory	138		TCI193T	Individual rights are more important than the needs of any group.	individualistic	df5430e1-58ec-488a-9c7e-9939b24e4b38	individualist.s.01	positive	961	LONGINT	undefined
+Temperament and Character Inventory	138		TCI230T	I have lied a lot on this questionnaire.	deceptive	0ef53504-e643-4e8f-bb19-cf877de2e3b3	deceptive.s.02	positive	963	LONGINT	undefined
+Test	9		TEST_1	None	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	1024	LONGINT	positive
+Test	9		TEST_2	Form completion	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	1025	TEXT	positive
+Test	9		TEST_3	Patient ID	None	b821443e-cfc2-43ff-a23f-3a22da752a8f		positive	1026	LONGINT	positive
+Test	9		TEST_4	1. How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done	comprehensive	b48b3c24-4031-40af-96be-4b605df6a9e6	comprehensive.a.01	positive	1027	INT	negative
+Test	9		TEST_5	2. How often do you have difficulty getting things in order when you have to do a task that requires organization	organized	5885cbc5-7849-48d7-9fe2-ba07a3eeefd2	organized.a.02	positive	1028	INT	negative
+Test	9		TEST_6	3. How often do you have problems remembering appointments or obligations	happy	88cb2f51-b773-428c-b346-25a27ec7a289	happy.a.01	positive	1029	INT	positive
+Test	9		TEST_7	4. When you have a task that requires a lot of thought, how often do you avoid or delay getting started	happy	88cb2f51-b773-428c-b346-25a27ec7a289	happy.a.01	positive	1030	INT	negative
+Test	9		TEST_8	5. How often do you fidget or squirm with your hands or feet when you have to sit down for a long time	restless	f50e18d7-84e0-40cf-99ae-543e4cfe4e5e	restless.s.01	positive	1031	INT	positive
+Test	9		TEST_9	6. How often do you feel overly active and compelled to do things, like you were driven by a motor	energetic	adae9e15-4dde-4c50-a8b5-be9d6818c997	energetic.a.01	positive	1032	INT	positive

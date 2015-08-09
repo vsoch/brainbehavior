@@ -1,9 +1,12 @@
 #!/usr/bin/env python2
 # We want to know, of the files we have, what is the breakdown?
 
-from brainbehavior.cognitiveatlas import Behavior, read_cogpheno
+from brainbehavior.cognitiveatlas import behaviors_to_pickle, load_behaviors
 
-cogpheno = read_cogpheno
+# default is to generate expanded list to brainbehavior/data/cognitiveatlas/behavioraltraits.pkl
+behaviors_to_pickle()
 
-# Here we need to check the terms
-#TODO: When finish new tagging from cogpheno, need to generat comphrensive list based on synsets!
+# Load behaviors
+traits = load_behaviors()
+
+
