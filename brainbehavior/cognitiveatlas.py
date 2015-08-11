@@ -152,6 +152,7 @@ def get_most_common(lst):
 # Generate a matrix of path similarity scores between all terms, for use in text parsing
 def get_path_similarity_matrix(families=None,sim_metric="path"):
     from nltk.corpus.reader.wordnet import Lemma, Synset as Syn
+    from brainbehavior.nlp import do_stem
     if families == None: 
         families = get_expanded_family_dict()
 

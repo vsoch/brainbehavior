@@ -9,10 +9,10 @@ import pandas
 import pickle
 
 # We want to first generate a matrix of relationships between all pairwise terms
-
 families = get_expanded_family_dict()
 
-path_similarities = get_path_similarity_matrix(behaviors,synset_selection)
+# This is NOT a diagonal matrix, base terms are in rows, family members in columns
+path_similarities = get_path_similarity_matrix(families)
 
 # Step 1: Terms that appear in most papers need to be filterd out
 percents = []
