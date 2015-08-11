@@ -5,8 +5,8 @@ import pickle
 
 # NOTE: this will likely need to be run on a bigmem node...
 
-input_folder = "/scratch/PI/russpold/data/PUBMED/counts"
-output_folder = "/scratch/PI/russpold/data/PUBMED"
+input_folder = "/share/PI/russpold/work/PUBMED/counts"
+output_folder = "/share/PI/russpold/work/PUBMED"
 files = glob("%s/*.pkl" %input_folder)
 tmp = pickle.load(open(files[0],"rb"))
 
@@ -18,11 +18,10 @@ noterms_count = []
 
 # Function to Save to file
 def save_result(counts,total_words,files_in_folder,noterms_count):
-    result = {"counts":counts,
-         "total_words":total_words,
-         "files_in_folder":files_in_folder,
-         "noterms_count":noterms_count}
-    pickle.dump(result,open("%s/pmc_counts_result.pkl" %output_folder,"wb"))
+    pickle.dump(noterms_count,open("%s/pmc_behavior_noterms.pkl" %output_folder,"wb"))
+    pickle.dump(files_in_folder,open("%s/pmc_behavior_files.pkl" %output_folder,"wb"))
+    pickle.dump(total_words,open("%s/pmc_behavior_totalwords.pkl" %output_folder,"wb"))
+    pickle.dump(counts,open("%s/pmc_behavior_counts.pkl" %output_folder,"wb"))
 
 
 for f in range(0,len(files)):
@@ -37,17 +36,3 @@ for f in range(0,len(files)):
         save_result(counts,total_words,files_in_folder,noterms_count)
 
 save_result(counts,total_words,files_in_folder,noterms_count)
-
-# What is average total words?
-#numpy.mean(total_words)
-#numpy.sum(noterms_count)
-
-# Save total words and files_in_folder
-pickle.dump(total_words,open("%s/pmc_total_words.pkl" %output_folder,"wb"))
-pickle.dump(noterms_count,open("%s/pmc_noterms_count.pkl" %output_folder,"wb"))
-
-# Save just the dataframe (likely better compression this way)
-# counts.to_pickle("%s/pmc_counts_pandas_df.pkl" %output_folder)
-# This doesn't work - try hd5 store
-counts.to_pickle("%s/pmc_counts_pandas_df.pkl" %output_folder)
-counts.to_sql()
