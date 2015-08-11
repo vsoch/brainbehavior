@@ -1,7 +1,14 @@
 library(reshape)
 library(plyr)
+library(pheatmap)
 
-input_data = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed/pmc_family_co-occurrence.tsv"
+# First let's look at the similarity matri
+# similarity(base stem (row) to member of family (column) )
+sim_matrix = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed/pmc_family_sim_matrix.tsv"
+sim_matrix = read.csv(sim_matrix,sep="\t",row.names=1)
+pheatmap(sim_matrix,cluster_cols=FALSE,cluster_rows=FALSE)
+
+input_data = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed/pmc_family_co-occurrence_filtered.tsv"
 outdir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed"
 
 df = read.csv(input_data,sep="\t")
@@ -12,7 +19,7 @@ df = df[,-1]
 df = df[which(rowSums(df) != 0),]
 df = df[,which(colSums(df) != 0)]
 
-outputfile = paste(outdir,"/web/co-occurrence.tsv",sep="")
+outputfile = paste(outdir,"/web/filter/co-occurrence.tsv",sep="")
 
 # Melt into data frame
 flat = melt(as.matrix(df))

@@ -125,7 +125,7 @@ def get_synset_opposites(synset):
     opposites = []
     for lemma in lemmas:
         opposites = opposites + [l.synset() for l in lemma.antonyms()]
-    return numpy.uniqie(opposites).tolist()
+    return numpy.unique(opposites).tolist()
 
 # Get unique strings to parse text (we can compare Word strings and text blobs)
 def get_term_strings(behaviors,word_only=True):
@@ -144,75 +144,91 @@ def get_term_strings(behaviors,word_only=True):
             term_strings.append(behavior.trait) 
     return numpy.sort(term_strings).tolist()
 
+# Return most common element in a list (used for directions "similar" and "opposite"
+# "similar" will be return if they are equal
+def get_most_common(lst):
+    return max(set(lst), key=lst.count)
+
 # Generate a matrix of path similarity scores between all terms, for use in text parsing
-# Synset selection is a dictionary of chosen synsets, one for each term
-def get_path_similarity_matrix(behaviors,synset_selection,sim_metric="path"):
+def get_path_similarity_matrix(families=None,sim_metric="path"):
     from nltk.corpus.reader.wordnet import Lemma, Synset as Syn
+    if families == None: 
+        families = get_expanded_family_dict()
 
-    # First we need a list of all lemmas (similarity == 1) and relevant synsets
-    term_objects = []
 
-    # We will run into trouble if a family member stem is == another family member stem
-    # unlike terms that have familial similarity, this would be counting the same
-    # information in two places, so we assign the family member to the base term
-    # with highest similarity
-    stems_seen = []
-    
-    for b in range(0,len(behaviors)):
-        behavior = behaviors[b] 
- 
-        #stem = do_stem([bname])[0]
+    # First we should get a list of all terms, and make sure we don't see any twice 
+    # (opposites are ok)
+    bases = dict()
+    allterms = []
 
-        # If we even have synsets or lemmas
-        if len(behavior.is_a) > 0:
-            # If the term has a matching synset
-            if isinstance(synset_selection[behavior.trait],str):
-                correct_synset = Synset(synset_selection[behavior.trait])
-                term_objects.append(correct_synset)
+    # Finding an identical stem means that we would need to tell the word apart based
+    # on context (eg, sensitive as a noun vs. an adjective. Since this method cannot
+    # do that (the stems are both "sensit"), we have to simply merge the families
+    stems = []
+    for f in range(0,len(families)):
+        family = families[f]
+        if isinstance(family["base"],str): 
+            stems.append(do_stem(family["base"])[0])
+        else: 
+            stems.append(do_stem([family["base"].name().split(".")[0]])[0])
+    stems = numpy.unique(stems).tolist()
 
-                # Filter synset to the one we are interested in
-                family = get_synset_family(correct_synset)
-                term_objects = term_objects + family 
+    # Make a lookup for bases that have identical stems- we need to combine families
+    family_index = {s: [] for s in stems}
+    for f in range(0,len(families)):
+        family = families[f]
+        if isinstance(family["base"],str):
+            stem = do_stem(family["base"])[0] 
+            holder = family_index[stem]
+            holder.append(f)
+            family_index[stem] = holder 
+        else: 
+            stem = do_stem([family["base"].name().split(".")[0]])[0]
+            holder = family_index[stem]
+            holder.append(f)
+            family_index[stem] = holder 
+
+    # Combine families, and save list of all stems (including family)
+    combined_families = dict()
+    allstems = []
+    for stem, indices in family_index.iteritems():
+        direction = []
+        family = []
+        similarity = []
+        allstems.append(stem)
+        for idx in indices:
+            direction = direction + families[idx]["direction"]
+            family = family + do_stem(families[idx]["family"])
+            similarity = similarity + families[idx]["similarity"]
+            allstems = allstems + do_stem(families[idx]["family"])
+        combined_families[stem] = {"base":stem,
+                                   "family":family,
+                                   "direction":direction,
+                                   "similarity":similarity} 
+    allstems = numpy.unique(allstems).tolist() 
+
+    # Now fill in matrix! We are only defining similarity stem|member (row --> column)
+    df = pandas.DataFrame(index=allstems,columns=allstems)
+    for stem, family in combined_families.iteritems():
+        # Find unique family stems
+        unique_family = numpy.unique(family["family"]).tolist()
+        for member in unique_family:
+            idx = family["family"].index(member)
+            if isinstance(idx,int): idx = [idx]
+            direction = get_most_common([family["direction"][x] for x in idx])
+            similarity = numpy.mean([family["similarity"][x] for x in idx])
+            if direction != "similar":
+                similarity = -1*similarity
+            # We will be conservative and define similarity == 0 in the case of conflict 
+            if not numpy.isnan(df.loc[stem,member]) and df.loc[stem,member] != similarity:
+                if similarity == 0:
+                    print "Replacing %s with %s for terms %s,%s!" %(df.loc[stem,member],similarity,stem,member)
+                    df.loc[stem,member] = similarity
+            else:
+                df.loc[stem,member] = similarity
             
-        # If not, append the name of the term
-        else:
-            term_objects.append(behavior.trait)
-
-    # Now we will fill in the data frame with similarities
-    names = []
-    for obj in term_objects:
-        if isinstance(obj,str):
-            names.append(obj)
-        else:
-            names.append(obj.name())
-    names = numpy.unique(names).tolist()
-    df = pandas.DataFrame(columns=names,index=names)
-
-    # Now calculate similarities
-    strings = numpy.unique([s for s in term_objects if isinstance(s,str)]).tolist()
-    syns = numpy.unique([s for s in term_objects if isinstance(s,Syn)]).tolist()
-
-    # First calculate for synsets
-    for t1 in range(0,len(syns)):
-        term1 = syns[t1]
-        term1_name = term1.name()
-        df.loc[term1_name,term1_name] = 1
-        print "Calculating path similarity for term %s, %s of %s" %(term1_name,t1,len(syns))
-        for t2 in range(0,len(syns)):
-            if t1 < t2:
-                term2 = syns[t2]
-                term2_name = term2.name()
-                sim_score = get_relation(term1,term2,sim_metric)
-                df.loc[term1_name,term2_name] = sim_score
-                df.loc[term2_name,term1_name] = sim_score
-
-    # Now fill in 0 for behaviors not in wordNet (they are in their own family)    
-    for s in range(0,len(strings)):
-        string = strings[s]
-        df.loc[string] = 0
-        df[string] = 0
-        df.loc[string,string] = 1
-
+    # Fill in zeros for values that are still nan
+    df[df.isnull()] = 0
     return df
 
 
