@@ -175,7 +175,8 @@ def get_path_similarity_matrix(families=None,sim_metric="path"):
     stems = numpy.unique(stems).tolist()
 
     # Make a lookup for bases that have identical stems- we need to combine families
-    family_index = {s: [] for s in stems}
+    # family_index = {s: [] for s in stems} #only works >python2.7
+    family_index = dict((s, []) for s in stems)
     for f in range(0,len(families)):
         family = families[f]
         if isinstance(family["base"],str):
