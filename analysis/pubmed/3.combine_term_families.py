@@ -1,9 +1,9 @@
 # if on sherlock, need to load python2.7
 # module load python/2.7.5
 from brainbehavior.cognitiveatlas import get_expanded_family_dict, get_path_similarity_matrix
-from brainbehavior.utils import save_json
+#from brainbehavior.utils import save_json
 from brainbehavior.nlp import do_stem
-from textblob.wordnet import Synset
+#from textblob.wordnet import Synset
 from glob import glob
 import pandas
 import pickle
@@ -14,6 +14,9 @@ families = get_expanded_family_dict()
 # This is NOT a diagonal matrix, base terms are in rows, family members in columns
 path_similarities = get_path_similarity_matrix(families)
 
+# Load the result
+result = pandas.read_pickle("/share/PI/russpold/work/PUBMED/pmc_behavior_counts.pkl")
+
 # Step 1: Terms that appear in most papers need to be filterd out
 percents = []
 for c in result.columns:
@@ -21,65 +24,34 @@ for c in result.columns:
     percent_occur = col[col!=0].shape[0] / float(col.shape[0])
     percents.append(percent_occur)
 percents = pandas.DataFrame(percents)
-percents.index = results.columns
-percents.to_csv("/scratch/PI/russpold/data/PUBMED/percent_occur.tsv",sep="\t")
+percents.index = result.columns
+percents.to_csv("/share/PI/russpold/work/PUBMED/pmc_percent_occur.tsv",sep="\t")
 
-# Lets try nixing words with > 0.1 frequency...
+# Lets try nixing words with > 0.4 frequency...
 nix = percents.loc[percents[0]>0.1]
 result[nix.index] = 0
-
-# Step 2: For each term, find family based on path similarity
 
 # This will be a new matrix with only base terms as column names
 familydf = pandas.DataFrame(index=result.index)
 
-missing = [] # should be empty!
+# Get the unique family dictionary
+families = get_expanded_family_dict(unique=True)
 
-# If we have synsets in synset_selection in the same family, we need to remove them
-# otherwise P(term1|term2) == 1
-from nltk.corpus.reader.wordnet import Lemma, Synset
-related = dict()
-for name1,syn1 in synset_selection.iteritems():
-    for name2,syn2 in synset_selection.iteritems():
-        if name1 != name2:
-            sim_score = min(Synset(syn1).path_similarity(Synset(syn2)),Synset(syn2).path_similarity(Synset(syn1)))
-            if sim_score > 0:
-                print "%s and %s, %s" %(name1,name2,sim_score)
-                related[name1] = name2
-
-
-for bname,sname in synset_selection.iteritems():
-    if isinstance(sname,str):
-        print "Processing %s,%s" %(bname,sname)
-        if sname in path_similarities.index.tolist():
-            family = path_similarities[sname][path_similarities[sname] != 0]
-            # Add names to list, to check for overlap
-            column_names = do_stem([x.split(".")[0] for x in family.index.tolist()])
-            family.index = column_names
-            # Create a data frame with just the columns
-            column_names = [c for c in column_names if c in result.columns]
-            family = family[column_names]
-            # if there are no family members
-            if family.shape[0] == 0: 
-                familydf[bname] = result[do_stem(bname)]
-            # Weight each count by the path similarity, and sum
-            else:
-                subset = result[column_names].copy()
-                for col in subset.columns:
-                    subset[col] *= family[col]
-                    if do_stem([bname]) in result.columns.tolist():
-                        familydf[bname] = subset.sum(axis=1) + result[do_stem(bname)]
-                    else:       
-                        familydf[bname] = subset.sum(axis=1)
-        else:
-            print "CHECK: %s:%s only has main term!" %(sname,bname)
-            familydf[bname] = result[do_stem([bname])]
+# Step 2: For each term stem (row), find family based on path similarity
+for stem,data in families.iteritems():
+    family = path_similarities[stem][path_similarities[stem] != 0]
+    # Create a data frame with just the columns
+    column_names = [c for c in family.index if c in result.columns]
+    family = family[column_names]
+    # if there are no family members
+    if family.shape[0] == 0: 
+        familydf[stem] = result[stem]
+    # Weight each count by the path similarity, and sum
     else:
-        if do_stem([bname])[0] not in result.columns:
-            missing.append(bname)
-        else:
-            print "CHECK: %s:%s only has main term!" %(sname,bname)
-            familydf[bname] = result[do_stem([bname])]
-
+        subset = result[column_names].copy()
+        for col in subset.columns:
+            subset[col] *= family[col]
+        familydf[stem] = subset.sum(axis=1) + result[stem]
+    
 # Save family data frame to file
-familydf.to_pickle("/scratch/PI/russpold/data/PUBMED/behavior_family_df_filtered.pkl")
+familydf.to_pickle("/share/PI/russpold/work/PUBMED/behavior_family_df_filtered_pt1.pkl")

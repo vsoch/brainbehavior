@@ -4,7 +4,7 @@ import pickle
 
 # NOTE: this will likely need to be run on a bigmem node...
 
-input_pickle = "/scratch/PI/russpold/data/PUBMED/behavior_family_df_filtered.pkl"
+input_pickle = "/share/PI/russpold/work/PUBMED/behavior_family_df_filtered_pt2.pkl"
 familydf = pandas.read_pickle(input_pickle)
 
 terms = familydf.columns.tolist()
@@ -26,4 +26,4 @@ for t in range(0,len(terms)):
     else:
         df.loc[:,term1] = 0
 
-df.to_csv("/scratch/PI/russpold/data/PUBMED/pmc_family_co-occurrence_filtered.tsv",sep="\t")
+df.to_csv("/share/PI/russpold/work/PUBMED/pmc_family_co-occurrence_filtered_pt2.tsv",sep="\t")

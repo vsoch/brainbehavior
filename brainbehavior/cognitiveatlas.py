@@ -150,64 +150,12 @@ def get_most_common(lst):
     return max(set(lst), key=lst.count)
 
 # Generate a matrix of path similarity scores between all terms, for use in text parsing
-def get_path_similarity_matrix(families=None,sim_metric="path"):
+def get_path_similarity_matrix(family_index=None,sim_metric="path"):
     from nltk.corpus.reader.wordnet import Lemma, Synset as Syn
     from brainbehavior.nlp import do_stem
-    if families == None: 
-        families = get_expanded_family_dict()
+    if family_index == None: 
+        family_index = get_expanded_family_dict(unique=True)
 
-
-    # First we should get a list of all terms, and make sure we don't see any twice 
-    # (opposites are ok)
-    bases = dict()
-    allterms = []
-
-    # Finding an identical stem means that we would need to tell the word apart based
-    # on context (eg, sensitive as a noun vs. an adjective. Since this method cannot
-    # do that (the stems are both "sensit"), we have to simply merge the families
-    stems = []
-    for f in range(0,len(families)):
-        family = families[f]
-        if isinstance(family["base"],str): 
-            stems.append(do_stem(family["base"])[0])
-        else: 
-            stems.append(do_stem([family["base"].name().split(".")[0]])[0])
-    stems = numpy.unique(stems).tolist()
-
-    # Make a lookup for bases that have identical stems- we need to combine families
-    # family_index = {s: [] for s in stems} #only works >python2.7
-    family_index = dict((s, []) for s in stems)
-    for f in range(0,len(families)):
-        family = families[f]
-        if isinstance(family["base"],str):
-            stem = do_stem(family["base"])[0] 
-            holder = family_index[stem]
-            holder.append(f)
-            family_index[stem] = holder 
-        else: 
-            stem = do_stem([family["base"].name().split(".")[0]])[0]
-            holder = family_index[stem]
-            holder.append(f)
-            family_index[stem] = holder 
-
-    # Combine families, and save list of all stems (including family)
-    combined_families = dict()
-    allstems = []
-    for stem, indices in family_index.iteritems():
-        direction = []
-        family = []
-        similarity = []
-        allstems.append(stem)
-        for idx in indices:
-            direction = direction + families[idx]["direction"]
-            family = family + do_stem(families[idx]["family"])
-            similarity = similarity + families[idx]["similarity"]
-            allstems = allstems + do_stem(families[idx]["family"])
-        combined_families[stem] = {"base":stem,
-                                   "family":family,
-                                   "direction":direction,
-                                   "similarity":similarity} 
-    allstems = numpy.unique(allstems).tolist() 
 
     # Now fill in matrix! We are only defining similarity stem|member (row --> column)
     df = pandas.DataFrame(index=allstems,columns=allstems)
@@ -327,25 +275,20 @@ def get_core_behaviors(input_file="brainbehavior/data/cognitiveatlas/cogPheno_79
     return behaviors
 
 
-def get_expanded_behavior_list(synset_names=False):
-    from nltk.corpus import wordnet as wn
-    behaviors = get_core_behaviors()
-    core = []
-    for behavior in behaviors:
-        if re.search("[.]",behavior):
-            syn = wn.synset(behavior)
-            family = get_synset_family(syn) + get_synset_opposites(syn)
-            if synset_names:            
-                family = [f.name() for f in family]
-            else:
-                family = [f.name().split(".")[0] for f in family]
-            core = core + family
-        else:
-            core.append(behavior)
-    return numpy.unique(core).tolist()
+def get_expanded_behavior_list(family_index=None,synset_names=False):
+    if family_index == None:
+        family_index = get_family_index(families)
+    allstems = []
+    for stem, indices in family_index.iteritems():
+        allstems.append(stem)
+        for idx in indices:
+            allstems = allstems + do_stem(families[idx]["family"])
+    return numpy.unique(allstems).tolist() 
 
-def get_expanded_family_dict(synset_names=False,sim_metric="path"):
+
+def get_families(sim_metric,synset_names=False):
     from nltk.corpus import wordnet as wn
+    from brainbehavior.nlp import do_stem
     behaviors = get_core_behaviors()
     families = []
     for behavior in behaviors:
@@ -367,7 +310,56 @@ def get_expanded_family_dict(synset_names=False,sim_metric="path"):
         else:
             tmp["base"] = behavior
         families.append(tmp)
-    return families                 
+    return families
+
+def get_family_index(families):
+    stems = []
+    for f in range(0,len(families)):
+        family = families[f]
+        if isinstance(family["base"],str): 
+            stems.append(do_stem(family["base"])[0])
+        else: 
+            stems.append(do_stem([family["base"].name().split(".")[0]])[0])
+    stems = numpy.unique(stems).tolist()        
+    family_index = dict((s, []) for s in stems)
+    for f in range(0,len(families)):
+        family = families[f]
+        if isinstance(family["base"],str):
+            stem = do_stem(family["base"])[0] 
+            holder = family_index[stem]
+            holder.append(f)
+            family_index[stem] = holder 
+        else: 
+            stem = do_stem([family["base"].name().split(".")[0]])[0]
+            holder = family_index[stem]
+            holder.append(f)
+            family_index[stem] = holder 
+    return family_index
+
+def get_expanded_family_dict(sim_metric="path",synset_names=False,unique=True):
+    families = get_families(sim_metric=sim_metric,synset_names=synset_names)
+    if unique==True:
+        # Finding an identical stem means that we would need to tell the word apart based
+        # on context (eg, sensitive as a noun vs. an adjective. Since this method cannot
+        # do that (the stems are both "sensit"), we have to simply merge the families
+        family_index = get_family_index(families)
+        # Combine families, and save list of all stems (including family)
+        combined_families = dict()
+        for stem, indices in family_index.iteritems():
+            direction = []
+            family = []
+            similarity = []
+            for idx in indices:
+                direction = direction + families[idx]["direction"]
+                family = family + do_stem(families[idx]["family"])
+                similarity = similarity + families[idx]["similarity"]
+            combined_families[stem] = {"base":stem,
+                                   "family":family,
+                                   "direction":direction,
+                                   "similarity":similarity} 
+        return combined_families
+    else:
+        return families                 
 
 def behaviors_to_pickle(output_file="brainbehavior/data/cognitiveatlas/behavioraltraits.pkl",behavior_set="expanded"):
     if behavior_set == "expanded":
