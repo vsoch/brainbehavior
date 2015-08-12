@@ -8,18 +8,16 @@ sim_matrix = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysi
 sim_matrix = read.csv(sim_matrix,sep="\t",row.names=1)
 pheatmap(sim_matrix,cluster_cols=FALSE,cluster_rows=FALSE)
 
-input_data = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed/pmc_family_co-occurrence_filtered.tsv"
+input_data = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed/pmc_family_co-occurrence_filtered_pt2.tsv"
 outdir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/pubmed"
 
-df = read.csv(input_data,sep="\t")
-rownames(df) = df[,1]
-df = df[,-1]
+df = read.csv(input_data,sep="\t",row.names=1)
 
 # Remove rows/cols where we didn't find at all
 df = df[which(rowSums(df) != 0),]
 df = df[,which(colSums(df) != 0)]
 
-outputfile = paste(outdir,"/web/filter/co-occurrence.tsv",sep="")
+outputfile = paste(outdir,"/web/filterpt2/co-occurrence.tsv",sep="")
 
 # Melt into data frame
 flat = melt(as.matrix(df))
