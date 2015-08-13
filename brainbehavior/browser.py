@@ -18,7 +18,7 @@ from selenium.webdriver.common.keys import Keys
 def get_browser():
     return webdriver.Firefox()
 
-def get_page(url):
+def get_page(browser,url):
     browser.get(url)
 
 # Run javascript and get output

@@ -3,11 +3,12 @@
 # First need to start splash server
 # python -m splash.server --max-timeout 120
 
-from brainbehavior.browser import get_browser, open_page, get_blogs
+from brainbehavior.browser import get_browser, get_page, get_blogs, next_page
+import pickle
 
 # Set up a web browser
 browser = get_browser()
-open_page("http://www.searchblogspot.com")
+get_page(browser,"http://www.searchblogspot.com")
 search_parent = browser.find_element_by_class_name('gsc-search-button')
 search_box = search_parent.find_elements_by_css_selector("*")
 
@@ -41,4 +42,4 @@ for disorder in disorders:
 
     blogdict[disorder] = urls
 
-
+pickle.dump(blogdict,open("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/blogs/disorder_blogs.pkl","wb"))
