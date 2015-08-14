@@ -156,10 +156,12 @@ def get_path_similarity_matrix(family_index=None,sim_metric="path"):
     if family_index == None: 
         family_index = get_expanded_family_dict(unique=True)
 
+    families = get_expanded_family_dict(unique=True)
+    allstems = get_expanded_behavior_list(sim_metric=sim_metric,synset_names=False)
 
     # Now fill in matrix! We are only defining similarity stem|member (row --> column)
     df = pandas.DataFrame(index=allstems,columns=allstems)
-    for stem, family in combined_families.iteritems():
+    for stem, family in families.iteritems():
         # Find unique family stems
         unique_family = numpy.unique(family["family"]).tolist()
         for member in unique_family:
@@ -275,9 +277,9 @@ def get_core_behaviors(input_file="brainbehavior/data/cognitiveatlas/cogPheno_79
     return behaviors
 
 
-def get_expanded_behavior_list(family_index=None,synset_names=False):
-    if family_index == None:
-        family_index = get_family_index(families)
+def get_expanded_behavior_list(sim_metric="path",synset_names=False):
+    families = get_families(sim_metric=sim_metric,synset_names=synset_names)
+    family_index = get_family_index(families)
     allstems = []
     for stem, indices in family_index.iteritems():
         allstems.append(stem)
@@ -313,6 +315,7 @@ def get_families(sim_metric,synset_names=False):
     return families
 
 def get_family_index(families):
+    from brainbehavior.nlp import do_stem
     stems = []
     for f in range(0,len(families)):
         family = families[f]

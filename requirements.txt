@@ -1,3 +1,5 @@
 nltk
+selenium
 wikipedia
 textblob
+PRAW

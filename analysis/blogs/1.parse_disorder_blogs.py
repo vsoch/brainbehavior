@@ -1,6 +1,8 @@
 # Let's try to parse the blog content
 
-from brainbehavior.browser import get_browser, run_javascript
+from brainbehavior.browser import get_browser, run_javascript, get_page
+from random import randint
+from time import sleep
 import pickle
 import numpy
 
@@ -17,28 +19,25 @@ for (i = 0; i < entries.length; i++) {
 return pages
 '''
 
-# Function to get content
-contentfn = '''
-return document.getElementsByClassName("entry-content")[0].children[0].textContent
-'''
 
 
-allblogcontent = dict()
+allblogpages = dict()
 
 # Load the blog URLS
 for disorder,blogs in blogdict.iteritems():
+    print "Parsing disorder blogs: %s" %(disorder)
     unique_blogs = numpy.unique(blogs).tolist()
-    blogcontent = dict()
-    for blog in unique_blogs:
-        content = []
-        get_page(browser,blog)
-        # For now just get content from most recent pages
-        pages = run_javascript(browser,entryfn)
-        for page in pages:
-            get_page(browser,page)
-            content.append(run_javascript(browser,contentfn))
-        blogcontent[blog] = content
-    allblogcontent[disorder] = blogcontent
+    blogpages = dict()
+    for b in range(0,len(unique_blogs)):
+        print "%s of %s" %(b,len(unique_blogs))
+        blog = unique_blogs[b]
+        browser.get("http://%s" %blog)
+        # For now just get most recent pages
+        try:
+            blogpages[blog] = run_javascript(browser,entryfn)
+        except:
+            print "Error with %s"
+    allblogpages[disorder] = blogpages
 
-pickle.dump(blogdict,open("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/blogs/disorder_blog_content.pkl","wb"))
-
+# We want each one to go to a different node so there are different IP addresses and times
+pickle.dump(allblogpages,open("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/blogs/disorder_blog_pages.pkl","wb"))
