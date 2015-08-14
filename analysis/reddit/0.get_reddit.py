@@ -55,7 +55,7 @@ for disorder,content in redditdict.iteritems():
     countdfs[disorder] = {"df":dfcount,"words":totalwords}
 
 # Save to output file
-pickle.dump(countsdf,open("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/countdfsreddit.pkl","wb"))
+pickle.dump(countdfs,open("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/countdfsreddit.pkl","wb"))
 
 ### 3. COMBINE COUNTS BY FAMILY ##############################################################
 # Prepare behavioral terms
@@ -64,8 +64,9 @@ families = get_expanded_family_dict(unique=True)
 # This is NOT a diagonal matrix, base terms are in rows, family members in columns
 path_similarities = get_path_similarity_matrix()
 
-for disorder,data in countdfs.iteritems():
-    result = data["df"]
+for disorder,counts in countdfs.iteritems():
+    print "Parsing disorder %s" %disorder
+    result = counts["df"]
 
     # This will be a new matrix with only base terms as column names
     familydf = pandas.DataFrame(index=result.index)

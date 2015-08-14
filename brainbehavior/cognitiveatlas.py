@@ -340,6 +340,7 @@ def get_family_index(families):
     return family_index
 
 def get_expanded_family_dict(sim_metric="path",synset_names=False,unique=True):
+    from brainbehavior.nlp import do_stem
     families = get_families(sim_metric=sim_metric,synset_names=synset_names)
     if unique==True:
         # Finding an identical stem means that we would need to tell the word apart based
