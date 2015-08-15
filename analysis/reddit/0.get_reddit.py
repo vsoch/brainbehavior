@@ -16,19 +16,40 @@ r = praw.Reddit(user_agent='cogatpheno')
 # Read in list of disorders to search for
 disorders = ["depression","anxiety","stress","OCD","panic","phobia","PTSD",
              "EatingDisorders","autism","amnesia","Alzheimers","BipolarReddit",
-             "schizophrenia","narcissism","narcolepsy","Drug_Addiction"]
+             "schizophrenia","narcissism","narcolepsy","Drug_Addiction","relationships",
+             "gaming","worldnews","politics","movies","science","atheism","Showerthoughts",
+             "cringe","rage","niceguys","sex","loseit","raisedbynarcissists","BPD",
+             "AvPD","DID","SPD","EOOD","CompulsiveSkinPicking","psychoticreddit","insomnia"]
 
-redditdict = dict()
-
+    
 for disorder in disorders:
     print "Parsing %s" %disorder
     submissions = r.get_subreddit(disorder).get_hot(limit=1000)
+    now = time.localtime()
     content = []
+    ids = []
+    scores = []
     for sub in submissions:
-        content.append(sub.selftext)
-    redditdict[disorder] = content
+        if len(sub.selftext) > 0:
+            content.append(sub.selftext)
+            ids.append(sub.fullname)
+            scores.append(sub.score)
+            if sub.num_comments > 0:
+                comments = sub.comments
+                while len(comments) > 0:
+                    for comment in comments:
+                        current = comments.pop(0)
+                        if isinstance(current,praw.objects.MoreComments):
+                            comments = comments + current.comments()
+                        else:               
+                            if len(current.body)>0:     
+                                content.append(current.body)
+                                ids.append(current.fullname)
+                                scores.append(current.score)
 
-pickle.dump(redditdict,open("analysis/reddit/disorder_dict.pkl","wb"))
+    print "%s has %s entities" %(disorder,len(content))
+    result = {"content":content,"disorder":disorder,"score":scores,"uids":ids,"retrieved":now}
+    pickle.dump(result,open("analysis/reddit/%s_dict.pkl" %disorder,"wb"))
 
 
 ### 2. COUNT TERMS ##################################################################
