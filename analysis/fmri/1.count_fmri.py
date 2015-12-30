@@ -27,7 +27,6 @@ totalwords = []
 
 # We want to keep a count of those with no terms
 noterms = 0
-totalwords = 0
 
 for z in zips:
     zname = "%s/%s" %(subfolder,os.path.basename(z))
