@@ -1,6 +1,12 @@
 (lp0
 S'fmri'
 p1
-aS'functional magnetic resonance'
+aS'functional magnetic resonance imaging'
 p2
+aS'neural'
+p3
+aS'brain'
+p4
+aS'functional MRI'
+p5
 a.
