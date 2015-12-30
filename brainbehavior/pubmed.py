@@ -2,7 +2,7 @@
 
 """
 
-Corpus: part of the brainbehavior python package, for parsing
+Pubmed: part of the brainbehavior python package, for parsing
 Pubmed, Wikipedia, etc.
 
 BrainBehavior: This module will work with three databases that

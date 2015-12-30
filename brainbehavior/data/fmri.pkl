@@ -1,0 +1,6 @@
+(lp0
+S'fmri'
+p1
+aS'functional magnetic resonance'
+p2
+a.

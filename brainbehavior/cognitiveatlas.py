@@ -19,6 +19,7 @@ import numpy
 import pandas
 import json
 import re
+import os
 
 __author__ = ["Vanessa Sochat (vsochat@stanford.edu)"]
 __version__ = "$Revision: 1.0 $"
@@ -244,13 +245,22 @@ def get_behavior_synset(behavior,nid=1):
                 relations = relations + new_relations
     return synsets
 
-def read_cogpheno(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv"):
+
+def get_input_file():
+    diry = os.path.dirname(os.path.realpath(__file__))
+    return "%s/brainbehavior/data/cognitiveatlas/cogPheno_791.tsv" %diry
+
+def read_cogpheno(input_file=None):
+    if input_file == None:
+        input_file = get_input_file()
     return pandas.read_csv(input_file,sep="\t")
 
 
 # QUALITY CONTROL -----------------------------------------------------------------------------------------------------
 # Tell the user for any terms that are not in wordnet (in case we want to change)
-def check_cogpheno_terms(input_file="brainbehavior/data/cognitiveatlas/cogPheno_782.tsv"):
+def check_cogpheno_terms(input_file=None):
+    if input_file == None:
+        input_file = get_input_file()
     cogpheno = read_cogpheno(input_file)
     print "Evaluating terms: terms without matches (below) should be re-considered, unless it's a medical term."
     traits = cogpheno.question_behavioral_trait.unique()
@@ -265,7 +275,9 @@ def check_cogpheno_terms(input_file="brainbehavior/data/cognitiveatlas/cogPheno_
 
 # LOADING/SAVING -----------------------------------------------------------------------------------------------------
 # Core are just the terms defined in cogatpheno
-def get_core_behaviors(input_file="brainbehavior/data/cognitiveatlas/cogPheno_791.tsv"):
+def get_core_behaviors(input_file=None):
+    if input_file == None:
+        input_file = get_input_file()
     cogpheno = read_cogpheno(input_file)
     # Reduce down to synsets
     traits = cogpheno.question_behavioral_trait_synset.dropna().unique()
@@ -365,7 +377,10 @@ def get_expanded_family_dict(sim_metric="path",synset_names=False,unique=True):
     else:
         return families                 
 
-def behaviors_to_pickle(output_file="brainbehavior/data/cognitiveatlas/behavioraltraits.pkl",behavior_set="expanded"):
+def behaviors_to_pickle(output_file=None,behavior_set="expanded"):
+    if output_file == None:
+        diry = os.path.dirname(os.path.abspath(__file__))
+        output_file = "%s/brainbehavior/data/cognitiveatlas/behavioraltraits.pkl" %diry
     if behavior_set == "expanded":
         behaviors = get_expanded_behavior_list()
     else:

@@ -15,26 +15,22 @@ content = []
 ids = []
 scores = []
 for sub in submissions:
-    try:
         if len(sub.selftext) > 0:
-                if sub.fullname not in ids:
-                    content.append(sub.selftext)
-                    ids.append(sub.fullname)
-                    scores.append(sub.score)
-                    if sub.num_comments > 0:
-                        comments = sub.comments
-                        while len(comments) > 0:
-                            for comment in comments:
-                                current = comments.pop(0)
-                                if isinstance(current,praw.objects.MoreComments):
-                                    comments = comments + current.comments()
-                                else:               
-                                    if len(current.body)>0:     
-                                        content.append(current.body)
-                                        ids.append(current.fullname)
-                                        scores.append(current.score)
-    except:
-        print "Skipping %s" %sub.fullname
+            content.append(sub.selftext)
+            ids.append(sub.fullname)
+            scores.append(sub.score)
+            if sub.num_comments > 0:
+                comments = sub.comments
+                while len(comments) > 0:
+                    for comment in comments:
+                        current = comments.pop(0)
+                        if isinstance(current,praw.objects.MoreComments):
+                            comments = comments + current.comments()
+                        else:               
+                            if len(current.body)>0:     
+                                content.append(current.body)
+                                ids.append(current.fullname)
+                                scores.append(current.score)
 
 print "%s has %s entities" %(disorder,len(content))
 result = {"content":content,"disorder":disorder,"score":scores,"uids":ids,"retrieved":now}

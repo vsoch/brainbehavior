@@ -57,45 +57,47 @@ for disorder in disorders:
 
 
 ### 2. COUNT TERMS ##################################################################
-term_pickle = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/brainbehavior/data/cognitiveatlas/behavioraltraits.pkl"
+term_pickle = "brainbehavior/data/cognitiveatlas/behavioraltraits.pkl"
 terms = pickle.load(open(term_pickle,"rb"))
 stems = do_stem(terms)
 
-countdfs = dict()
-
-for disorder,content in redditdict.iteritems():    
-    print "Parsing %s" %disorder
+pickles = glob("%s/*_dict.pkl" %outfolder)
+for result_file in pickles:
+    result = pickle.load(open(result_file,"rb"))
+    content = result["content"]
+    print "Parsing %s" %result_file
     # We will save counts and total words
     dfcount = pandas.DataFrame(columns=stems)
     totalwords = []
     # We want to keep a count of those with no terms
     noterms = 0
     for t in range(0,len(content)):
+        print "%s of %s" %(t,len(content))
         text = ''.join([i if ord(i) < 128 else ' ' for i in content[t]])
         counts = get_term_counts(terms,str(text))
         # Only save if we have at least one!
         if counts["count"].sum() > 0:    
             totalwords.append(get_total_words(text))
             dfcount.loc[t,counts.index] = counts["count"]
-    countdfs[disorder] = {"df":dfcount,"words":totalwords}
-
-# Save to output file
-pickle.dump(countdfs,open("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/countdfsreddit.pkl","wb"))
+    result["dfcount"] = dfcount
+    result["words"] = totalwords 
+    # Save to output file
+    pickle.dump(result,open(result_file.replace("dict","dict_counts"),"wb"))
 
 ### 3. COMBINE COUNTS BY FAMILY ##############################################################
 # Prepare behavioral terms
+pickles = glob("%s/*_dict_counts.pkl" %outfolder)
 families = get_expanded_family_dict(unique=True)
 
 # This is NOT a diagonal matrix, base terms are in rows, family members in columns
 path_similarities = get_path_similarity_matrix()
 
-for disorder,counts in countdfs.iteritems():
-    print "Parsing disorder %s" %disorder
-    result = counts["df"]
-
+for result_file in pickles:
+    tmp = pickle.load(open(result_file,"rb"))
+    print "Parsing disorder %s" %tmp["disorder"]
+    result = tmp["dfcount"]
     # This will be a new matrix with only base terms as column names
     familydf = pandas.DataFrame(index=result.index)
-
     # Step 2: For each term stem (row), find family based on path similarity
     for stem,data in families.iteritems():
         family = path_similarities[stem][path_similarities[stem] != 0]
@@ -110,10 +112,10 @@ for disorder,counts in countdfs.iteritems():
             subset = result[column_names].copy()
             for col in subset.columns:
                 subset[col] *= family[col]
-            familydf[stem] = subset.sum(axis=1) + result[stem]
-    
+            familydf[stem] = subset.sum(axis=1) + result[stem] 
     # Save family data frame to file
-    familydf.to_pickle("/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/result/%s_familydf.pkl" %disorder)
+    tmp["familydf"] = familydf
+    pickle.dump(tmp,open(result_file.replace("dict_counts","dict_counts_family"),"wb"))    
 
 ### 4. CO-OCCURRENCE ##################################################################
     # Now calculate co-occurrence

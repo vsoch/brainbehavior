@@ -2,9 +2,9 @@ library(reshape)
 library(plyr)
 library(pheatmap)
 
-indir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/result"
+indir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/result/v2/co-occurrence"
 input_datas = list.files(indir,pattern="*.tsv")
-outdir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/web"
+outdir = "/home/vanessa/Documents/Dropbox/Code/Python/brain-behavior/analysis/reddit/web/v2"
 
 for (input_data in input_datas){
     input_file = paste(indir,"/",input_data,sep="")
