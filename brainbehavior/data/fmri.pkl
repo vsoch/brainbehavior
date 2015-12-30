@@ -9,4 +9,6 @@ aS'brain'
 p4
 aS'functional MRI'
 p5
+aS'functional magnetic resonance'
+p6
 a.
